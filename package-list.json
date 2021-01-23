@@ -1,0 +1,15 @@
+{
+  "package-id": "hl7.fhir.us.shrae",
+  "canonical": "http://hl7.org/fhir/us/shrae",
+  "title": "HL7 FHIR Implementation Guide: Standard Health Record (SHR) Adverse Events Release 1 - US Realm | STU1",
+  "introduction": "Standard Health Record (SHR) Adverse Events",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "http://build.fhir.org/ig/HL7/shrae/",
+      "status": "draft",
+      "current": true
+    }
+  ]
+}

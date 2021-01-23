@@ -18,6 +18,17 @@
 .env.test.local
 .env.production.local
 .idea
+Thumbs.db
+fsh-generated/**
+input-cache/schemas
+input-cache/schemas-r5
+input-cache/publisher.jar
+/output
+/parking_lot
+template/**
+temp/**
+.vscode
+.idea
 
 npm-debug.log*
 yarn-debug.log*

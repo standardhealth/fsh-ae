@@ -1,0 +1,84 @@
+id: hl7.fhir.us.shrae
+canonical: http://hl7.org/fhir/us/shrae
+version: 0.0.1
+name: HL7FHIRImplementationGuideStandardHealthRecordAdverseEventsRelease1USRealmSTU1
+title: "HL7 FHIR Implementation Guide: Standard Health Record (SHR) Adverse Events
+  Release 1 - US Realm | STU1"
+status: draft
+publisher:
+  name: HL7 International Clinical Interoperability Council
+  url: http://www.hl7.org/Special/committees/cic
+  email: ciclist@lists.HL7.org
+jurisdiction: urn:iso:std:iso:3166#US "United States of America"
+description: The Standard Health Record (SHR) Adverse Event specification reconciles CTCAE and CDISC CDASH.
+license: CC0-1.0
+fhirVersion: 4.0.1
+dependencies:
+  hl7.fhir.us.core: 3.1.0
+parameters:
+  show-inherited-invariants: false
+  version-comparison: n/a
+  path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
+copyrightYear: 2021
+releaseLabel: STU1
+pages:
+  index.md:
+    title: Home
+  implementation.md:
+    title: Implementation
+  examples.md:
+    title: Examples Overview
+  downloads.md:
+    title: Downloads
+  change_log.md:
+    title: Change log
+menu:
+  Home: index.html
+  Implementation: implementation.html
+  FHIR Artifacts:
+    Profiles: "artifacts.html#1"
+    ValueSets: "artifacts.html#2"
+    CodeSystems: "artifacts.html#3"
+    GenericExamples: "artifacts.html#4"
+    All artifacts: "artifacts.html"
+  Downloads: downloads.html
+  Change Log: change_log.html
+  History: http://hl7.org/fhir/us/shrae/history.html
+
+groups:
+  Profiles:
+    name: Profiles
+    description: Adverse event related profiles
+    resources:
+      - StructureDefinition/ctc-adverse-event
+      - StructureDefinition/adverse-event-expectation
+      - StructureDefinition/adverse-event-resolved-date
+      - StructureDefinition/ctcae-grade
+
+  # Value sets
+  ValueSets:
+    name: Value Sets
+    description: These define sets of codes used by systems conforming with this implementation guide. Comorbid condition-related value sets appear in a separate section below.
+    resources:
+      - ValueSet/ctcae-preferred-term-value-set
+      - ValueSet/adverse-event-expectation-value-set
+      - ValueSet/adverse-event-seriousness-value-set
+      - ValueSet/adverse-event-relatedness-value-set
+      - ValueSet/ctcae-grade-value-set
+
+  CodeSystems:
+    name: Code Systems
+    description: These define new code systems used by systems conforming with this implementation guide
+    resources:
+      - CodeSystem/ctcae-grade-code-system
+
+  # Examples
+  GenericExamples:
+    name: "Examples:"
+    description: Examples of resources conforming to SHR AdverseEvent profiles. These examples are independent (i.e., there is no expectation of consistency of data among the resources).
+    resources:
+      - Patient/PatientExample1
+      - Patient/PatientExample2
+      - Practitioner/PractitionerExample1
+      - AdverseEvent/ctc-adverse-event-example-1
+      - AdverseEvent/ctc-adverse-event-example-2
