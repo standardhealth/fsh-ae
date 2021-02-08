@@ -17,15 +17,7 @@
 
 ### Background
 
-
-Use cases that drove the initial clinical data requirements for this IG:
-
-* **Use Case 1**: A principal investigator submits an Individual Case Safety Report (ICSR) after a patient receiving a treatment as part of a cancer clinical trial experiences an adverse event (AE). 
-
-* **Use Case 2**: A principal investigator submits an Individual Case Safety Report (ICSR) after a patient receiving a drug or vaccine treatment either during a clinical trial or after a period of time following the market approval and release of said treatment.
-
-* **Use Case 3**: A patient experiences an adverse event during or after the administration a given drug, vaccine, or biological product (e.g.: drug transfusion). The provider records the adverse event per healthcare organization patient safety policies.
-
+The mCODE iCAREdata project has received funding from the Food and Drug Administration (FDA) on the improving data capture and standardization of adverse events. 
 
 The information obtained from subject matter experts, several pre-existing standards, nomenclatures, and guidelines were consulted in the development of this specification, including:
 
@@ -35,8 +27,10 @@ The information obtained from subject matter experts, several pre-existing stand
 * [Health and Human Services (HHS) Vaccine Adverse Event Reporting System (VAERS)](https://vaers.hhs.gov/)
 
 
-The data elements identified in this process were modeled using [FHIR Shorthand (FSH)](http://build.fhir.org/ig/HL7/fhir-shorthand/) and [SUSHI](https://github.com/FHIR/sushi) and exported as FHIR Profiles. [The profiles](artifacts.html#2), related FHIR artifacts, and other [technical implementation information](implementation.html), constitute the bulk of this IG. 
+### Actors and Use Case Scenarios
 
+
+#### Actors
 
 There are multiple actors recognized in this IG including:
 
@@ -45,7 +39,27 @@ There are multiple actors recognized in this IG including:
 * **Patient** - the patient who is suspected to have, or is undergoing a treatment and may be subject to adverse events resulting from that treatment.
 * **Application** - EHR systems.
 
-This implementation guide is a Domain of Knowledge IG. The purpose of this IG is to show how to represent clinical concepts generally, not to have a complete set of agreements for interoperable exchanges.
+#### Clinical Use Cases
+
+The following use cases will inform the initial design for this IG:
+
+* **Use Case 1**: A principal investigator submits a report after a patient receiving a treatment as part of a cancer clinical trial experiences an adverse event (AE).
+
+* **Use Case 2**: A principal investigator submits an Individual Case Safety Report (ICSR) after a patient receiving a drug or vaccine treatment either during a clinical trial or after a period of time following the market approval and release of said treatment.
+
+* **Use Case 3**: A patient experiences an adverse event during or after the administration a given drug, vaccine, or biological product (e.g.: drug transfusion). The provider records the adverse event per healthcare organization patient safety policies.
+
+
+
+<!-- If the image below is not wrapped in a div tag, the publisher tries to wrap text around the image, which is not desired. -->
+<div style="text-align: center;">{%include ae-icsr-exchange.svg%}</div>
+
+### Adverse Event Reporting Standards
+
+FDA Individual Case Safety Report (ICSR)
+National Cancer Institute CTCAE:
+* routine reporting via Clinical Data Update System (CDUS)
+* adverse event expedited reporting (AdEERS)
 
 ### Scope and Conceptual Model
 
@@ -56,7 +70,7 @@ The SHR Adverse Event model consists of data elements divided into TBD groups, i
 
 ### Disclaimers and Known Limitations
 
-TBD
+This implementation guide is a Domain of Knowledge IG. The purpose of this IG is to show how to represent clinical concepts generally, not to have a complete set of agreements for interoperable exchanges.
 
 ### Credits
 

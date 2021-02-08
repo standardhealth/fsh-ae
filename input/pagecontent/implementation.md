@@ -1,6 +1,11 @@
 ### Implementation Notes
 
-This page contains miscellaneous information on modeling and FHIR implementation. The content is primarily directed at informaticists and implementers of CTCAE and CDISC adverse events. The following topics are addressed:
+This page contains miscellaneous information on modeling and FHIR implementation. The content is primarily directed at informaticists and implementers of the following adverse reporting methods:
+* CTEP CDUS
+* CTEP AdEERS
+* CDISC adverse event reporting in CDASH and SDTM.
+
+The following topics are addressed:
 
 * [Understanding this Guide](#understanding-this-guide)
 * [Adverse Event](#Adverse-Event)
@@ -12,6 +17,8 @@ This page contains miscellaneous information on modeling and FHIR implementation
 The SHR Adverse Event Implementation Guide was developed using the standard HL7 FHIR publishing tools. The page layouts and symbols are explained [in the FHIR documentation](https://www.hl7.org/fhir/formats.html).
 
 Each profile is shown in multiple views. The "Differential Table" view represents the difference between the current profile and its base resource or profile. When interpreting this view, bear in mind that the immediate parent may not be a base FHIR resource, but it could be a US Core profile or another profile in this guide.
+
+The data elements identified in this process were modeled using [FHIR Shorthand (FSH)](http://build.fhir.org/ig/HL7/fhir-shorthand/) and [SUSHI](https://github.com/FHIR/sushi) and exported as FHIR Profiles. [The profiles](artifacts.html#2), related FHIR artifacts, and other [technical implementation information](implementation.html), constitute the bulk of this IG. 
 
 ### Adverse Event
 
@@ -50,7 +57,8 @@ This implementation guide supplies terminology bindings drawn primarily from LOI
 
 Value sets from the FHIR specification and US Core were reused to the extent possible. New value sets where created only when no known existing value sets were deemed to be fit for purpose.
 
+Relevant CTEP codes and values are listed [here](https://ctep.cancer.gov/protocoldevelopment/codes_values.htm).
 
 #### Representing Provenance
 
-Provenance information includes the "who, what, when, where, why" associated with collection, transfer, and updating of clinical information. mCODE relies on FHIR's native mechanisms for recording and tracking provenance. As such, mCODE shares all the capabilities and limitations of FHIR provenance tracking. The user should refer to the [FHIR specification](https://www.hl7.org/fhir/provenance.html) for more information.
+Provenance information includes the "who, what, when, where, why" associated with collection, transfer, and updating of clinical information. This IG relies on FHIR's native mechanisms for recording and tracking provenance. As such, this IG shares all the capabilities and limitations of FHIR provenance tracking. The user should refer to the [FHIR specification](https://www.hl7.org/fhir/provenance.html) for more information.

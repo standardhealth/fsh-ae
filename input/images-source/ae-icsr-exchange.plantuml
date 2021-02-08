@@ -1,0 +1,14 @@
+@startuml
+skinparam defaultFontName Arial
+
+title Adverse Event Reporting: CTCAE Submission
+hide footbox
+participant "CTCAE Data Receiver" as Receiver
+participant "CTCAE Data Sender" as Sender
+
+group Submitting AdverseEvent ICSR
+    "Receiver" -> "Sender" : ""POST [base]/CTCAEAdverseEvent""
+    "Sender" --> "Receiver" : HTTP response 200 containing CTCAEAdverseEvent instance and assigned FHIR ID
+end
+
+@enduml

@@ -48,7 +48,6 @@
 <artifact deprecated="true" id="ValueSet/mcode-laterality-value-set" key="laterality-value-set" name="Laterality Value Set"/>
 <artifact deprecated="true" key="Observation" name="Observation"/>
 <artifact id="Organization/OrganizationExample1" key="Organization-OrganizationExample1" name="OrganizationExample1"/>
-<artifact id="Group/PatientGroupExample1" key="Group-PatientGroupExample1" name="Patient Group Example"/>
 <artifact id="Patient/PatientExample1" key="Patient-PatientExample1" name="PatientExample1"/>
 <artifact id="Patient/PatientExample2" key="Patient-PatientExample2" name="PatientExample2"/>
 <artifact id="Practitioner/PractitionerExample1" key="Practitioner-PractitionerExample1" name="PractitionerExample1"/>

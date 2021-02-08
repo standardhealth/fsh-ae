@@ -12,7 +12,7 @@ This section provides some examples how the adverse event elements may be repres
 
 ### Scenario 1: clinical trials patient
 
-In addition to the examples provided above, we also have developed this scenario describing a hypothetical patient, along with accompanying example instances to demonstrate how the adverse event profiles can be used to guide the creation resources representing a clinically realistic scenario. When information in the persona does not map onto mCODE profiles, we provide examples using [USCore](http://hl7.org/fhir/us/core/index.html) or standard FHIR resources.
+In addition to the examples provided above, we also have developed this scenario describing a hypothetical patient, along with accompanying example instances to demonstrate how the adverse event profiles can be used to guide the creation resources representing a clinically realistic scenario. Example resources supporting the AE profiles in this IG will align with [USCore](http://hl7.org/fhir/us/core/index.html) or standard FHIR resources as needed.
 
 #### Patient description
 
