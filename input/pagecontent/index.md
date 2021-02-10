@@ -65,7 +65,7 @@ National Cancer Institute CTCAE:
 
 The SHR Adverse Event model consists of data elements divided into TBD groups, illustrated in the following diagram:
 
-** INSERT CONCEPTUAL DIAGRAM LINK **
+** INSERT CONCEPTUAL DIAGRAM **
 
 
 ### Disclaimers and Known Limitations
