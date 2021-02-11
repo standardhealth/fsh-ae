@@ -3,12 +3,11 @@ canonical: http://hl7.org/fhir/us/shrae
 version: 0.0.1
 name: HL7FHIRImplementationGuideStandardHealthRecordAdverseEventsRelease1USRealmSTU1
 title: "HL7 FHIR Implementation Guide: Standard Health Record (SHR) Adverse Events
-  Release 1 - US Realm | STU1"
+  Release 1 - DRAFT"
 status: draft
 publisher:
   name: HL7 International Clinical Interoperability Council
-  url: http://www.hl7.org/Special/committees/cic
-  email: ciclist@lists.HL7.org
+  url: http://www.mcodeinitiative.org
 jurisdiction: urn:iso:std:iso:3166#US "United States of America"
 description: The Standard Health Record (SHR) Adverse Event specification reconciles CTCAE and CDISC CDASH.
 license: CC0-1.0
@@ -20,7 +19,7 @@ parameters:
   version-comparison: n/a
   path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
 copyrightYear: 2021
-releaseLabel: STU1
+releaseLabel: DRAFT
 pages:
   index.md:
     title: Home

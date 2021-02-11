@@ -23,8 +23,20 @@ The information obtained from subject matter experts, several pre-existing stand
 
 * [CTEP-AERS: Cancer Therapy Evaluation Program Adverse Event Reporting System](https://ctep.cancer.gov/protocolDevelopment/electronic_applications/adverse_events.htm)
 * [FDA Adverse Event Reporting System (FAERS)](https://open.fda.gov/data/faers/)
-* [HL7 FHIR Implementation Guide: Profiles for ICSR Transfusion and Vaccination Adverse Event Detection and Reporting](https://build.fhir.org/ig/HL7/fhir-icsr-ae-reporting/branches/main/index.html)
 * [Health and Human Services (HHS) Vaccine Adverse Event Reporting System (VAERS)](https://vaers.hhs.gov/)
+* [CTCAE 5.0](https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v6_Solicitation_Brief_Overview.pdf)
+
+#### Comparison among current HL7 Adverse Event Efforts
+
+Several artifacts projects related to Adverse Event reporting are underway at HL7, including:
+* FHIR AdverseEvent core resource maintained by the HL7 Patient Care Working Group
+* [HL7 FHIR Implementation Guide: Profiles for ICSR Transfusion and Vaccination Adverse Event Detection and Reporting](https://build.fhir.org/ig/HL7/fhir-icsr-ae-reporting/branches/main/index.html)
+* HL7 BRIDG
+* HL7 CDISC to FHIR mapping
+
+We recognize the need to have a more cohesive effort to create an overarching and collaborative FHIR model that could represent these use cases. While collaborative discussions are underway, this IG distinguishes itself in several ways:
+* a focus on meeting NCI CTEP adverse event reporting requirements.
+* the narrow scoping for oncology-specific clinical trials, especially in support for the CodeX iCAREdata project.
 
 
 ### Actors, Systems, and Use Case Scenarios
@@ -73,23 +85,21 @@ The following use cases will inform the initial design for this IG:
 
 ### Adverse Event Reporting Standards
 
-FDA Individual Case Safety Report (ICSR)
-National Cancer Institute CTCAE:
-* routine reporting via Clinical Data Update System (CDUS)
-* adverse event expedited reporting (AdEERS)
+* FDA Individual Case Safety Report (ICSR)
+* National Cancer Institute CTCAE:
+  * CTEP reporting via the Clinical Trial Monitoring System (CTMS) and Clinical Data Update System (CDUS)
+  * Adverse Event Expedited Reporting System (AdEERS)
 
-### Scope and Conceptual Model
-
-The SHR Adverse Event model consists of data elements divided into TBD groups, illustrated in the following diagram:
-
-** INSERT CONCEPTUAL DIAGRAM **
 
 
 ### Disclaimers and Known Limitations
 
 This implementation guide (IG) is a Domain of Knowledge IG. The purpose of this IG is to show how to represent clinical concepts generally, not to have a complete set of agreements for interoperable exchanges.
 
-This IG focuses is narrowly scoped to only _the adverse reporting section_ and directly relevant relationships of an adverse event.  It does not attempt to model all of the metadata found in a Case Report Form (CRF) or the entire format of the entire trials report conformant with the NCI Clinical Trials Monitoring Service (CTMS). 
+* This IG focuses is narrowly scoped to only _the adverse reporting section_ and directly relevant relationships of an adverse event.  It does not attempt to model all of the metadata found in a Case Report Form (CRF) or the entire format of the entire trials report conformant with the NCI Clinical Trials Monitoring Service (CTMS). 
+* This IG focuses on CTCAE terms as the reference for AE terms and grades. MedDRA, while recognized, is scoped to only those MedDRA lower-level terms (LLT) for which there is a CTCAE 5.0 mapping.
+* CTCAE 6.0, currently in early draft development, is out of scope.
+* The following standards, while noted, will not be the focus of this IG version: CTEP Adverse Event Reporting System (AdEERS), and CDISC adverse event reporting in CDASH and SDTM.
 
 ### Credits
 

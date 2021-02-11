@@ -1,9 +1,8 @@
 ### Implementation Notes
 
 This page contains miscellaneous information on modeling and FHIR implementation. The content is primarily directed at informaticists and implementers of the following adverse reporting methods:
-* CTEP CDUS
-* CTEP AdEERS
-* CDISC adverse event reporting in CDASH and SDTM.
+* CTEP Clinical Trial Monitoring Service (CTMS)
+* CTEP Clinical Data Update Service (CDUS)
 
 The following topics are addressed:
 
