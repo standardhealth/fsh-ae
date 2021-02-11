@@ -37,9 +37,10 @@ menu:
   Implementation: implementation.html
   FHIR Artifacts:
     Profiles: "artifacts.html#1"
-    ValueSets: "artifacts.html#2"
-    CodeSystems: "artifacts.html#3"
-    GenericExamples: "artifacts.html#4"
+    Extensions: "artifacts.html#2"
+    ValueSets: "artifacts.html#3"
+    CodeSystems: "artifacts.html#4"
+    GenericExamples: "artifacts.html#5"
     All artifacts: "artifacts.html"
   Downloads: downloads.html
   Change Log: change_log.html
@@ -51,6 +52,12 @@ groups:
     description: Adverse event related profiles
     resources:
       - StructureDefinition/ctc-adverse-event
+
+  # Extensions
+  Extensions:
+    name: Extensions
+    description: These define AE extensions to some of the above profiles.
+    resources:
       - StructureDefinition/adverse-event-expectation
       - StructureDefinition/adverse-event-resolved-date
       - StructureDefinition/ctcae-grade

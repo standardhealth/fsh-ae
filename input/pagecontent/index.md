@@ -27,7 +27,7 @@ The information obtained from subject matter experts, several pre-existing stand
 * [Health and Human Services (HHS) Vaccine Adverse Event Reporting System (VAERS)](https://vaers.hhs.gov/)
 
 
-### Actors and Use Case Scenarios
+### Actors, Systems, and Use Case Scenarios
 
 
 #### Actors
@@ -38,6 +38,15 @@ There are multiple actors recognized in this IG including:
 * **Sponsors and Principal Investigators** - TBD
 * **Patient** - the patient who is suspected to have, or is undergoing a treatment and may be subject to adverse events resulting from that treatment.
 * **Application** - EHR systems.
+
+#### Systems
+
+The current iCAREdata pilot environment driving this IG is likely representative of multiple environments seeking to better integrate adverse event data captured from an electronic health record (EHR) with that of a dedicated reporting system for reporting adverse events to a monitoring organization like CTEP. A high level systems diagram is illustrated below:
+
+
+
+![CTEP Reporting](CTEP-CTReporting-SystemsDiagram.png)    
+
 
 #### Clinical Use Cases
 
@@ -53,6 +62,8 @@ The following use cases will inform the initial design for this IG:
 
 <!-- If the image below is not wrapped in a div tag, the publisher tries to wrap text around the image, which is not desired. -->
 <div style="text-align: center;">{%include ae-icsr-exchange.svg%}</div>
+<p></p>
+<p></p>
 
 ### Adverse Event Reporting Standards
 
@@ -70,7 +81,9 @@ The SHR Adverse Event model consists of data elements divided into TBD groups, i
 
 ### Disclaimers and Known Limitations
 
-This implementation guide is a Domain of Knowledge IG. The purpose of this IG is to show how to represent clinical concepts generally, not to have a complete set of agreements for interoperable exchanges.
+This implementation guide (IG) is a Domain of Knowledge IG. The purpose of this IG is to show how to represent clinical concepts generally, not to have a complete set of agreements for interoperable exchanges.
+
+This IG focuses is narrowly scoped to only _the adverse reporting section_ and directly relevant relationships of an adverse event.  It does not attempt to model all of the metadata found in a Case Report Form (CRF) or the entire format of the entire trials report conformant with the NCI Clinical Trials Monitoring Service (CTMS). 
 
 ### Credits
 
