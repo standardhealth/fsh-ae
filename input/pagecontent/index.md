@@ -41,12 +41,18 @@ There are multiple actors recognized in this IG including:
 
 #### Systems
 
-The current iCAREdata pilot environment driving this IG is likely representative of multiple environments seeking to better integrate adverse event data captured from an electronic health record (EHR) with that of a dedicated reporting system for reporting adverse events to a monitoring organization like CTEP. A high level systems diagram is illustrated below:
+The current iCAREdata pilot environment driving this IG is likely representative of multiple environments seeking to better integrate adverse event data captured from an electronic health record (EHR) with that of a dedicated reporting system for reporting adverse events to a monitoring organization like CTEP. 
 
+The systems considered in this IG include:
 
+* **Case Report Forms (CRFs)** - Used by Clinical Trial principal investigators and sponsors for reporting adverse event to clinical trial monitoring organizations. The relevant fields in a CRF could reside in a dedicated 3rd party clinical trials CRF application like Medidata Rave, or as a customized module or form within an Electronic Health Record (EHR).
+* **Adverse Event Monitoring applications** - Used by monitoring organizations like the FDA or NCI CTEP for receiving trials related updates, including the reporting of adverse events discovered throughout the trial.
 
-![CTEP Reporting](CTEP-CTReporting-SystemsDiagram.png)    
+The diagram below shows one example where several Alliance for Clinical Trials (ACT) sites could use one or more forms used for the capture of adverse events.
 
+<div style="text-align: center;">
+<img src="CTEP-CTReporting-SystemsDiagram.png" alt="CTEP Reporting" />
+</div>
 
 #### Clinical Use Cases
 
