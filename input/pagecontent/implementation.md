@@ -61,3 +61,5 @@ Relevant CTEP codes and values are listed [here](https://ctep.cancer.gov/protoco
 #### Representing Provenance
 
 Provenance information includes the "who, what, when, where, why" associated with collection, transfer, and updating of clinical information. This IG relies on FHIR's native mechanisms for recording and tracking provenance. As such, this IG shares all the capabilities and limitations of FHIR provenance tracking. The user should refer to the [FHIR specification](https://www.hl7.org/fhir/provenance.html) for more information.
+
+#### Tag #4
