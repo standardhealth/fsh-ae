@@ -17,7 +17,7 @@
 
 ### Background
 
-The mCODE iCAREdata project has received funding from the Food and Drug Administration (FDA) on the improving data capture and standardization of adverse events. 
+The mCODE ICAREdata project has received funding from the Food and Drug Administration (FDA) on the improving data capture and standardization of adverse events. 
 
 The information obtained from subject matter experts, several pre-existing standards, nomenclatures, and guidelines were consulted in the development of this specification, including:
 
@@ -36,7 +36,7 @@ Several artifacts projects related to Adverse Event reporting are underway at HL
 
 We recognize the need to have a more cohesive effort to create an overarching and collaborative FHIR model that could represent these use cases. While collaborative discussions are underway, this IG distinguishes itself in several ways:
 * a focus on meeting NCI CTEP adverse event reporting requirements.
-* the narrow scoping for oncology-specific clinical trials, especially in support for the CodeX iCAREdata project.
+* the narrow scoping for oncology-specific clinical trials, especially in support for the CodeX ICAREdata project.
 
 
 ### Actors, Systems, and Use Case Scenarios
@@ -53,7 +53,7 @@ There are multiple actors recognized in this IG including:
 
 #### Systems
 
-The current iCAREdata pilot environment driving this IG is likely representative of multiple environments seeking to better integrate adverse event data captured from an electronic health record (EHR) with that of a dedicated reporting system for reporting adverse events to a monitoring organization like CTEP. 
+The current ICAREdata pilot environment driving this IG is likely representative of multiple environments seeking to better integrate adverse event data captured from an electronic health record (EHR) with that of a dedicated reporting system for reporting adverse events to a monitoring organization like CTEP. 
 
 The systems considered in this IG include:
 
@@ -95,7 +95,7 @@ The following use cases will inform the initial design for this IG:
 
 This implementation guide (IG) is a Domain of Knowledge IG. The purpose of this IG is to show how to represent clinical concepts generally, not to have a complete set of agreements for interoperable exchanges.
 
-* This IG focuses is narrowly scoped to only _the adverse reporting section_ and directly relevant relationships of an adverse event.  It does not attempt to model all of the metadata found in a Case Report Form (CRF) or the entire format of the entire trials report conformant with the NCI Clinical Trials Monitoring Service (CTMS). 
+* This IG focus is narrowly scoped to only _the adverse reporting section_ and directly relevant relationships of an adverse event.  It does not attempt to model all of the metadata found in a Case Report Form (CRF) or the entire format of the entire trials report conformant with the NCI Clinical Trials Monitoring Service (CTMS). 
 * This IG focuses on CTCAE terms as the reference for AE terms and grades. MedDRA, while recognized, is scoped to only those MedDRA lower-level terms (LLT) for which there is a CTCAE 5.0 mapping.
 * References to mCODE artifacts, where applicable, are to [mCODE v1.5 FHIR IG (STU2)](http://build.fhir.org/ig/HL7/fhir-mCODE-ig/branches/master/index.html) currently targeted for the HL7 May 2021 ballot.
 * CTCAE 6.0, currently in early draft development, is out of scope.

@@ -33,7 +33,7 @@ This is a set of experimental profiles for representing adverse events (AE). The
 | ValueSet   | [CTCAEGradeVS]                  | Values for CTC Grade           | n/a                |
 | ValueSet   | [AdverseEventSeriousnessVS]     | Values for seriousness         | n/a                |
 | ValueSet   | [AdverseEventExpectationVS]     | Values for expectation         | n/a                |
-| ValueSet   | [CTCAEPreferredTermVS]          | CTCAE preferred terms for AE   | n/a                |
+| ValueSet   | [CTCAETermVS]                   | CTCAE terms for AE             | n/a                |
 | ValueSet   | [AdverseEventRelatednessVS]     | Likelihood that AE is related to intervention | n/a |
 
 [CTCAdverseEvent]: StructureDefinition-ctc-adverse-event.html
@@ -44,7 +44,7 @@ This is a set of experimental profiles for representing adverse events (AE). The
 [CTCAEGradeVS]: ValueSet-ctcae-grade-value-set.html
 [AdverseEventSeriousnessVS]: ValueSet-adverse-event-seriousness-value-set.html
 [AdverseEventExpectationVS]: ValueSet-adverse-event-expectation-value-set.html
-[CTCAEPreferredTermVS]: ValueSet-ctcae-preferred-term-value-set.html
+[CTCAETermVS]: ValueSet-ctcae-term-value-set.html
 [AdverseEventRelatednessVS]: ValueSet-adverse-event-relatedness-value-set.html
 [Example 1]: AdverseEvent-ctc-adverse-event-example-1.html
 [Example 2]: AdverseEvent-ctc-adverse-event-example-2.html
@@ -57,6 +57,8 @@ This implementation guide supplies terminology bindings drawn primarily from LOI
 Value sets from the FHIR specification and US Core were reused to the extent possible. New value sets where created only when no known existing value sets were deemed to be fit for purpose.
 
 Relevant CTEP codes and values are listed [here](https://ctep.cancer.gov/protocoldevelopment/codes_values.htm).
+
+The CTCAE Adverse Event reporting is based on CTCAE 5.0 and corresponds to MedDRA version 20.1. The CTCAE terms for the CTCAETermVS defined in this IG includes the codes for the NCI Preferred Terms and the MedDRA LLT (Lowest Level Terms) that map to the CTCAE terms as defined in https://evs.nci.nih.gov/ftp1/CTCAE/CTCAE_5.0/NCIt_CTCAE_5.0.xlsx.
 
 #### Representing Provenance
 
