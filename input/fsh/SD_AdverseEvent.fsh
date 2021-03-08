@@ -12,17 +12,17 @@ Description: "Profile of adverse event, using Common Terminology Criteria (CTC).
 // ------Event-----
 * event 1..1 MS
 * event.text 1..1 MS  // require the verbatim text, recorded in event.text
-* event from CTCAEPreferredTermVS (extensible)
-* event.coding ^short = "CTCAE Preferred Term"
-* event.coding ^definition = "The preferred term taken from CTCAE."
+* event from CTCAETermVS (extensible)
+* event.coding ^short = "CTCAE Term"
+* event.coding ^definition = "The term taken from CTCAE."
 * event.coding.code ^short = "NCI Thesaurus code"
-* event.coding.code ^definition = "The NCI Thesaurus code for the CTCAE Preferred Term. The code should not precoordinate the adverse event grade"
+* event.coding.code ^definition = "The NCI Thesaurus code for the CTCAE Term. The code should not precoordinate the adverse event grade"
 * event.coding.display ^short = "NCI Thesaurus preferred name."
 * event.coding.display ^definition = "The NCI Thesaurus preferred name corresponding to the NCI code."
 * event.coding.version ^short = "CTCAE Version"
-* event.coding.version ^definition = "The version of CTCAE supplying the preferred term."
+* event.coding.version ^definition = "The version of CTCAE supplying the NCI preferred term."
 * event.text ^short = "Verbatim Text"
-* event.text ^definition = "The original, verbatim word or phrase as entered by the clinician describing the advese event. The verbatim text may be different than the CTCAE Preferred Term given in event.coding.display, since the latter is derived, coded version of the verbatim text. If the AE was selected from a pick list, the event.text must be text displayed in the user interface that was selected by the clinician."
+* event.text ^definition = "The original, verbatim word or phrase as entered by the clinician describing the advese event. The verbatim text may be different than the CTCAE Term given in event.coding.display, since the latter is derived, coded version of the verbatim text. If the AE was selected from a pick list, the event.text must be text displayed in the user interface that was selected by the clinician."
 // ------Grade-----
 * severity 0..0  // replaced with extension because severity has a required value set we don't want
 * extension contains 

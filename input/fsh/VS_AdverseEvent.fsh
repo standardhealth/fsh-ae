@@ -42,12 +42,14 @@ Description: "An expected adverse event is one whose nature and severity have be
 * NCIT#C41333 "Expected Adverse Event"
 * NCIT#C41334 "Unexpected Adverse Event"
 
-ValueSet: CTCAEPreferredTermVS
-Id: ctcae-preferred-term-value-set
-Title: "CTCAE Preferred Terms"
-Description: "The NCI Common Terminology Criteria for Adverse Events (CTCAE) is utilized for Adverse Event (AE) reporting. The codes are drawn from the NCI Thesaurus. Each CTCAE term is a MedDRA LLT (Lowest Level Term). The value set is CTCAE 5.0 and corresponds to MedDRA version 20.1. See https://evs.nci.nih.gov/ftp1/CTCAE/CTCAE_5.0/NCIt_CTCAE_5.0.xlsx.
+ValueSet: CTCAETermVS
+Id: ctcae-term-value-set
+Title: "CTCAE Terms Value Set"
+Description: "The NCI Common Terminology Criteria for Adverse Events (CTCAE) is utilized for Adverse Event (AE) reporting. The codes are drawn from the NCI Thesaurus. Each CTCAE term is a MedDRA LLT (Lowest Level Term) with corresponding codes that can be used in place of the NCI code. The value set is CTCAE 5.0 and corresponds to MedDRA version 20.1. See https://evs.nci.nih.gov/ftp1/CTCAE/CTCAE_5.0/NCIt_CTCAE_5.0.xlsx.
 
 **Use of 'Other, specify'**: In the event a suitable CTCAE term cannot be found, the appropriate verbatim term SHALL be captured via the 'Other, specify' mechanism. In this case, the verbatim term is populated into the event.text field, the NCIT code for the body system into the event.coding.code field, and the display string corresponding to the code into the event.coding.display field. For example, if reporting the unusual adverse event 'Vulcan-green blood' it will be reported as: event.text of 'Vulcan-green blood', event.coding.display of 'Blood and lymphatic system disorders - Other, specify', and event.coding.code of NCIT code C143323."
+
+* codes from system MEDDRA
 * NCIT#C143283  "Anemia"
 * NCIT#C143323  "Blood and lymphatic system disorders - Other, specify"
 * NCIT#C143332  "Bone marrow hypocellular"
@@ -885,6 +887,7 @@ Description: "The NCI Common Terminology Criteria for Adverse Events (CTCAE) is 
 * NCIT#C143873  "Thromboembolic event"
 * NCIT#C143930  "Vascular disorders - Other, specify"
 * NCIT#C54741  "Vasculitis"
+
 
 /* Hold for now
 

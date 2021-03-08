@@ -17,7 +17,9 @@ Alias:   HGVS = http://varnomen.hgvs.org
 Alias:   SPTY = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias:   SO = http://sequenceontology.org
 Alias:   MEDCIN = http://terminology.hl7.org/CodeSystem/medcin
+Alias:   MEDDRA = https://www.meddra.org
 Alias:   OmbRaceCat = urn:oid:2.16.840.1.113883.6.238
+
 
 // From Terminology.hl7.org
 Alias:   CondCat = http://terminology.hl7.org/CodeSystem/condition-category
