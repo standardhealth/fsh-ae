@@ -27,6 +27,10 @@ pages:
     title: Implementation
   examples.md:
     title: Examples Overview
+  examplepersona1.md:
+    title: Persona 1 - Clinical Trials Patient
+  examplepersona2.md:
+    title: Persona 2 - Standard of Care Patient
   downloads.md:
     title: Downloads
   change_log.md:
@@ -34,6 +38,7 @@ pages:
 menu:
   Home: index.html
   Implementation: implementation.html
+  Extended Examples: examples.html
   FHIR Artifacts:
     Profiles: "artifacts.html#1"
     Extensions: "artifacts.html#2"

@@ -12,11 +12,11 @@ Description: "Profile of adverse event, using Common Terminology Criteria (CTC).
 // ------Event-----
 * event 1..1 MS
 * event.text 1..1 MS  // require the verbatim text, recorded in event.text
-* event from CTCAETermVS (extensible)
+* event from CTCAETermVS (preferred)
 * event.coding ^short = "CTCAE Term"
 * event.coding ^definition = "The term taken from CTCAE."
-* event.coding.code ^short = "MedDRA code"
-* event.coding.code ^definition = "The MedDRA code for the CTCAE Term. The code should not precoordinate the adverse event grade"
+* event.coding.code ^short = "MedDRA or NCIT code"
+* event.coding.code ^definition = "The MedDRA or NCIT code for the CTCAE Term. The code should not precoordinate the adverse event grade"
 * event.coding.display ^short = "MedDRA preferred name."
 * event.coding.display ^definition = "The MedDRA preferred name corresponding to the NCI code."
 * event.coding.version ^short = "CTCAE Version"

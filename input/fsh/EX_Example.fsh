@@ -1,3 +1,4 @@
+/*
 Instance: PatientExample1
 InstanceOf: Patient
 Description: "Example for Patient"
@@ -30,15 +31,15 @@ Description: "Example for Patient"
 * identifier.system = "http://hospital.example.org"
 * identifier.value = "m456"
 * name.family = "Anyperson"
-* name.given[0] = "Eve"
-* name.given[1] = "A."
+* name.given[0] = "Marsha"
+* name.given[1] = "C."
 * contact.telecom[0].system = #phone
 * contact.telecom[0].value = "999-999-9999"
 * contact.telecom[0].use = #home
 * contact.telecom[1].system = #email
-* contact.telecom[1].value = "eve.anyperson@example.com"
+* contact.telecom[1].value = "marsha.anyperson@example.com"
 * gender = #female
-* birthDate = "1955-05-20"
+* birthDate = "1955-02-20"
 * address.line = "456 Smith Lane"
 * address.city = "Anytown"
 * address.state = "MA"
@@ -46,6 +47,7 @@ Description: "Example for Patient"
 * address.country = "US"
 * communication.language = urn:ietf:bcp:47#en-US "English (Region=United States)"
 * communication.language.text = "English"
+*/
 
 Instance: OrganizationExample1
 InstanceOf: USCoreOrganization
