@@ -3,7 +3,7 @@ InstanceOf: CTCAdverseEvent
 Description: "Grade 2 dehydration attributed to gefitinib"
 * contained[0] = medication-example-1
 * subject = Reference(Patient/PatientExample1)
-* event = NCIT#C57787  "Dehydration"
+* event = MEDDRA#10012174  "Dehydration"
 * event.text = "DHN IV given"
 * extension[grade].valueCodeableConcept = CTCAEGradeCS#2 "Moderate Adverse Event"
 * seriousness = NCIT#C41336 "Non-serious Adverse Event"
