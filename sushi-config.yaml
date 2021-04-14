@@ -88,7 +88,7 @@ groups:
     name: "Examples:"
     description: Examples of resources conforming to SHR AdverseEvent profiles. These examples are independent (i.e., there is no expectation of consistency of data among the resources).
     resources:
-      - Patient/PatientExample1
+      - Patient/patient-example-kaitlyn-b
       - Patient/PatientExample2
       - Practitioner/PractitionerExample1
       - AdverseEvent/ctc-adverse-event-example-1

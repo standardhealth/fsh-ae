@@ -9,7 +9,7 @@ Both scenarios below are similar in its goal of identifying the most relevant AE
 #### Patient Persona #1: Clinical Trials
 The [first patient persona](examplepersona1.html) is presented in the context of a clinical trial.
 
-* **Patient**: <a href="Patient-PatientExample1.html">PatientExample1</a> shows patient demographics like name and address.
+* **Patient**: <a href="Patient-patient-example-kaitlyn-b.html">Patient Example Kaitlyn B</a> shows patient demographics like name and address.
 
 #### Patient Persona #2: Standard of Care 
 The [second patient persona](examplepersona2.html) is presented in the context of a cancer patient undergoing a standard of care chemotherapy regimen. 
