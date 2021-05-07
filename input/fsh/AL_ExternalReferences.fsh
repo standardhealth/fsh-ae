@@ -1,4 +1,6 @@
 // Profiles
+
+// USCore Profiles
 Alias:   USCoreCondition = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition
 Alias:   USCoreDiagnosticReportLab = http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab
 Alias:   USCoreDocumentReference = http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentReference
@@ -13,7 +15,9 @@ Alias:   USCoreObservationLab = http://hl7.org/fhir/us/core/StructureDefinition/
 Alias:   USCoreOrganization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 Alias:   VitalSign = http://hl7.org/fhir/StructureDefinition/vitalsigns
 
-// Extensions
+// USCore Extensions
 Alias:   USCoreBirthSex = http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
 Alias:   USCoreRace = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 
+// mCODE Profiles
+Alias:  mCODECancerPatient = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient

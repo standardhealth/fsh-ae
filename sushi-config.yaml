@@ -56,6 +56,7 @@ groups:
     description: Adverse event related profiles
     resources:
       - StructureDefinition/ctc-adverse-event
+      - StructureDefinition/ae-patient-bundle
 
   # Extensions
   Extensions:
@@ -83,13 +84,17 @@ groups:
     resources:
       - CodeSystem/ctcae-grade-code-system
 
-  # Examples
-  GenericExamples:
-    name: "Examples:"
-    description: Examples of resources conforming to SHR AdverseEvent profiles. These examples are independent (i.e., there is no expectation of consistency of data among the resources).
+  CTCAESpecificExamples:
+    name: "CTCAE examples"
+    description: "Examples of resources conforming to a CTCAE AdverseEvent profile."
     resources:
-      - Patient/PatientExample1
-      - Patient/PatientExample2
-      - Practitioner/PractitionerExample1
       - AdverseEvent/ctc-adverse-event-example-1
       - AdverseEvent/ctc-adverse-event-example-2
+  
+  GenericExamples:
+    name: "Examples:"
+    description: Examples of resources from other profiles (e.g. mCODE) or FHIR core resources which support the persona. These examples are independent (i.e., there is no expectation of consistency of data among the resources).
+    resources:
+      - Patient/PatientExample1
+      - Patient/PatientPersona2
+      - Practitioner/PractitionerExample1

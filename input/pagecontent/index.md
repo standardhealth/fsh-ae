@@ -1,3 +1,8 @@
+<div markdown="1" class="note">
+<b>NOTE:</b> This is a _very early and preliminary_ version of the AdverseEvent specification. Please do not submit comments on the IG content at this time.
+
+</div>
+
 <style>
     table.mcode-table, .mcode-table tr, .mcode-table td {
         border: 1px solid #ccc;
@@ -8,7 +13,6 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd" markdown="1">
 
 * [Background](#background)
-* [Scope and Conceptual Model](#scope-and-conceptual-model)
 * [FHIR Examples](examples.html)
 * [Implementation Notes](implementation.html)
 * [Disclaimers and Known Limitations](#disclaimers-and-known-limitations)
@@ -111,9 +115,11 @@ This IG was authored by the MITRE Corporation using [FHIR Shorthand (FSH)](http:
 
 
 | **Co-Editor:**         | May Terry<br>MITRE Corporation<br>[mayt@mitre.org] |
+| **Co-Editor:**         | Michelle Casagni<br>MITRE Corporation<br>[mcasagni@mitre.org]
 | **Co-Editor:**         | Mark Kramer<br>MITRE Corporation<br>[mkramer@mitre.org]          |
 
 [mayt@mitre.org]: mailto:mayt@mitre.org
+[mcasagni@mitre.org]: mailto:mcasagni@mitre.org
 [mkramer@mitre.org]: mailto:mkramer@mitre.org
 
 MITRE: Approved for Public Release. Distribution Unlimited. Case Number 16-1988
