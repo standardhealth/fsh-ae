@@ -14,7 +14,6 @@ The [first patient persona](examplepersona1.html) is presented in the context of
 #### Patient Persona #2: Standard of Care 
 The [second patient persona](examplepersona2.html) is presented in the context of a cancer patient undergoing a standard of care chemotherapy regimen. 
 
-* **Patient**: <a href="Patient-PatientExample2.html">PatientExample2</a> shows patient demographics like name and address.
 
 #### Additional Notes
 

@@ -7,7 +7,7 @@ This page contains miscellaneous information on modeling and FHIR implementation
 The following topics are addressed:
 
 * [Understanding this Guide](#understanding-this-guide)
-* [Adverse Event](#Adverse-Event)
+* [Adverse Event](#adverse-event)
 * [Terminology Preferences](#terminology-preferences)
 * [Representing Provenance](#representing-provenance)
 

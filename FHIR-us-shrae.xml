@@ -16,99 +16,14 @@
 <artifact id="CodeSystem/ctcae-grade-code-system" key="CodeSystem-ctcae-grade-code-system" name="CTCAE Grade Code System"/>
 <artifact id="ValueSet/ctcae-grade-value-set" key="ValueSet-ctcae-grade-value-set" name="CTCAE Grade Value Set"/>
 <artifact id="ValueSet/ctcae-preferred-term-value-set" key="ValueSet-ctcae-preferred-term-value-set" name="CTCAE Preferred Terms"/>
-<artifact deprecated="true" id="ValueSet/mcode-cancer-body-location-value-set" key="cancer-body-location-value-set" name="Cancer Body Location Value Set"/>
-<artifact deprecated="true" id="Profile/mcode-cancer-condition-parent" key="cancer-condition-parent" name="Cancer Condition Parent"/>
-<artifact deprecated="true" id="Profile/mcode-cancer-disease-status" key="cancer-disease-status" name="Cancer Disease Status"/>
-<artifact deprecated="true" id="ValueSet/mcode-cancer-disease-status-evidence-type-value-set" key="cancer-disease-status-evidence-type-value-set" name="Cancer Disease Status Evidence Type Value Set"/>
-<artifact deprecated="true" id="ValueSet/mcode-cancer-disorder-value-set" key="cancer-disorder-value-set" name="Cancer Disorder Value Set"/>
-<artifact deprecated="true" id="Profile/mcode-cancer-genetic-variant" key="cancer-genetic-variant" name="Cancer Genetic Variant"/>
-<artifact deprecated="true" id="Profile/mcode-cancer-genomics-report" key="cancer-genomics-report" name="Cancer Genomics Report"/>
-<artifact deprecated="true" id="Profile/mcode-cancer-patient" key="cancer-patient" name="Cancer Patient"/>
-<artifact deprecated="true" id="Profile/mcode-cancer-related-medication-statement" key="cancer-related-medication-statement" name="Cancer Related Medication Statement"/>
-<artifact deprecated="true" id="Profile/mcode-cancer-related-radiation-procedure" key="cancer-related-radiation-procedure" name="Cancer Related Radiation Procedure"/>
-<artifact deprecated="true" id="Profile/mcode-cancer-related-surgical-procedure" key="cancer-related-surgical-procedure" name="Cancer Related Surgical Procedure"/>
-<artifact deprecated="true" id="ValueSet/mcode-cancer-related-surgical-procedure-value-set" key="cancer-related-surgical-procedure-value-set" name="Cancer Related Surgical Procedure Value Set"/>
-<artifact deprecated="true" id="Profile/mcode-cancer-stage-parent" key="cancer-stage-parent" name="Cancer Stage Parent"/>
-<artifact deprecated="true" id="ValueSet/mcode-cancer-staging-system-value-set" key="cancer-staging-system-value-set" name="Cancer Staging System Value Set"/>
-<artifact deprecated="true" id="ValueSet/mcode-clinvar-value-set" key="clinvar-value-set" name="ClinVar Value Set"/>
-<artifact deprecated="true" id="Profile/mcode-comorbid-condition" key="comorbid-condition" name="Comorbid Condition"/>
-<artifact deprecated="true" id="ValueSet/mcode-comorbid-condition-value-set" key="comorbid-condition-value-set" name="Comorbid Condition Value Set"/>
-<artifact deprecated="true" id="ValueSet/mcode-condition-status-trend-value-set" key="condition-status-trend-value-set" name="Condition Status Trend Value Set"/>
-<artifact deprecated="true" id="Profile/mcode-ecog-performance-status" key="ecog-performance-status" name="ECOG Performance Status"/>
-<artifact deprecated="true" id="Extension/mcode-evidence-type-extension" key="evidence-type-extension" name="Evidence Type Extension"/>
-<artifact deprecated="true" id="Profile/mcode-genetic-specimen" key="genetic-specimen" name="Genetic Specimen"/>
-<artifact deprecated="true" id="ValueSet/mcode-genetic-specimen-type-value-set" key="genetic-specimen-type-value-set" name="Genetic Specimen Type Value Set"/>
-<artifact deprecated="true" id="Profile/mcode-genomic-region-studied" key="genomic-region-studied" name="Genomic Region Studied"/>
-<artifact deprecated="true" id="ValueSet/mcode-hgvs-sequence-variant-nomenclature-value-set" key="hgvs-sequence-variant-nomenclature-value-set" name="HGVS Sequence Variant Nomenclature Value Set"/>
-<artifact deprecated="true" id="ValueSet/mcode-hugo-gene-nomenclature-committee-gene-names-value-set" key="hugo-gene-nomenclature-committee-gene-names-value-set" name="HUGO Gene Nomenclature Committee Gene Names Value Set"/>
-<artifact deprecated="true" id="Extension/mcode-histology-morphology-behavior-extension" key="histology-morphology-behavior-extension" name="Histology Morphology Behavior Extension"/>
-<artifact deprecated="true" id="ValueSet/mcode-histology-morphology-behavior-value-set" key="histology-morphology-behavior-value-set" name="Histology Morphology Behavior Value Set"/>
-<artifact deprecated="true" id="Profile/mcode-karnofsky-performance-status" key="karnofsky-performance-status" name="Karnofsky Performance Status"/>
-<artifact deprecated="true" id="Extension/mcode-laterality-extension" key="laterality-extension" name="Laterality Extension"/>
-<artifact deprecated="true" id="ValueSet/mcode-laterality-value-set" key="laterality-value-set" name="Laterality Value Set"/>
-<artifact deprecated="true" key="Observation" name="Observation"/>
 <artifact id="Organization/OrganizationExample1" key="Organization-OrganizationExample1" name="OrganizationExample1"/>
 <artifact id="Patient/PatientExample1" key="Patient-PatientExample1" name="PatientExample1"/>
-<artifact id="Patient/PatientExample2" key="Patient-PatientExample2" name="PatientExample2"/>
+<artifact id="Patient/PatientPersona2" key="Patient-PatientPersona2" name="PatientPersona2"/>
 <artifact id="Practitioner/PractitionerExample1" key="Practitioner-PractitionerExample1" name="PractitionerExample1"/>
-<artifact deprecated="true" id="Profile/mcode-primary-cancer-condition" key="primary-cancer-condition" name="Primary Cancer Condition"/>
-<artifact deprecated="true" id="ValueSet/mcode-primary-or-uncertain-behavior-cancer-disorder-value-set" key="primary-or-uncertain-behavior-cancer-disorder-value-set" name="Primary or Uncertain Behavior Cancer Disorder Value Set"/>
-<artifact deprecated="true" key="Procedure" name="Procedure"/>
-<artifact deprecated="true" id="ValueSet/mcode-radiation-procedure-value-set" key="radiation-procedure-value-set" name="Radiation Procedure Value Set"/>
-<artifact deprecated="true" id="ValueSet/mcode-radiation-target-body-site-value-set" key="radiation-target-body-site-value-set" name="Radiation Target Body Site Value Set"/>
-<artifact deprecated="true" id="Extension/mcode-related-primary-cancer-condition-extension" key="related-primary-cancer-condition-extension" name="Related Primary Cancer Condition Extension"/>
-<artifact deprecated="true" id="Profile/mcode-secondary-cancer-condition" key="secondary-cancer-condition" name="Secondary Cancer Condition"/>
-<artifact deprecated="true" id="ValueSet/mcode-secondary-cancer-disorder-value-set" key="secondary-cancer-disorder-value-set" name="Secondary Cancer Disorder Value Set"/>
-<artifact deprecated="true" id="Profile/mcode-tnm-clinical-distant-metastases" key="tnm-clinical-distant-metastases" name="TNM Clinical Distant Metastases"/>
-<artifact deprecated="true" id="Profile/mcode-tnm-clinical-primary-tumor-category" key="tnm-clinical-primary-tumor-category" name="TNM Clinical Primary Tumor Category"/>
-<artifact deprecated="true" id="Profile/mcode-tnm-clinical-regional-nodes-category" key="tnm-clinical-regional-nodes-category" name="TNM Clinical Regional Nodes Category"/>
-<artifact deprecated="true" id="Profile/mcode-tnm-clinical-stage-group" key="tnm-clinical-stage-group" name="TNM Clinical Stage Group"/>
-<artifact deprecated="true" id="ValueSet/mcode-tnm-distant-metastases-category-value-set" key="tnm-distant-metastases-category-value-set" name="TNM Distant Metastases Category Value Set"/>
-<artifact deprecated="true" id="Profile/mcode-tnm-pathological-distant-metastases-category" key="tnm-pathological-distant-metastases-category" name="TNM Pathological Distant Metastases Category"/>
-<artifact deprecated="true" id="Profile/mcode-tnm-pathological-primary-tumor-category" key="tnm-pathological-primary-tumor-category" name="TNM Pathological Primary Tumor Category"/>
-<artifact deprecated="true" id="Profile/mcode-tnm-pathological-regional-nodes-category" key="tnm-pathological-regional-nodes-category" name="TNM Pathological Regional Nodes Category"/>
-<artifact deprecated="true" id="Profile/mcode-tnm-pathological-stage-group" key="tnm-pathological-stage-group" name="TNM Pathological Stage Group"/>
-<artifact deprecated="true" id="ValueSet/mcode-tnm-primary-tumor-category-value-set" key="tnm-primary-tumor-category-value-set" name="TNM Primary Tumor Category Value Set"/>
-<artifact deprecated="true" id="ValueSet/mcode-tnm-regional-nodes-category-value-set" key="tnm-regional-nodes-category-value-set" name="TNM Regional Nodes Category Value Set"/>
-<artifact deprecated="true" id="ValueSet/mcode-tnm-stage-group-value-set" key="tnm-stage-group-value-set" name="TNM Stage Group Value Set"/>
-<artifact deprecated="true" id="Extension/mcode-termination-reason-extension" key="termination-reason-extension" name="Termination Reason Extension"/>
-<artifact deprecated="true" id="Extension/mcode-treatment-intent-extension" key="treatment-intent-extension" name="Treatment Intent Extension"/>
-<artifact deprecated="true" id="ValueSet/mcode-treatment-intent-value-set" key="treatment-intent-value-set" name="Treatment Intent Value Set"/>
-<artifact deprecated="true" id="ValueSet/mcode-treatment-termination-reason-value-set" key="treatment-termination-reason-value-set" name="Treatment Termination Reason Value Set"/>
-<artifact deprecated="true" id="Profile/mcode-tumor-marker" key="tumor-marker" name="Tumor Marker"/>
-<artifact deprecated="true" id="ValueSet/mcode-tumor-marker-test-value-set" key="tumor-marker-test-value-set" name="Tumor Marker Test Value Set"/>
-<artifact deprecated="true" id="ValueSet/mcode-units-of-length-value-set" key="units-of-length-value-set" name="Units of Length Value Set"/>
-<artifact deprecated="true" key="ValueSet" name="ValueSet"/>
+<artifact id="Bundle/ae-bundle-persona-2" key="ae-bundle-persona-2" name="ae-bundle-persona-2"/>
 <artifact id="AdverseEvent/ctc-adverse-event-example-1" key="AdverseEvent-ctc-adverse-event-example-1" name="ctc-adverse-event-example-1"/>
 <artifact id="AdverseEvent/ctc-adverse-event-example-2" key="AdverseEvent-ctc-adverse-event-example-2" name="ctc-adverse-event-example-2"/>
-<artifact deprecated="true" id="Example/mcode-cancer-disease-status-example-01" key="mcode-cancer-disease-status-example-01" name="mCODECancerDiseaseStatusExample01"/>
-<artifact deprecated="true" id="Example/mcode-cancer-genetic-variant-example-01" key="mcode-cancer-genetic-variant-example-01" name="mCODECancerGeneticVariantExample01"/>
-<artifact deprecated="true" id="Example/mcode-cancer-genetic-variant-example-02" key="mcode-cancer-genetic-variant-example-02" name="mCODECancerGeneticVariantExample02"/>
-<artifact deprecated="true" id="Example/mcode-cancer-genomics-report-example-01" key="mcode-cancer-genomics-report-example-01" name="mCODECancerGenomicsReportExample01"/>
-<artifact deprecated="true" id="Example/mcode-cancer-related-medication-statement-example-01" key="mcode-cancer-related-medication-statement-example-01" name="mCODECancerRelatedMedicationStatementExample01"/>
-<artifact deprecated="true" id="Example/mcode-cancer-related-medication-statement-example-02" key="mcode-cancer-related-medication-statement-example-02" name="mCODECancerRelatedMedicationStatementExample02"/>
-<artifact deprecated="true" id="Example/mcode-cancer-related-radiation-procedure-example-01" key="mcode-cancer-related-radiation-procedure-example-01" name="mCODECancerRelatedRadiationProcedureExample01"/>
-<artifact deprecated="true" id="Example/mcode-cancer-related-surgical-procedure-example-01" key="mcode-cancer-related-surgical-procedure-example-01" name="mCODECancerRelatedSurgicalProcedureExample01"/>
-<artifact deprecated="true" id="Example/mcode-comorbid-condition-example-01" key="mcode-comorbid-condition-example-01" name="mCODEComorbidConditionExample01"/>
-<artifact deprecated="true" id="Example/mcode-ecog-performance-status-example-01" key="mcode-ecog-performance-status-example-01" name="mCODEECOGPerformanceStatusExample01"/>
-<artifact deprecated="true" id="Example/mcode-genetic-specimen-example-01" key="mcode-genetic-specimen-example-01" name="mCODEGeneticSpecimenExample01"/>
-<artifact deprecated="true" id="Example/mcode-genomic-region-studied-example-01" key="mcode-genomic-region-studied-example-01" name="mCODEGenomicRegionStudiedExample01"/>
-<artifact deprecated="true" id="Example/mcode-karnofsky-performance-status-example-01" key="mcode-karnofsky-performance-status-example-01" name="mCODEKarnofskyPerformanceStatusExample01"/>
-<artifact deprecated="true" id="Example/mcode-organization-example-01" key="mcode-organization-example-01" name="mCODEOrganizationExample01"/>
-<artifact deprecated="true" id="Example/mcode-patient-example-01" key="mcode-patient-example-01" name="mCODEPatientExample01"/>
-<artifact deprecated="true" id="Example/mcode-patient-example-02" key="mcode-patient-example-02" name="mCODEPatientExample02"/>
-<artifact deprecated="true" id="Example/mcode-practitioner-example-01" key="mcode-practitioner-example-01" name="mCODEPractitionerExample01"/>
-<artifact deprecated="true" id="Example/mcode-primary-cancer-condition-example-01" key="mcode-primary-cancer-condition-example-01" name="mCODEPrimaryCancerConditionExample01"/>
-<artifact deprecated="true" id="Example/mcode-secondary-cancer-condition-example-01" key="mcode-secondary-cancer-condition-example-01" name="mCODESecondaryCancerConditionExample01"/>
-<artifact deprecated="true" id="Example/mcode-tnm-clinical-distant-metastases-category-example-01" key="mcode-tnm-clinical-distant-metastases-category-example-01" name="mCODETNMClinicalDistantMetastasesCategoryExample01"/>
-<artifact deprecated="true" id="Example/mcode-tnm-clinical-primary-tumor-category-example-01" key="mcode-tnm-clinical-primary-tumor-category-example-01" name="mCODETNMClinicalPrimaryTumorCategoryExample01"/>
-<artifact deprecated="true" id="Example/mcode-tnm-clinical-regional-nodes-category-example-01" key="mcode-tnm-clinical-regional-nodes-category-example-01" name="mCODETNMClinicalRegionalNodesCategoryExample01"/>
-<artifact deprecated="true" id="Example/mcode-tnm-clinical-stage-group-example-01" key="mcode-tnm-clinical-stage-group-example-01" name="mCODETNMClinicalStageGroupExample01"/>
-<artifact deprecated="true" id="Example/mcode-tnm-pathological-distant-metastases-category-example-01" key="mcode-tnm-pathological-distant-metastases-category-example-01" name="mCODETNMPathologicalDistantMetastasesCategoryExample01"/>
-<artifact deprecated="true" id="Example/mcode-tnm-pathological-primary-tumor-category-example-01" key="mcode-tnm-pathological-primary-tumor-category-example-01" name="mCODETNMPathologicalPrimaryTumorCategoryExample01"/>
-<artifact deprecated="true" id="Example/mcode-tnm-pathological-regional-nodes-category-example-01" key="mcode-tnm-pathological-regional-nodes-category-example-01" name="mCODETNMPathologicalRegionalNodesCategoryExample01"/>
-<artifact deprecated="true" id="Example/mcode-tnm-pathological-stage-group-example-01" key="mcode-tnm-pathological-stage-group-example-01" name="mCODETNMPathologicalStageGroupExample01"/>
-<artifact deprecated="true" id="Example/mcode-tumor-marker-example-01" key="mcode-tumor-marker-example-01" name="mCODETumorMarkerExample01"/>
+<artifact id="AdverseEvent/ctc-adverse-event-anemia-persona-2" key="ctc-adverse-event-anemia-persona-2" name="ctc-adverse-event-anemia-persona-2"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="profiles" name="(profiles)"/>

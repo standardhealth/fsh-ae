@@ -1,6 +1,23 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://terminology.hl7.org/CodeSystem/MDRAE",
+  "code" : "10002272"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/MDRAE"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code \"10002272\" is not valid in the system http://terminology.hl7.org/CodeSystem/MDRAE; The code provided (http://terminology.hl7.org/CodeSystem/MDRAE#10002272) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/MDRAE",
   "code" : "10012174"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
