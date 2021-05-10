@@ -5,4 +5,3 @@
 * [XML Definitions (zip)](definitions.xml.zip)
 * [XML Examples (zip)](examples.ttl.zip)
 * [Turtle Definitions](definitions.ttl.zip)
-* [Data Dictionary (Excel download)](mCODEDataDictionary.xlsx)

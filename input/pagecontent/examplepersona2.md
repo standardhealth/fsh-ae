@@ -5,4 +5,13 @@ In addition to the examples provided above, we also have developed this scenario
 
 #### Patient description
 
-Patient M is a 55 year old non-Hispanic white female ...TBD.
+Patient Marsha C., diagnosed with stage group IIB breast cancer, began her first cycle of AC chemotherapy on 12/1/2020.  She tolerated the cycle well.  On 12/21/20 (evaluation #1) she arrived for cycle 2.  Her lab work showed WBC of 2.0 with ANC of .70 and Hgb of 9.0.  Her baseline lab work was all WNL.  Per CTCAE v 5.0 her White blood cell decreased at grade 2,  Neutrophil count decreased at grade 3 and Anemia grade 2.  She also reports nausea and vomiting grade 1 each.  All AE’s are considered probably related to both the A and C drugs.  Because of the grade 3 neutropenia, treatment was held and additional treatment for nausea/vomiting was prescribed (3 day course of dexamethasone 4mg orally twice a day) in addition to the already prescribed Zofran.  Patient was seen back in one week (12/29) (Evaluation #2) at which time her WBC and ANC were resolved.  Her anemia improved to 10.9 and is therefore resolving at grade 1 again, probably attributed to the A/C. Her nausea and vomiting resolved.  Patient tolerated treatment well and was received the Neulasta on body injector to help avoid additional neutropenic episodes.  Patient seen in 3 weeks for cycle 3.  Lab work stable.  She received cycles 3 and 4 and tolerated them well.  Anemia stable at grade 1 values.  No other lab abnormalities noted.  Patient then began dose dense taxol on 2/16/21.  She was seen every 2 weeks for 4 cycles (2 months).  On 3/2/21 the patient was seen.  She reports significant numbness and tingling of her hands and feet bilaterally that is impacting her balance, gait and ability to perform ADL’s (button/zip clothes/type).  This represents a grade 2 peripheral sensory neuropathy definitely related to the Taxol IV treatment. Her treatment was again held and the dose was therefore reduced one dose level to 140mg/m2 (20% dose reduction).  When she was seen again in 1 week (3/9/21) for treatment, her neuropathy had improved to grade 1.  Her platelet count was grade 1 at 120,000 and her anemia/hgb level was grade 1 at 9.9; definitely related to Taxol.  She reported diarrhea 3x over a 24 hour period on 3/5/21 resolved 3/6/21 (grade 1) /probably related to Taxol.  She was cleared to receive treatment and the previously reduced dose was administered.  She proceeded to receive her final taxol treatments at that reduced dose without other adverse events.  Her anemia and “platelet count decreased” remained at grade 1, definitely related to Taxol.   
+
+<div style="text-align: center;">
+<img src="AE-PersonaExample-Timeline.svg" alt="Example Timeline" />
+</div>
+
+#### Persona FHIR Examples
+
+**Adeverse Event Bundle:**
+* Persona Bundle: [ae-bundle-persona-2](Bundle-ae-bundle-persona-2.html)
