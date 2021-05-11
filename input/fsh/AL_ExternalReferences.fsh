@@ -20,4 +20,5 @@ Alias:   USCoreBirthSex = http://hl7.org/fhir/us/core/StructureDefinition/us-cor
 Alias:   USCoreRace = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 
 // mCODE Profiles
-Alias:  mCODECancerPatient = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient
+Alias:  mCodeCancerPatient = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient
+Alias:  mCodePatientBundle = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle
