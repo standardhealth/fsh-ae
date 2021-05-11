@@ -1,5 +1,5 @@
 Profile: AEPatientBundle
-Parent: Bundle
+Parent: mCodePatientBundle
 Id: ae-patient-bundle
 Title: "AdverseEvent Patient Bundle"
 Description: "A collection of data for a patient and includes adverse events."

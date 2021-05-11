@@ -10,8 +10,9 @@ Description: "Extended AdverseEvent example as a Patient Bundle"
 * entry[CTCAdverseEvent].fullUrl = "http://example.org/ctc-adverse-event-anemia-persona-2"
 
 
+
 Instance: PatientPersona2
-InstanceOf: Patient
+InstanceOf: mCodeCancerPatient
 Description: "Example for Patient"
 * identifier.use = #usual
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#MR "Medical Record Number"
