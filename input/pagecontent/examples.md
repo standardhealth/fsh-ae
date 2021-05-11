@@ -7,9 +7,8 @@ The personas below describe hypothetical patients, along with accompanying examp
 Both scenarios below are similar in its goal of identifying the most relevant AE elements and ensuring alignment with mCODE. They differ sligthly in its purpose: 
 
 #### Patient Persona #1: Clinical Trials
-The [first patient persona](examplepersona1.html) is presented in the context of a clinical trial.
+The [first patient persona](examplepersona1.html) is presented in the context of a cancer patient in a clinical trial.
 
-* **Patient**: <a href="Patient-PatientExample1.html">PatientExample1</a> shows patient demographics like name and address.
 
 #### Patient Persona #2: Standard of Care 
 The [second patient persona](examplepersona2.html) is presented in the context of a cancer patient undergoing a standard of care chemotherapy regimen. 

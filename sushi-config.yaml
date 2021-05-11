@@ -96,6 +96,6 @@ groups:
     name: "Examples:"
     description: Examples of resources from other profiles (e.g. mCODE) or FHIR core resources which support the persona. These examples are independent (i.e., there is no expectation of consistency of data among the resources).
     resources:
-      - Patient/PatientExample1
+      - Patient/patient-example-kaitlyn-b
       - Patient/PatientPersona2
       - Practitioner/PractitionerExample1

@@ -22,3 +22,4 @@ Alias:   USCoreRace = http://hl7.org/fhir/us/core/StructureDefinition/us-core-ra
 // mCODE Profiles
 Alias:  mCodeCancerPatient = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient
 Alias:  mCodePatientBundle = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle
+Alias:  mCodePrimaryCancerCondition = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition
