@@ -8,6 +8,12 @@ Description: "Extended AdverseEvent example as a Patient Bundle"
 * entry[0].fullUrl = "http://example.org/PatientPersona2"
 * entry[CTCAdverseEvent].resource = ctc-adverse-event-anemia-persona-2
 * entry[CTCAdverseEvent].fullUrl = "http://example.org/ctc-adverse-event-anemia-persona-2"
+* entry[+].resource = primary-cancer-condition-persona-2
+* entry[=].fullUrl = "http://example.org/primary-cancer-condition-persona-2"
+* entry[+].resource = cancer-related-medication-request-doxorubicin-persona-2
+* entry[=].fullUrl = "http://example.org/cancer-related-medication-request-doxorubicin-persona-2"
+* entry[+].resource = cancer-related-medication-administration-doxorubicin-persona-2
+* entry[=].fullUrl = "http://example.org/cancer-related-medication-administration-doxorubicin-persona-2"
 
 
 
@@ -18,9 +24,8 @@ Description: "Example for Patient"
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#MR "Medical Record Number"
 * identifier.system = "http://hospital.example.org"
 * identifier.value = "m456"
-* name.family = "c"
+* name.family = "C."
 * name.given[0] = "Marsha"
-* name.given[1] = "C."
 * contact.telecom[0].system = #phone
 * contact.telecom[0].value = "999-999-9999"
 * contact.telecom[0].use = #home
@@ -46,13 +51,58 @@ Description: "Anemia grade 2"
 * event.text = "Hgb 9.0 per CBC results from 12/21/20"
 * extension[grade].valueCodeableConcept = CTCAEGradeCS#2 "Moderate Adverse Event"
 * recorder = Reference(Practitioner/PractitionerExample1)
-* suspectEntity[0].instance = Reference(medication-doxorubicin-persona-2)
+* suspectEntity[0].instance = Reference(cancer-related-medication-administration-doxorubicin-persona-2)
 * suspectEntity[0].causality[0].productRelatedness = "probable"
 * extension[expectation].valueCodeableConcept = NCIT#C41333 "Expected Adverse Event"
 * extension[resolvedDate].valueDateTime = "2020-12-21"
 
-Instance: medication-doxorubicin-persona-2
-InstanceOf: Medication
-Description: "DOXOrubicin"
-// Usage: #inline
-* code = RXN#3639 "DOXOrubicin"
+
+Instance: primary-cancer-condition-persona-2
+InstanceOf: PrimaryCancerCondition
+Description: "Extended example: example showing primary cancer condition"
+* extension[histologyMorphologyBehavior].valueCodeableConcept = SCT#373395001 "Invasive ductal carcinoma with an extensive intraductal component (morphologic abnormality)"
+* clinicalStatus = ClinStatus#active
+* verificationStatus = VerStatus#confirmed
+* category = CondCat#problem-list-item
+* code = SCT#353431000119107 "Primary malignant neoplasm of female left breast (disorder)"
+* subject = Reference(PatientPersona2)
+* onsetDateTime = "2020-09-25"
+* asserter = Reference(us-core-practitioner-owen-oncologist)
+* stage.summary = AJCC#3C
+// * stage.assessment = Reference(tnm-clinical-stage-group-jenny-m)
+
+Instance: cancer-related-medication-request-doxorubicin-persona-2
+InstanceOf: CancerRelatedMedicationRequest
+Description: "Extended example: example showing chemotherapy medication"
+* extension[treatmentIntent].valueCodeableConcept = SCT#373808002 "Curative - procedure intent (qualifier value)"
+* status = #active "active"
+* category = MedReqCat#outpatient
+* intent = #order
+* medicationCodeableConcept = RXN#3639 "DOXOrubicin"
+* subject = Reference(PatientPersona2)
+* requester = Reference(us-core-practitioner-owen-oncologist)
+* reasonReference = Reference(primary-cancer-condition-persona-2)
+* dosageInstruction.timing.repeat.boundsPeriod.start = "2018-04-01"
+* authoredOn = "2020-10-06"
+* dosageInstruction.text = "doxorubicin (60 mg/m² IV)"
+* dosageInstruction.route = SCT#47625008 "Intravenous route (qualifier value)"
+* dosageInstruction.doseAndRate.rateQuantity = 60 'mg/m2' "mg/m2"
+// Once every 3 weeks
+* dosageInstruction.maxDosePerPeriod.numerator.value = 1
+* dosageInstruction.maxDosePerPeriod.denominator = 3 'wk' "week"
+
+Instance: cancer-related-medication-administration-doxorubicin-persona-2
+InstanceOf: CancerRelatedMedicationAdministration
+Description: "chemotherapy medication administered"
+* status = #completed "completed"
+* category = MedReqCat#outpatient
+* medicationCodeableConcept = RXN#1790099 "doxorubicin hydrochloride 20 MG per 10 ML Injection"
+* subject = Reference(PatientPersona2)
+* reasonReference = Reference(primary-cancer-condition-persona-2)
+* request = Reference(cancer-related-medication-request-doxorubicin-persona-2)
+* effectiveDateTime = "2020-12-01"
+* note.authorReference = Reference(us-core-practitioner-nancy-oncology-nurse)
+* note.time = "2020-12-01"
+* note.text = "doxorubicin (60 mg/m² IV), 105.96 mg in 50 ml 0.9% normal saline administered by continuous infusion. Patient tolerated infusion without side effects."
+* dosage.dose = 105.96 'mg' "mg"
+* dosage.route = SCT#47625008 "Intravenous route (qualifier value)"
