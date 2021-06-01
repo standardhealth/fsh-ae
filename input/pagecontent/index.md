@@ -88,11 +88,11 @@ The following use cases will inform the initial design for this IG:
 
 ### Adverse Event Reporting Standards
 
+Other reporting standards informing the ICAREdata adverse event work:
 * FDA Individual Case Safety Report (ICSR)
 * National Cancer Institute CTCAE:
   * CTEP reporting via the Clinical Trial Monitoring System (CTMS) and Clinical Data Update System (CDUS)
   * CTEP Adverse Event Reporting System (CTEP-AERS)
-
 
 
 ### Disclaimers and Known Limitations

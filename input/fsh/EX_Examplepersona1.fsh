@@ -5,24 +5,24 @@ Description: "Extended AdverseEvent example as a Patient Bundle for Compass Tria
 * entry[0].fullUrl = "http://example.org/patient-example-kaitlyn-b"
 * entry[1].resource =  kaitlyn-primary-cancer-condition-ex1
 * entry[1].fullUrl = "http://example.org/kaitlyn-primary-cancer-condition-ex1"
-* entry[2].resource = clinical-trial-example-compass
-* entry[2].fullUrl = "http://example.org/clinical-trial-example-compass"
-* entry[3].resource = ctc-adverse-event-compass-ex1
-* entry[3].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1"
-* entry[4].resource = ctc-adverse-event-compass-ex1a
-* entry[4].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1a"
-* entry[5].resource = ctc-adverse-event-compass-ex1b
-* entry[5].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1b"
-* entry[6].resource = ctc-adverse-event-compass-ex2
-* entry[6].fullUrl = "http://example.org/ctc-adverse-event-compass-ex2"
-* entry[7].resource = medication-request-example-kadcyla
-* entry[7].fullUrl = "http://example.org/medication-request-example-kadcyla"
-* entry[8].resource = medication-request-example-tucatinib
-* entry[8].fullUrl = "http://example.org/medication-request-example-tucatinib"
-* entry[9].resource = medication-administration-kadcyla
-* entry[9].fullUrl = "http://example.org/medication-administration-kadcyla"
-* entry[10].resource = medication-administration-tucatinib
-* entry[10].fullUrl = "http://example.org/medication-administration-tucatinib"
+* entry[+].resource = clinical-trial-example-compass
+* entry[=].fullUrl = "http://example.org/clinical-trial-example-compass"
+* entry[+].resource = ctc-adverse-event-compass-ex1
+* entry[=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1"
+* entry[+].resource = ctc-adverse-event-compass-ex1a
+* entry[=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1a"
+* entry[+].resource = ctc-adverse-event-compass-ex1b
+* entry[=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1b"
+* entry[+].resource = ctc-adverse-event-compass-ex2
+* entry[=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex2"
+* entry[+].resource = medication-request-example-kadcyla
+* entry[=].fullUrl = "http://example.org/medication-request-example-kadcyla"
+* entry[+].resource = medication-request-example-tucatinib
+* entry[=].fullUrl = "http://example.org/medication-request-example-tucatinib"
+* entry[+].resource = medication-administration-kadcyla
+* entry[=].fullUrl = "http://example.org/medication-administration-kadcyla"
+* entry[+].resource = medication-administration-tucatinib
+* entry[=].fullUrl = "http://example.org/medication-administration-tucatinib"
 
 Instance: patient-example-kaitlyn-b
 InstanceOf: mCodeCancerPatient

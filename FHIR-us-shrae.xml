@@ -6,24 +6,31 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="StructureDefinition/adverse-event-expectation" key="StructureDefinition-adverse-event-expectation" name="Adverse Event Expectation"/>
-<artifact id="ValueSet/adverse-event-expectation-value-set" key="ValueSet-adverse-event-expectation-value-set" name="Adverse Event Expectation Value Set"/>
-<artifact id="ValueSet/adverse-event-relatedness-value-set" key="ValueSet-adverse-event-relatedness-value-set" name="Adverse Event Relatedness Value Set"/>
-<artifact id="StructureDefinition/adverse-event-resolved-date" key="StructureDefinition-adverse-event-resolved-date" name="Adverse Event Resolved Date"/>
-<artifact id="ValueSet/adverse-event-seriousness-value-set" key="ValueSet-adverse-event-seriousness-value-set" name="Adverse Event Seriousness Value Set"/>
-<artifact id="StructureDefinition/ctc-adverse-event" key="StructureDefinition-ctc-adverse-event" name="CTC Adverse Event"/>
-<artifact id="StructureDefinition/ctcae-grade" key="StructureDefinition-ctcae-grade" name="CTC Adverse Event Grade"/>
-<artifact id="CodeSystem/ctcae-grade-code-system" key="CodeSystem-ctcae-grade-code-system" name="CTCAE Grade Code System"/>
-<artifact id="ValueSet/ctcae-grade-value-set" key="ValueSet-ctcae-grade-value-set" name="CTCAE Grade Value Set"/>
-<artifact id="ValueSet/ctcae-preferred-term-value-set" key="ValueSet-ctcae-preferred-term-value-set" name="CTCAE Preferred Terms"/>
-<artifact id="Organization/OrganizationExample1" key="Organization-OrganizationExample1" name="OrganizationExample1"/>
-<artifact id="Patient/PatientExample1" key="Patient-PatientExample1" name="PatientExample1"/>
-<artifact id="Patient/PatientPersona2" key="Patient-PatientPersona2" name="PatientPersona2"/>
-<artifact id="Practitioner/PractitionerExample1" key="Practitioner-PractitionerExample1" name="PractitionerExample1"/>
-<artifact id="Bundle/ae-bundle-persona-2" key="ae-bundle-persona-2" name="ae-bundle-persona-2"/>
+
 <artifact id="AdverseEvent/ctc-adverse-event-example-1" key="AdverseEvent-ctc-adverse-event-example-1" name="ctc-adverse-event-example-1"/>
 <artifact id="AdverseEvent/ctc-adverse-event-example-2" key="AdverseEvent-ctc-adverse-event-example-2" name="ctc-adverse-event-example-2"/>
 <artifact id="AdverseEvent/ctc-adverse-event-anemia-persona-2" key="ctc-adverse-event-anemia-persona-2" name="ctc-adverse-event-anemia-persona-2"/>
+<artifact id="Bundle/ae-bundle-kaitlyn-compass-trial" key="ae-bundle-kaitlyn-compass-trial" name="ae-bundle-kaitlyn-compass-trial"/>
+<artifact id="Bundle/ae-bundle-persona-2" key="ae-bundle-persona-2" name="ae-bundle-persona-2"/>erse-event-anemia-persona-2"/>
+<artifact id="CodeSystem/ctcae-grade-code-system" key="CodeSystem-ctcae-grade-code-system" name="CTCAE Grade Code System"/>
+<artifact id="Organization/OrganizationExample1" key="Organization-OrganizationExample1" name="OrganizationExample1"/>
+<artifact id="MedicationAdministration/cancer-related-medication-administration-doxorubicin-persona-2" key="cancer-related-medication-administration-doxorubicin-persona-2" name="cancer-related-medication-request-doxorubicin-persona-2"/>
+<artifact id="MedicationRequest/cancer-related-medication-request-doxorubicin-persona-2" key="cancer-related-medication-request-doxorubicin-persona-2" name="cancer-related-medication-request-doxorubicin-persona-2"/>
+<artifact id="Patient/PatientExample1" key="Patient-PatientExample1" name="PatientExample1"/>
+<artifact id="Patient/patient-example-kaitlyn-b" key="patient-example-kaitlyn-b" name="patient-example-kaitlyn-b"/>
+<artifact id="Patient/PatientPersona2" key="Patient-PatientPersona2" name="PatientPersona2"/>
+<artifact id="Practitioner/PractitionerExample1" key="Practitioner-PractitionerExample1" name="PractitionerExample1"/>
+<artifact id="StructureDefinition/ae-patient-bundle" key="StructureDefinition-ae-patient-bundle" name="Adverse Event Patient Bundle"/>
+<artifact id="StructureDefinition/adverse-event-expectation" key="StructureDefinition-adverse-event-expectation" name="Adverse Event Expectation"/>
+<artifact id="StructureDefinition/adverse-event-resolved-date" key="StructureDefinition-adverse-event-resolved-date" name="Adverse Event Resolved Date"/>
+<artifact id="StructureDefinition/ctc-adverse-event" key="StructureDefinition-ctc-adverse-event" name="CTC Adverse Event"/>
+<artifact id="StructureDefinition/ctcae-grade" key="StructureDefinition-ctcae-grade" name="CTC Adverse Event Grade"/>
+<artifact id="ValueSet/adverse-event-expectation-value-set" key="ValueSet-adverse-event-expectation-value-set" name="Adverse Event Expectation Value Set"/>
+<artifact id="ValueSet/adverse-event-relatedness-value-set" key="ValueSet-adverse-event-relatedness-value-set" name="Adverse Event Relatedness Value Set"/>
+<artifact id="ValueSet/adverse-event-seriousness-value-set" key="ValueSet-adverse-event-seriousness-value-set" name="Adverse Event Seriousness Value Set"/>
+<artifact id="ValueSet/ctcae-grade-value-set" key="ValueSet-ctcae-grade-value-set" name="CTCAE Grade Value Set"/>
+<artifact id="ValueSet/ctcae-preferred-term-value-set" key="ValueSet-ctcae-preferred-term-value-set" name="CTCAE Preferred Terms"/>
+
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page deprecated="true" key="profiles" name="(profiles)"/>
