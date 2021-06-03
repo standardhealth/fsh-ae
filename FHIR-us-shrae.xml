@@ -9,13 +9,17 @@
 
 <artifact id="AdverseEvent/ctc-adverse-event-example-1" key="AdverseEvent-ctc-adverse-event-example-1" name="ctc-adverse-event-example-1"/>
 <artifact id="AdverseEvent/ctc-adverse-event-example-2" key="AdverseEvent-ctc-adverse-event-example-2" name="ctc-adverse-event-example-2"/>
-<artifact id="AdverseEvent/ctc-adverse-event-anemia-persona-2" key="ctc-adverse-event-anemia-persona-2" name="ctc-adverse-event-anemia-persona-2"/>
+<artifact id="AdverseEvent/ctc-adverse-event-anemia1-persona-2" key="ctc-adverse-event-anemia1-persona-2" name="ctc-adverse-event-anemia1-persona-2"/>
+<artifact id="AdverseEvent/ctc-adverse-event-neutropenia1-persona-2" key="ctc-adverse-event-neutropenia1-persona-2" name="ctc-adverse-event-neutropenia1-persona-2"/>
+<artifact id="AdverseEvent/ctc-adverse-event-neutropenia2-persona-2" key="ctc-adverse-event-neutropenia2-persona-2" name="ctc-adverse-event-neutropenia2-persona-2"/>
+<artifact id="AdverseEvent/ctc-adverse-event-nausea1-persona-2" key="ctc-adverse-event-nausea1-persona-2" name="ctc-adverse-event-nausea1-persona-2"/>
 <artifact id="Bundle/ae-bundle-kaitlyn-compass-trial" key="ae-bundle-kaitlyn-compass-trial" name="ae-bundle-kaitlyn-compass-trial"/>
-<artifact id="Bundle/ae-bundle-persona-2" key="ae-bundle-persona-2" name="ae-bundle-persona-2"/>erse-event-anemia-persona-2"/>
+<artifact id="Bundle/ae-bundle-persona-2" key="ae-bundle-persona-2" name="ae-bundle-persona-2"/>
 <artifact id="CodeSystem/ctcae-grade-code-system" key="CodeSystem-ctcae-grade-code-system" name="CTCAE Grade Code System"/>
 <artifact id="Organization/OrganizationExample1" key="Organization-OrganizationExample1" name="OrganizationExample1"/>
-<artifact id="MedicationAdministration/cancer-related-medication-administration-doxorubicin-persona-2" key="cancer-related-medication-administration-doxorubicin-persona-2" name="cancer-related-medication-request-doxorubicin-persona-2"/>
+<artifact id="MedicationAdministration/cancer-related-medication-administration-doxorubicin-persona-2" key="cancer-related-medication-administration-doxorubicin-persona-2" name="cancer-related-medication-administration-doxorubicin-persona-2"/>
 <artifact id="MedicationRequest/cancer-related-medication-request-doxorubicin-persona-2" key="cancer-related-medication-request-doxorubicin-persona-2" name="cancer-related-medication-request-doxorubicin-persona-2"/>
+<artifact id="MedicationRequest/cancer-related-medication-request-doxorubicin2-persona-2" key="cancer-related-medication-request-doxorubicin2-persona-2" name="cancer-related-medication-request-doxorubicin2-persona-2"/>
 <artifact id="Patient/PatientExample1" key="Patient-PatientExample1" name="PatientExample1"/>
 <artifact id="Patient/patient-example-kaitlyn-b" key="patient-example-kaitlyn-b" name="patient-example-kaitlyn-b"/>
 <artifact id="Patient/PatientPersona2" key="Patient-PatientPersona2" name="PatientPersona2"/>

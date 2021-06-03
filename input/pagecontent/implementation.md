@@ -7,7 +7,8 @@ This page contains miscellaneous information on modeling and FHIR implementation
 The following topics are addressed:
 
 * [Understanding this Guide](#understanding-this-guide)
-* [Adverse Event](#adverse-event)
+* [Adverse Event Artifacts](#adverse-event-artifacts)
+* [Representing Adverse Event Grades](#representing-adverse-event-grades)
 * [Terminology Preferences](#terminology-preferences)
 * [Representing Provenance](#representing-provenance)
 
@@ -19,7 +20,7 @@ Each profile is shown in multiple views. The "Differential Table" view represent
 
 The data elements identified in this process were modeled using [FHIR Shorthand (FSH)](http://build.fhir.org/ig/HL7/fhir-shorthand/) and [SUSHI](https://github.com/FHIR/sushi) and exported as FHIR Profiles. [The profiles](artifacts.html#2), related FHIR artifacts, and other [technical implementation information](implementation.html), constitute the bulk of this IG. 
 
-### Adverse Event
+#### Adverse Event Artifacts
 
 This is a set of experimental profiles for representing adverse events (AE). The definitions are FHIR interpretation of Common Terminology Criteria (CTC). The profiles and value sets and are intended to give sufficient information for FDA reporting.
 
@@ -37,6 +38,7 @@ This is a set of experimental profiles for representing adverse events (AE). The
 | ValueSet   | [CTCAETermVS]                   | CTCAE terms for AE             | n/a                |
 | ValueSet   | [AdverseEventRelatednessVS]     | Likelihood that AE is related to intervention | n/a |
 
+
 [AEPatientBundle]: StructureDefinition-ae-patient-bundle.html
 [Persona1 AE Bundle]: Bundle-ae-bundle-kaitlyn-compass-trial.html
 [Persona2 AE Bundle]: Bundle-ae-bundle-persona-2.html
@@ -53,6 +55,12 @@ This is a set of experimental profiles for representing adverse events (AE). The
 [Example 1]: AdverseEvent-ctc-adverse-event-example-1.html
 [Example 2]: AdverseEvent-ctc-adverse-event-example-2.html
 
+#### Representing Adverse Event Grades
+
+THe NCI CTCAE 5.0 cross-walk table represents grades ranging from 1 to 5 and assigns an NCI concept for each of the NCI terms.
+For simplicity and to better align with MedDRA, this IG does not use the NCI assigned concepts for grade and instead creates a local code system and value set, [ctcae-grade-value-set](http://hl7.org/fhir/us/shrae/ValueSet/ctcae-grade-value-set), to generally represent the CTCAE grades that can be applied across all CTCAE terms.
+
+Some clinical workflows require that you assert the absence of a solicited adverse event. CTCAE does not contain concepts for a grade 0. 
 
 #### Terminology Preferences
 
@@ -67,5 +75,3 @@ The CTCAE Adverse Event reporting is based on CTCAE 5.0 and corresponds to MedDR
 #### Representing Provenance
 
 Provenance information includes the "who, what, when, where, why" associated with collection, transfer, and updating of clinical information. This IG relies on FHIR's native mechanisms for recording and tracking provenance. As such, this IG shares all the capabilities and limitations of FHIR provenance tracking. The user should refer to the [FHIR specification](https://www.hl7.org/fhir/provenance.html) for more information.
-
-#### Tag #4

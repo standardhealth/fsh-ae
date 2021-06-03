@@ -19,7 +19,7 @@ parameters:
   show-inherited-invariants: false
   version-comparison: n/a
   path-expansion-params: '../../exp-params.json'  #path is relative to [base]/fsh-generated/resources
-copyrightYear: 2021
+copyrightYear: 2021+
 releaseLabel: DRAFT
 pages:
   index.md:
