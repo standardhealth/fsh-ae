@@ -7,8 +7,8 @@ Usage: #example
 Description: "Extended AdverseEvent example as a Patient Bundle"
 * entry[0].resource = PatientPersona2
 * entry[0].fullUrl = "http://example.org/PatientPersona2"
-* entry[CTCAdverseEvent].resource = ctc-adverse-event-anemia1-persona-2
-* entry[CTCAdverseEvent].fullUrl = "http://example.org/ctc-adverse-event-anemia1-persona-2"
+* entry[ctcAdverseEvent].resource = ctc-adverse-event-anemia1-persona-2
+* entry[ctcAdverseEvent].fullUrl = "http://example.org/ctc-adverse-event-anemia1-persona-2"
 * entry[+].resource = primary-cancer-condition-persona-2
 * entry[=].fullUrl = "http://example.org/primary-cancer-condition-persona-2"
 * entry[+].resource = cancer-related-medication-request-doxorubicin-persona-2
@@ -19,9 +19,6 @@ Description: "Extended AdverseEvent example as a Patient Bundle"
 * entry[=].fullUrl = "http://example.org/cbc-201-persona2"
 * entry[+].resource = cbc-202-persona2
 * entry[=].fullUrl = "http://example.org/cbc-202-persona2"
-* entry[+].resource = cancer-related-medication-request-doxorubicin2-persona-2
-* entry[=].fullUrl = "http://example.org/cancer-related-medication-request-doxorubicin2-persona-2"
-
 
 Instance: PatientPersona2
 InstanceOf: mCodeCancerPatient
@@ -90,7 +87,7 @@ Description: "Nausea grade 1"
 * extension[expectation].valueCodeableConcept = NCIT#C41333 "Expected Adverse Event"
 * extension[resolvedDate].valueDateTime = "2020-12-21"
 
-/*
+
 Instance: ctc-adverse-event-anemia2-persona-2
 InstanceOf: CTCAdverseEvent
 Description: "Anemia grade 1"
@@ -104,7 +101,7 @@ Description: "Anemia grade 1"
 * suspectEntity[0].causality[0].productRelatedness = "probable" // if grade is 0 (absent) do we still need this field?
 * extension[expectation].valueCodeableConcept = NCIT#C41333 "Expected Adverse Event"
 * extension[resolvedDate].valueDateTime = "2020-12-29"
-*/
+
 
 Instance: ctc-adverse-event-neutropenia2-persona-2
 InstanceOf: CTCAdverseEvent
