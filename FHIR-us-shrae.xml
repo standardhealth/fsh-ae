@@ -11,15 +11,25 @@
 <artifact id="AdverseEvent/ctc-adverse-event-example-2" key="AdverseEvent-ctc-adverse-event-example-2" name="ctc-adverse-event-example-2"/>
 <artifact id="AdverseEvent/ctc-adverse-event-anemia-persona-2" key="ctc-adverse-event-anemia-persona-2" name="ctc-adverse-event-anemia-persona-2"/>
 <artifact id="Bundle/ae-bundle-kaitlyn-compass-trial" key="ae-bundle-kaitlyn-compass-trial" name="ae-bundle-kaitlyn-compass-trial"/>
-<artifact id="Bundle/ae-bundle-persona-2" key="ae-bundle-persona-2" name="ae-bundle-persona-2"/>erse-event-anemia-persona-2"/>
+<artifact id="Bundle/ae-bundle-persona-2" key="ae-bundle-persona-2" name="ae-bundle-persona-2"/>
+<artifact id="Condition/kaitlyn-primary-cancer-condition-ex1" key="kaitlyn-primary-cancer-condition-ex1" name="kaitlyn-primary-cancer-condition-ex1"/>
 <artifact id="CodeSystem/ctcae-grade-code-system" key="CodeSystem-ctcae-grade-code-system" name="CTCAE Grade Code System"/>
+<artifact id="CTCAdverseEvent/ctc-adverse-event-compass-ex1" key="ctc-adverse-event-compass-ex1" name="ctc-adverse-event-compass-ex1"/>
+<artifact id="CTCAdverseEvent/ctc-adverse-event-compass-ex1a" key="ctc-adverse-event-compass-ex1a" name="ctc-adverse-event-compass-ex1a"/>
+<artifact id="CTCAdverseEvent/ctc-adverse-event-compass-ex1b" key="ctc-adverse-event-compass-ex1b" name="ctc-adverse-event-compass-ex1b"/>
+<artifact id="CTCAdverseEvent/ctc-adverse-event-compass-ex2" key="ctc-adverse-event-compass-ex2" name="ctc-adverse-event-compass-ex2"/>
 <artifact id="Organization/OrganizationExample1" key="Organization-OrganizationExample1" name="OrganizationExample1"/>
 <artifact id="MedicationAdministration/cancer-related-medication-administration-doxorubicin-persona-2" key="cancer-related-medication-administration-doxorubicin-persona-2" name="cancer-related-medication-request-doxorubicin-persona-2"/>
+<artifact id="MedicationAdministration/medication-administration-kadcyla" key="medication-administration-kadcyla" name="medication-administration-kadcyla"/>
+<artifact id="MedicationAdministration/medication-administration-tucatinib" key="medication-administration-tucatinib" name="medication-administration-tucatinib"/>
 <artifact id="MedicationRequest/cancer-related-medication-request-doxorubicin-persona-2" key="cancer-related-medication-request-doxorubicin-persona-2" name="cancer-related-medication-request-doxorubicin-persona-2"/>
+<artifact id="MedicationRequest/medication-request-example-kadcyla" key="medication-request-example-kadcyla" name="medication-request-example-kadcyla"/>
+<artifact id="MedicationRequest/medication-request-example-tucatinib" key="medication-request-example-tucatinib" name="medication-request-example-tucatinib"/>
 <artifact id="Patient/PatientExample1" key="Patient-PatientExample1" name="PatientExample1"/>
 <artifact id="Patient/patient-example-kaitlyn-b" key="patient-example-kaitlyn-b" name="patient-example-kaitlyn-b"/>
 <artifact id="Patient/PatientPersona2" key="Patient-PatientPersona2" name="PatientPersona2"/>
 <artifact id="Practitioner/PractitionerExample1" key="Practitioner-PractitionerExample1" name="PractitionerExample1"/>
+<artifact id="ResearchStudy/clinical-trial-example-compass" key="clinical-trial-example-compass" name="clinical-trial-example-compass"/>
 <artifact id="StructureDefinition/ae-patient-bundle" key="StructureDefinition-ae-patient-bundle" name="Adverse Event Patient Bundle"/>
 <artifact id="StructureDefinition/adverse-event-expectation" key="StructureDefinition-adverse-event-expectation" name="Adverse Event Expectation"/>
 <artifact id="StructureDefinition/adverse-event-resolved-date" key="StructureDefinition-adverse-event-resolved-date" name="Adverse Event Resolved Date"/>
