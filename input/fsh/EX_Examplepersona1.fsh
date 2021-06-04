@@ -1,20 +1,20 @@
 Instance: ae-bundle-kaitlyn-compass-trial
-InstanceOf: mCodePatientBundle
+InstanceOf: AEPatientBundle  //mCodePatientBundle
 Description: "Extended AdverseEvent example as a Patient Bundle for Compass Trial"
 * entry[0].resource = patient-example-kaitlyn-b
 * entry[0].fullUrl = "http://example.org/patient-example-kaitlyn-b"
-* entry[1].resource =  kaitlyn-primary-cancer-condition-ex1
-* entry[1].fullUrl = "http://example.org/kaitlyn-primary-cancer-condition-ex1"
-* entry[+].resource = clinical-trial-example-compass
-* entry[=].fullUrl = "http://example.org/clinical-trial-example-compass"
-* entry[+].resource = ctc-adverse-event-compass-ex1
-* entry[=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1"
-* entry[+].resource = ctc-adverse-event-compass-ex1a
-* entry[=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1a"
-* entry[+].resource = ctc-adverse-event-compass-ex1b
-* entry[=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1b"
-* entry[+].resource = ctc-adverse-event-compass-ex2
-* entry[=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex2"
+* entry[CTCAdverseEvent][0].resource = ctc-adverse-event-compass-ex1
+* entry[CTCAdverseEvent][0].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1"
+* entry[CTCAdverseEvent][+].resource = ctc-adverse-event-compass-ex1a
+* entry[CTCAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1a"
+* entry[CTCAdverseEvent][+].resource = ctc-adverse-event-compass-ex1a
+* entry[CTCAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1a"
+* entry[CTCAdverseEvent][+].resource = ctc-adverse-event-compass-ex1b
+* entry[CTCAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1b"
+* entry[CTCAdverseEvent][+].resource = ctc-adverse-event-compass-ex2
+* entry[CTCAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex2"
+* entry[+].resource = kaitlyn-primary-cancer-condition-ex1
+* entry[=].fullUrl = "http://example.org/kaitlyn-primary-cancer-condition-ex1"
 * entry[+].resource = medication-request-example-kadcyla
 * entry[=].fullUrl = "http://example.org/medication-request-example-kadcyla"
 * entry[+].resource = medication-request-example-tucatinib
@@ -23,6 +23,12 @@ Description: "Extended AdverseEvent example as a Patient Bundle for Compass Tria
 * entry[=].fullUrl = "http://example.org/medication-administration-kadcyla"
 * entry[+].resource = medication-administration-tucatinib
 * entry[=].fullUrl = "http://example.org/medication-administration-tucatinib"
+
+/* 
+ResearchStudy doesn't work in the bundle, causes it to not render
+* entry[+].resource = clinical-trial-example-compass
+* entry[=].fullUrl = "http://example.org/clinical-trial-example-compass"
+*/
 
 Instance: patient-example-kaitlyn-b
 InstanceOf: mCodeCancerPatient
@@ -74,9 +80,9 @@ Description: "Primary Cancer Condition for Kaitlyn B"
 * category = #problem-list-item
 //* code = SCT#448952004 "Invasive ductal carcinoma of female breast (disorder)"
 //* bodySite.extension[laterality].valueCodeableConcept = SCT#7771000 "Left (qualifier value)"
-* subject = Reference(Patient/patient-example-kaitlyn-b)
+* subject = Reference(patient-example-kaitlyn-b)
 * onsetDateTime = "2019-05-01"
-* asserter = Reference(Practitioner/PractitionerExample1)
+* asserter = Reference(PractitionerExample1)
 
 Instance: medication-request-example-kadcyla
 InstanceOf: CancerRelatedMedicationRequest
@@ -154,7 +160,7 @@ Description: "Example showing clinial trial medication adminstration Tucatinib"
 Instance: ctc-adverse-event-compass-ex1
 InstanceOf: CTCAdverseEvent
 Description: "Grade 1 ALT"
-* subject = Reference(Patient/patient-example-kaitlyn-b)
+* subject = Reference(patient-example-kaitlyn-b)
 * event = MEDDRA#10001551  "Alanine aminotransferase increased" 
 * event.coding.version = "20.3"
 * event.text = "Alanine aminotransferase (ALT) increased at 50"
@@ -163,7 +169,7 @@ Description: "Grade 1 ALT"
 * seriousness = NCIT#C41336 "Non-serious Adverse Event"
 * outcome = AEO#ongoing  // resolved on 6/10/20 after 3 more visits - goes to grade 3 then back to 1 then WNL
 * date = "2020-04-22"
-* recorder = Reference(Practitioner/PractitionerExample1)
+* recorder = Reference(PractitionerExample1)
 * study = Reference(clinical-trial-example-compass)
 * suspectEntity[0].instance = Reference(medication-administration-kadcyla)
 * suspectEntity[0].causality[0].assessment = NCIT#C53259
@@ -176,7 +182,7 @@ Description: "Grade 1 ALT"
 Instance: ctc-adverse-event-compass-ex1a
 InstanceOf: CTCAdverseEvent
 Description: "Grade 3 ALT"
-* subject = Reference(Patient/patient-example-kaitlyn-b)
+* subject = Reference(patient-example-kaitlyn-b)
 * event = MEDDRA#10001551  "Alanine aminotransferase increased" 
 * event.coding.version = "20.3"
 * event.text = "Alanine aminotransferase (ALT) increased to 200"
@@ -185,7 +191,7 @@ Description: "Grade 3 ALT"
 * seriousness = NCIT#C41336 "Non-serious Adverse Event"
 * outcome = AEO#ongoing 
 * date = "2020-05-13"
-* recorder = Reference(Practitioner/PractitionerExample1)
+* recorder = Reference(PractitionerExample1)
 * study = Reference(clinical-trial-example-compass)
 * suspectEntity[0].instance = Reference(medication-administration-kadcyla)
 * suspectEntity[0].causality[0].assessment = NCIT#C53259
@@ -198,7 +204,7 @@ Description: "Grade 3 ALT"
 Instance: ctc-adverse-event-compass-ex1b
 InstanceOf: CTCAdverseEvent
 Description: "ALT back to grade 1 and resolved"
-* subject = Reference(Patient/patient-example-kaitlyn-b)
+* subject = Reference(patient-example-kaitlyn-b)
 * event = MEDDRA#10001551  "Alanine aminotransferase increased" 
 * event.coding.version = "20.3"
 * event.text = "Alanine aminotransferase (ALT) decreased to 60"
@@ -207,7 +213,7 @@ Description: "ALT back to grade 1 and resolved"
 * seriousness = NCIT#C41336 "Non-serious Adverse Event"
 * outcome = AEO#resolved
 * date = "2020-05-20"
-* recorder = Reference(Practitioner/PractitionerExample1)
+* recorder = Reference(PractitionerExample1)
 * study = Reference(clinical-trial-example-compass)
 * suspectEntity[0].instance = Reference(medication-administration-kadcyla)
 * suspectEntity[0].causality[0].assessment = NCIT#C53259
@@ -221,7 +227,7 @@ Description: "ALT back to grade 1 and resolved"
 Instance: ctc-adverse-event-compass-ex2
 InstanceOf: CTCAdverseEvent
 Description: "Grade 1 Nausea/vomiting"  // both are AEs, which to use or make them separate?
-* subject = Reference(Patient/patient-example-kaitlyn-b)
+* subject = Reference(patient-example-kaitlyn-b)
 * event = MEDDRA#10028813  "Nausea" 
 * event.coding.version = "20.3"
 * event.text = "Nausea"
@@ -230,7 +236,7 @@ Description: "Grade 1 Nausea/vomiting"  // both are AEs, which to use or make th
 * seriousness = NCIT#C41336 "Non-serious Adverse Event"
 * outcome = AEO#ongoing  // resolved on 6/10/20 after 3 more visits - goes to grade 3 then back to 1 then WNL
 * date = "2020-05-25"
-* recorder = Reference(Practitioner/PractitionerExample1)
+* recorder = Reference(PractitionerExample1)
 * study = Reference(clinical-trial-example-compass)
 * suspectEntity[0].instance = Reference(medication-administration-kadcyla)
 * suspectEntity[0].causality[0].assessment = NCIT#C53258
