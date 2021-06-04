@@ -15,10 +15,12 @@ Description: "Extended AdverseEvent example as a Patient Bundle"
 * entry[=].fullUrl = "http://example.org/cancer-related-medication-request-doxorubicin-persona-2"
 * entry[+].resource = cancer-related-medication-administration-doxorubicin-persona-2
 * entry[=].fullUrl = "http://example.org/cancer-related-medication-administration-doxorubicin-persona-2"
-* entry[+].resource = cbc-201-persona2
-* entry[=].fullUrl = "http://example.org/cbc-201-persona2"
-* entry[+].resource = cbc-202-persona2
-* entry[=].fullUrl = "http://example.org/cbc-202-persona2"
+* entry[+].resource = diagnosticreport-cbc-201-1-persona2
+* entry[=].fullUrl = "http://example.org/diagnosticreport-cbc-201-1-persona2"
+* entry[+].resource = diagnosticreport-cbc-202-1-persona2
+* entry[=].fullUrl = "http://example.org/diagnosticreport-cbc-202-1-persona2"
+// * entry[+].resource = clinical-trial-example-soc
+// * entry[=].fullUrl = "http://example.org/clinical-trial-example-soc"
 
 Instance: PatientPersona2
 InstanceOf: mCodeCancerPatient
@@ -187,3 +189,9 @@ Description: "Extended example: example showing chemotherapy medication"
 // Once every 3 weeks
 * dosageInstruction.maxDosePerPeriod.numerator.value = 1
 * dosageInstruction.maxDosePerPeriod.denominator = 3 'wk' "week"
+
+Instance: clinical-trial-example-soc
+InstanceOf: ResearchStudy
+Description: "Standard of Care Protocol 0U812"
+* title = "Standard of Care Protocol 0U812" 
+* status =  http://hl7.org/fhir/research-study-status#active "Active"

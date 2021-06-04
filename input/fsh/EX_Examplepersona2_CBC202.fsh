@@ -3,6 +3,8 @@ Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $loinc = http://loinc.org
 Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 
+// removed the O&O representation of a bundle and just kept the DiagnosticReport
+/*
 Instance: cbc-202-persona2
 InstanceOf: Bundle
 Usage: #example
@@ -43,10 +45,12 @@ Usage: #example
 * entry[=].resource = r202-16
 * entry[+].fullUrl = "http://example.org/fhir/Observation/r202-17"
 * entry[=].resource = r202-17
+*/
 
-Instance: Inline-Instance-for-202-1
+// Instance: Inline-Instance-for-202-1
+Instance: diagnosticreport-cbc-202-1-persona2
 InstanceOf: DiagnosticReport
-Usage: #inline
+// Usage: #inline
 * id = "202"
 * meta.tag = $workflow-codes#01 "Needs Review"
 * identifier.system = "http://acme.com/lab/reports"
@@ -54,7 +58,7 @@ Usage: #inline
 * status = #final
 * category = $v2-0074#HM
 * code.coding[0] = $loinc#58410-2 "CBC panel - Blood by Automated count"
-* code.coding[+] = #CBC "MASTER FULL BLOOD COUNT"
+// * code.coding[+] = #CBC "MASTER FULL BLOOD COUNT"
 * code.text = "Complete Blood Count"
 * subject = Reference(Patient/PatientPersona2)
 // * encounter = Reference(Encounter/example)
@@ -81,7 +85,7 @@ Usage: #inline
 
 Instance: r202-1
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#718-7 "Hemoglobin [Mass/volume] in Blood"
 * code.text = "Hemoglobin"
@@ -93,7 +97,7 @@ Usage: #inline
 
 Instance: r202-2
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#789-8 "Erythrocytes [#/volume] in Blood by Automated count"
 * code.text = "Red Cell Count"
@@ -105,15 +109,15 @@ Usage: #inline
 
 Instance: r202-3
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#4544-3 "Hematocrit [Volume Fraction] of Blood by Automated count"
 * code.text = "Haematocrit"
 * subject = Reference(Patient/PatientPersona2)
 * performer = Reference(Organization/us-core-organization-acme-laboratory) "Acme Laboratory, Inc"
-* valueQuantity.value = 55
+* valueQuantity.value = 50
 * valueQuantity.unit = "%"
-* interpretation = $v3-ObservationInterpretation#H
+* interpretation = $v3-ObservationInterpretation#N
 * referenceRange.low.value = 38
 * referenceRange.low.unit = "%"
 * referenceRange.high.value = 52
@@ -121,45 +125,45 @@ Usage: #inline
 
 Instance: r202-4
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#787-2 "MCV [Entitic volume] by Automated count"
 * code.text = "Mean Cell Volume"
 * subject = Reference(Patient/PatientPersona2)
 * performer = Reference(Organization/us-core-organization-acme-laboratory) "Acme Laboratory, Inc"
-* valueQuantity = 99 'fL' "fL"
-* interpretation = $v3-ObservationInterpretation#H
+* valueQuantity = 95 'fL' "fL"
+* interpretation = $v3-ObservationInterpretation#N
 * referenceRange.low = 80 'fL' "fL"
 * referenceRange.high = 98 'fL' "fL"
 
 Instance: r202-5
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#785-6 "MCH [Entitic mass] by Automated count"
 * code.text = "Mean Cell Hemoglobin"
 * subject = Reference(Patient/PatientPersona2)
 * performer = Reference(Organization/us-core-organization-acme-laboratory) "Acme Laboratory, Inc"
-* valueQuantity = 36 'pg' "pg"
-* interpretation = $v3-ObservationInterpretation#H
+* valueQuantity = 33 'pg' "pg"
+* interpretation = $v3-ObservationInterpretation#N
 * referenceRange.low = 27 'pg' "pg"
 * referenceRange.high = 35 'pg' "pg"
 
 Instance: r202-6
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#777-3 "Platelets [#/volume] in Blood by Automated count"
 * code.text = "Platelet Count"
 * subject = Reference(Patient/PatientPersona2)
 * performer = Reference(Organization/us-core-organization-acme-laboratory) "Acme Laboratory, Inc"
-* valueQuantity = 444 '10*9/L' "x10*9/L"
+* valueQuantity = 439 '10*9/L' "x10*9/L"
 * referenceRange.low = 150 '10*9/L' "x10*9/L"
 * referenceRange.high = 450 '10*9/L' "x10*9/L"
 
 Instance: r202-7
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#6690-2 "Leukocytes [#/volume] in Blood by Automated count"
 * code.text = "White Cell Count"
@@ -171,7 +175,7 @@ Usage: #inline
 
 Instance: r202-8
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#770-8 "Neutrophils/100 leukocytes in Blood by Automated count"
 * code.text = "Neutrophils"
@@ -181,20 +185,20 @@ Usage: #inline
 
 Instance: r202-9
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#751-8 "Neutrophils [#/volume] in Blood by Automated count"
 * code.text = "Neutrophils"
 * subject = Reference(Patient/PatientPersona2)
 * performer = Reference(Organization/us-core-organization-acme-laboratory) "Acme Laboratory, Inc"
 * valueQuantity = 3.3 '10*9/L' "x10*9/L"
-* interpretation = $v3-ObservationInterpretation#LL
+* interpretation = $v3-ObservationInterpretation#N
 * referenceRange.low = 2 '10*9/L' "x10*9/L"
 * referenceRange.high = 7.5 '10*9/L' "x10*9/L"
 
 Instance: r202-10
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#736-9 "Lymphocytes/100 leukocytes in Blood by Automated count"
 * code.text = "Lymphocytes"
@@ -204,20 +208,20 @@ Usage: #inline
 
 Instance: r202-11
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#731-0 "Lymphocytes [#/volume] in Blood by Automated count"
 * code.text = "Lymphocytes"
 * subject = Reference(Patient/PatientPersona2)
 * performer = Reference(Organization/us-core-organization-acme-laboratory) "Acme Laboratory, Inc"
-* valueQuantity = 0.9 '10*9/L' "x10*9/L"
-* interpretation = $v3-ObservationInterpretation#L
+* valueQuantity = 1.9 '10*9/L' "x10*9/L"
+* interpretation = $v3-ObservationInterpretation#N
 * referenceRange.low = 1.1 '10*9/L' "x10*9/L"
 * referenceRange.high = 4 '10*9/L' "x10*9/L"
 
 Instance: r202-12
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#5905-5 "Monocytes/100 leukocytes in Blood by Automated count"
 * code.text = "Monocytes"
@@ -227,7 +231,7 @@ Usage: #inline
 
 Instance: r202-13
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#742-7 "Monocytes [#/volume] in Blood by Automated count"
 * code.text = "Monocytes"
@@ -239,7 +243,7 @@ Usage: #inline
 
 Instance: r202-14
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#713-8 "Eosinophils/100 leukocytes in Blood by Automated count"
 * code.text = "Eosinophils"
@@ -249,20 +253,20 @@ Usage: #inline
 
 Instance: r202-15
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#711-2 "Eosinophils [#/volume] in Blood by Automated count"
 * code.text = "Eosinophils"
 * subject = Reference(Patient/PatientPersona2)
 * performer = Reference(Organization/us-core-organization-acme-laboratory) "Acme Laboratory, Inc"
-* valueQuantity = 0.92 '10*9/L' "x10*9/L"
-* interpretation = $v3-ObservationInterpretation#HH
+* valueQuantity = 0.32 '10*9/L' "x10*9/L"
+* interpretation = $v3-ObservationInterpretation#N
 * referenceRange.low = 0.04 '10*9/L' "x10*9/L"
 * referenceRange.high = 0.4 '10*9/L' "x10*9/L"
 
 Instance: r202-16
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#706-2 "Basophils/100 leukocytes in Blood by Automated count"
 * code.text = "Basophils"
@@ -272,7 +276,7 @@ Usage: #inline
 
 Instance: r202-17
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#704-7 "Basophils [#/volume] in Blood by Automated count"
 * code.text = "Basophils"

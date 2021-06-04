@@ -3,6 +3,8 @@ Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $loinc = http://loinc.org
 Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 
+// removed the O&O representation of a bundle and just kept the DiagnosticReport
+/*
 Instance: cbc-201-persona2
 InstanceOf: Bundle
 Usage: #example
@@ -43,10 +45,12 @@ Usage: #example
 * entry[=].resource = r201-16
 * entry[+].fullUrl = "http://example.org/fhir/Observation/r201-17"
 * entry[=].resource = r201-17
+*/
 
-Instance: Inline-Instance-for-201-1
+// Instance: Inline-Instance-for-201-1
+Instance: diagnosticreport-cbc-201-1-persona2
 InstanceOf: DiagnosticReport
-Usage: #inline
+// Usage: #inline
 * id = "201"
 * meta.tag = $workflow-codes#01 "Needs Review"
 * identifier.system = "http://acme.com/lab/reports"
@@ -54,7 +58,7 @@ Usage: #inline
 * status = #final
 * category = $v2-0074#HM
 * code.coding[0] = $loinc#58410-2 "CBC panel - Blood by Automated count"
-* code.coding[+] = #CBC "MASTER FULL BLOOD COUNT"
+// * code.coding[+] = #CBC "MASTER FULL BLOOD COUNT"
 * code.text = "Complete Blood Count"
 * subject = Reference(Patient/PatientPersona2)
 // * encounter = Reference(Encounter/example)
@@ -81,7 +85,7 @@ Usage: #inline
 
 Instance: r201-1
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#718-7 "Hemoglobin [Mass/volume] in Blood"
 * code.text = "Hemoglobin"
@@ -93,7 +97,7 @@ Usage: #inline
 
 Instance: r201-2
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#789-8 "Erythrocytes [#/volume] in Blood by Automated count"
 * code.text = "Red Cell Count"
@@ -105,7 +109,7 @@ Usage: #inline
 
 Instance: r201-3
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#4544-3 "Hematocrit [Volume Fraction] of Blood by Automated count"
 * code.text = "Haematocrit"
@@ -121,7 +125,7 @@ Usage: #inline
 
 Instance: r201-4
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#787-2 "MCV [Entitic volume] by Automated count"
 * code.text = "Mean Cell Volume"
@@ -134,7 +138,7 @@ Usage: #inline
 
 Instance: r201-5
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#785-6 "MCH [Entitic mass] by Automated count"
 * code.text = "Mean Cell Hemoglobin"
@@ -147,7 +151,7 @@ Usage: #inline
 
 Instance: r201-6
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#777-3 "Platelets [#/volume] in Blood by Automated count"
 * code.text = "Platelet Count"
@@ -159,7 +163,7 @@ Usage: #inline
 
 Instance: r201-7
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#6690-2 "Leukocytes [#/volume] in Blood by Automated count"
 * code.text = "White Cell Count"
@@ -171,7 +175,7 @@ Usage: #inline
 
 Instance: r201-8
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#770-8 "Neutrophils/100 leukocytes in Blood by Automated count"
 * code.text = "Neutrophils"
@@ -181,7 +185,7 @@ Usage: #inline
 
 Instance: r201-9
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#751-8 "Neutrophils [#/volume] in Blood by Automated count"
 * code.text = "Neutrophils"
@@ -194,7 +198,7 @@ Usage: #inline
 
 Instance: r201-10
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#736-9 "Lymphocytes/100 leukocytes in Blood by Automated count"
 * code.text = "Lymphocytes"
@@ -204,7 +208,7 @@ Usage: #inline
 
 Instance: r201-11
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#731-0 "Lymphocytes [#/volume] in Blood by Automated count"
 * code.text = "Lymphocytes"
@@ -217,7 +221,7 @@ Usage: #inline
 
 Instance: r201-12
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#5905-5 "Monocytes/100 leukocytes in Blood by Automated count"
 * code.text = "Monocytes"
@@ -227,7 +231,7 @@ Usage: #inline
 
 Instance: r201-13
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#742-7 "Monocytes [#/volume] in Blood by Automated count"
 * code.text = "Monocytes"
@@ -239,7 +243,7 @@ Usage: #inline
 
 Instance: r201-14
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#713-8 "Eosinophils/100 leukocytes in Blood by Automated count"
 * code.text = "Eosinophils"
@@ -249,7 +253,7 @@ Usage: #inline
 
 Instance: r201-15
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#711-2 "Eosinophils [#/volume] in Blood by Automated count"
 * code.text = "Eosinophils"
@@ -262,7 +266,7 @@ Usage: #inline
 
 Instance: r201-16
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#706-2 "Basophils/100 leukocytes in Blood by Automated count"
 * code.text = "Basophils"
@@ -272,7 +276,7 @@ Usage: #inline
 
 Instance: r201-17
 InstanceOf: Observation
-Usage: #inline
+// Usage: #inline
 * status = #final
 * code = $loinc#704-7 "Basophils [#/volume] in Blood by Automated count"
 * code.text = "Basophils"

@@ -6,8 +6,8 @@ Description: "Profile of adverse event, using Common Terminology Criteria (CTC).
 * ^status = #draft
 * ^experimental = true
 * obeys adverse-event-grade-zero-invariant
-* subject only Reference(Patient)
-* subject and date and outcome and recorder and actuality and category and study MS 
+* subject only Reference(CancerPatient)
+* subject and date and outcome and recorder and actuality and study MS 
 * actuality = #actual
 // ------Event-----
 * event 1..1 MS
@@ -32,9 +32,14 @@ Description: "Profile of adverse event, using Common Terminology Criteria (CTC).
 // ------Seriousness------
 * seriousness 0..1 MS
 * seriousness from AdverseEventSeriousnessVS (required)
+// ------Suspect Entity--------
+* suspectEntity.instance only Reference(Medication or MedicationAdministration)
 // ------Causality------
 * suspectEntity and suspectEntity.instance and suspectEntity.causality and suspectEntity.causality.assessment and suspectEntity.causality.assessment.text MS
 * suspectEntity.causality.assessment from AdverseEventRelatednessVS (required)
+// ------Recorder, Contributor --------
+* recorder only Reference(Practitioner)
+* contributor only Reference(Practitioner)
 
 
 Invariant: adverse-event-grade-zero-invariant

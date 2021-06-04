@@ -22,7 +22,7 @@ The data elements identified in this process were modeled using [FHIR Shorthand 
 
 #### Adverse Event Artifacts
 
-This is a set of experimental profiles for representing adverse events (AE). The definitions are FHIR interpretation of Common Terminology Criteria (CTC). The profiles and value sets and are intended to give sufficient information for FDA reporting.
+This is a set of experimental profiles for representing adverse events (AE). The definitions are FHIR interpretation of Common Terminology Criteria (CTC). The profiles and value sets and are intended to give minimal and sufficient information for CTCAE reporting.
 
 | Type       | Name                            | Description                    | Example             |
 | ---------- | ------------------------------- | -----------------------------  | ------------------- |

@@ -3,16 +3,16 @@ InstanceOf: AEPatientBundle  //mCodePatientBundle
 Description: "Extended AdverseEvent example as a Patient Bundle for Compass Trial"
 * entry[0].resource = patient-example-kaitlyn-b
 * entry[0].fullUrl = "http://example.org/patient-example-kaitlyn-b"
-* entry[CTCAdverseEvent][0].resource = ctc-adverse-event-compass-ex1
-* entry[CTCAdverseEvent][0].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1"
-* entry[CTCAdverseEvent][+].resource = ctc-adverse-event-compass-ex1a
-* entry[CTCAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1a"
-* entry[CTCAdverseEvent][+].resource = ctc-adverse-event-compass-ex1a
-* entry[CTCAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1a"
-* entry[CTCAdverseEvent][+].resource = ctc-adverse-event-compass-ex1b
-* entry[CTCAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1b"
-* entry[CTCAdverseEvent][+].resource = ctc-adverse-event-compass-ex2
-* entry[CTCAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex2"
+* entry[ctcAdverseEvent][0].resource = ctc-adverse-event-compass-ex1
+* entry[ctcAdverseEvent][0].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1"
+* entry[ctcAdverseEvent][+].resource = ctc-adverse-event-compass-ex1a
+* entry[ctcAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1a"
+* entry[ctcAdverseEvent][+].resource = ctc-adverse-event-compass-ex1a
+* entry[ctcAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1a"
+* entry[ctcAdverseEvent][+].resource = ctc-adverse-event-compass-ex1b
+* entry[ctcAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1b"
+* entry[ctcAdverseEvent][+].resource = ctc-adverse-event-compass-ex2
+* entry[ctcAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex2"
 * entry[+].resource = kaitlyn-primary-cancer-condition-ex1
 * entry[=].fullUrl = "http://example.org/kaitlyn-primary-cancer-condition-ex1"
 * entry[+].resource = medication-request-example-kadcyla
