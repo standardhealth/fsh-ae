@@ -9,7 +9,10 @@
 
 <artifact id="AdverseEvent/ctc-adverse-event-example-1" key="AdverseEvent-ctc-adverse-event-example-1" name="ctc-adverse-event-example-1"/>
 <artifact id="AdverseEvent/ctc-adverse-event-example-2" key="AdverseEvent-ctc-adverse-event-example-2" name="ctc-adverse-event-example-2"/>
-<artifact id="AdverseEvent/ctc-adverse-event-anemia-persona-2" key="ctc-adverse-event-anemia-persona-2" name="ctc-adverse-event-anemia-persona-2"/>
+<artifact id="AdverseEvent/ctc-adverse-event-anemia1-persona-2" key="ctc-adverse-event-anemia1-persona-2" name="ctc-adverse-event-anemia1-persona-2"/>
+<artifact id="AdverseEvent/ctc-adverse-event-neutropenia1-persona-2" key="ctc-adverse-event-neutropenia1-persona-2" name="ctc-adverse-event-neutropenia1-persona-2"/>
+<artifact id="AdverseEvent/ctc-adverse-event-neutropenia2-persona-2" key="ctc-adverse-event-neutropenia2-persona-2" name="ctc-adverse-event-neutropenia2-persona-2"/>
+<artifact id="AdverseEvent/ctc-adverse-event-nausea1-persona-2" key="ctc-adverse-event-nausea1-persona-2" name="ctc-adverse-event-nausea1-persona-2"/>
 <artifact id="Bundle/ae-bundle-kaitlyn-compass-trial" key="ae-bundle-kaitlyn-compass-trial" name="ae-bundle-kaitlyn-compass-trial"/>
 <artifact id="Bundle/ae-bundle-persona-2" key="ae-bundle-persona-2" name="ae-bundle-persona-2"/>
 <artifact id="Condition/kaitlyn-primary-cancer-condition-ex1" key="kaitlyn-primary-cancer-condition-ex1" name="kaitlyn-primary-cancer-condition-ex1"/>

@@ -33,3 +33,33 @@ Description: "Extended example: example RN practitioner"
 * gender = #female
 * qualification.code = http://terminology.hl7.org/CodeSystem/v2-0360#RN
 * qualification.code.coding[0].version = "2.7"
+
+Instance: us-core-organization-physician-services-inc
+InstanceOf: USCoreOrganization
+Description: "Extended example: example organization"
+* active = true
+* type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
+* name = "Physician Services, Inc."
+* telecom.system = #phone
+* telecom.value = "999-999-9999"
+* telecom.use = #work
+* address.line = "123 Corporate Drive"
+* address.city = "Anytown"
+* address.state = "MA"
+* address.postalCode = "12345"
+* address.country = "US"
+
+Instance: us-core-organization-acme-laboratory
+InstanceOf: USCoreOrganization
+Description: "Extended example: example organization"
+* active = true
+* type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
+* name = "Acme Laboratory, Inc."
+* telecom.system = #phone
+* telecom.value = "999-999-9999"
+* telecom.use = #work
+* address.line = "123 Corporate Drive"
+* address.city = "Anytown"
+* address.state = "MA"
+* address.postalCode = "12345"
+* address.country = "US"

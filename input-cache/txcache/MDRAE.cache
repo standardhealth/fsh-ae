@@ -79,3 +79,37 @@ v: {
   "error" : "The code \"10028813\" is not valid in the system http://terminology.hl7.org/CodeSystem/MDRAE; The code provided (http://terminology.hl7.org/CodeSystem/MDRAE#10028813) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/MDRAE",
+  "code" : "110028813"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/MDRAE"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code \"110028813\" is not valid in the system http://terminology.hl7.org/CodeSystem/MDRAE; The code provided (http://terminology.hl7.org/CodeSystem/MDRAE#110028813) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/MDRAE",
+  "code" : "10016288"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/MDRAE"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code \"10016288\" is not valid in the system http://terminology.hl7.org/CodeSystem/MDRAE; The code provided (http://terminology.hl7.org/CodeSystem/MDRAE#10016288) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
