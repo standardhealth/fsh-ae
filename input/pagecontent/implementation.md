@@ -58,7 +58,7 @@ This is a set of experimental profiles for representing adverse events (AE). The
 #### Representing Adverse Event Grades
 
 THe NCI CTCAE 5.0 cross-walk table represents grades ranging from 1 to 5 and assigns an NCI concept for each of the NCI terms.
-For simplicity and to better align with MedDRA, this IG does not use the NCI assigned concepts for grade and instead creates a local code system and value set, [ctcae-grade-value-set](http://hl7.org/fhir/us/shrae/ValueSet/ctcae-grade-value-set), to generally represent the CTCAE grades that can be applied across all CTCAE terms.
+For simplicity and to better align with MedDRA, this IG does not use the NCI assigned concepts for grade and instead creates a local code system and value set, [ctcae-grade-value-set](http://hl7.org/fhir/us/codexae/ValueSet/ctcae-grade-value-set), to generally represent the CTCAE grades that can be applied across all CTCAE terms.
 
 Some clinical workflows require that you assert the absence of a solicited adverse event. CTCAE does not contain concepts for a grade 0. 
 

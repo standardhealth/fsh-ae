@@ -1,8 +1,8 @@
-id: hl7.fhir.us.shrae
-canonical: http://hl7.org/fhir/us/shrae
+id: hl7.fhir.us.codexae
+canonical: http://hl7.org/fhir/us/codexae
 version: 0.0.1
-name: HL7FHIRImplementationGuideStandardHealthRecordAdverseEventsRelease1USRealmSTU1
-title: "HL7 FHIR Implementation Guide: Standard Health Record (SHR) Adverse Events
+name: HL7FHIRImplementationGuideCodeXAdverseEventsRelease1USRealmSTU1
+title: "HL7 FHIR Implementation Guide: CodeX Common Terminology Criteria (CTC) Adverse Events
   Release 1 - DRAFT"
 status: draft
 publisher:
@@ -49,7 +49,7 @@ menu:
     All artifacts: "artifacts.html"
   Downloads: downloads.html
   Change Log: change_log.html
-  History: http://hl7.org/fhir/us/shrae/history.html
+  History: http://hl7.org/fhir/us/codexae/history.html
 
 groups:
   Profiles:

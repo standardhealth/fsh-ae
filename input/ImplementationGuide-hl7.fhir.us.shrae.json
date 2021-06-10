@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "hl7.fhir.us.shrae",
-  "url": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.shrae",
+  "id": "hl7.fhir.us.codexae",
+  "url": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.codexae",
   "version": "0.0.1",
   "name": "HL7FHIRImplementationGuideminimalStandardHealthRecordAdverseEvents",
   "title": "HL7 FHIR Implementation Guide: Standard Health Record (SHR) Adverse Events Release 1 - US Realm | STU1",
@@ -34,7 +34,7 @@
       ]
     }
   ],
-  "packageId": "hl7.fhir.us.shrae",
+  "packageId": "hl7.fhir.us.codexae",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
