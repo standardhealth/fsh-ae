@@ -55,6 +55,13 @@ This is a set of experimental profiles for representing adverse events (AE). The
 [Example 1]: AdverseEvent-ctc-adverse-event-example-1.html
 [Example 2]: AdverseEvent-ctc-adverse-event-example-2.html
 
+#### AE Messaging Flow
+
+<!-- If the image below is not wrapped in a div tag, the publisher tries to wrap text around the image, which is not desired. -->
+<div style="text-align: center;">{%include ae-icsr-exchange.svg%}</div>
+<p></p>
+<p></p>
+
 #### Representing Adverse Event Terms and Grades
 
 Adverse events are represented as two concepts:
