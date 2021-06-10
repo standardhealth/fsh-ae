@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="current" defaultWorkgroup="cic" gitUrl="https://github.com/HL7/fhir-mCODE-ig" url="http://hl7.org/fhir/us/shrae">
-<version code="current" url="http://build.fhir.org/ig/HL7/shrae/"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="current" defaultWorkgroup="cic" gitUrl="https://github.com/HL7/fhir-mCODE-ig" url="http://hl7.org/fhir/us/codexae">
+<version code="current" url="http://build.fhir.org/ig/HL7/codexae/"/>
 <version code="0.9.1" deprecated="true"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
@@ -17,10 +17,10 @@
 <artifact id="Bundle/ae-bundle-persona-2" key="ae-bundle-persona-2" name="ae-bundle-persona-2"/>
 <artifact id="Condition/kaitlyn-primary-cancer-condition-ex1" key="kaitlyn-primary-cancer-condition-ex1" name="kaitlyn-primary-cancer-condition-ex1"/>
 <artifact id="CodeSystem/ctcae-grade-code-system" key="CodeSystem-ctcae-grade-code-system" name="CTCAE Grade Code System"/>
-<artifact id="CTCAdverseEvent/ctc-adverse-event-compass-ex1" key="ctc-adverse-event-compass-ex1" name="ctc-adverse-event-compass-ex1"/>
-<artifact id="CTCAdverseEvent/ctc-adverse-event-compass-ex1a" key="ctc-adverse-event-compass-ex1a" name="ctc-adverse-event-compass-ex1a"/>
-<artifact id="CTCAdverseEvent/ctc-adverse-event-compass-ex1b" key="ctc-adverse-event-compass-ex1b" name="ctc-adverse-event-compass-ex1b"/>
-<artifact id="CTCAdverseEvent/ctc-adverse-event-compass-ex2" key="ctc-adverse-event-compass-ex2" name="ctc-adverse-event-compass-ex2"/>
+<artifact id="AdverseEvent/ctc-adverse-event-compass-ex1" key="ctc-adverse-event-compass-ex1" name="ctc-adverse-event-compass-ex1"/>
+<artifact id="AdverseEvent/ctc-adverse-event-compass-ex1a" key="ctc-adverse-event-compass-ex1a" name="ctc-adverse-event-compass-ex1a"/>
+<artifact id="AdverseEvent/ctc-adverse-event-compass-ex1b" key="ctc-adverse-event-compass-ex1b" name="ctc-adverse-event-compass-ex1b"/>
+<artifact id="AdverseEvent/ctc-adverse-event-compass-ex2" key="ctc-adverse-event-compass-ex2" name="ctc-adverse-event-compass-ex2"/>
 <artifact id="Organization/OrganizationExample1" key="Organization-OrganizationExample1" name="OrganizationExample1"/>
 <artifact id="MedicationAdministration/cancer-related-medication-administration-doxorubicin-persona-2" key="cancer-related-medication-administration-doxorubicin-persona-2" name="cancer-related-medication-request-doxorubicin-persona-2"/>
 <artifact id="MedicationAdministration/medication-administration-kadcyla" key="medication-administration-kadcyla" name="medication-administration-kadcyla"/>

@@ -1,26 +1,27 @@
-// Example for Patient Persona #2 - Capturing adverse events in a standard of care regimen.
-
-
 Instance: ae-bundle-persona-2
 InstanceOf: AEPatientBundle
-Usage: #example
+// Usage: #example
 Description: "Extended AdverseEvent example as a Patient Bundle"
-* entry[0].resource = PatientPersona2
-* entry[0].fullUrl = "http://example.org/PatientPersona2"
+* entry[cancerPatient].resource = PatientPersona2
+* entry[cancerPatient].fullUrl = "http://example.org/PatientPersona2"
 * entry[ctcAdverseEvent].resource = ctc-adverse-event-anemia1-persona-2
 * entry[ctcAdverseEvent].fullUrl = "http://example.org/ctc-adverse-event-anemia1-persona-2"
-* entry[+].resource = primary-cancer-condition-persona-2
+* entry[2].resource = primary-cancer-condition-persona-2
 * entry[=].fullUrl = "http://example.org/primary-cancer-condition-persona-2"
 * entry[+].resource = cancer-related-medication-request-doxorubicin-persona-2
 * entry[=].fullUrl = "http://example.org/cancer-related-medication-request-doxorubicin-persona-2"
 * entry[+].resource = cancer-related-medication-administration-doxorubicin-persona-2
 * entry[=].fullUrl = "http://example.org/cancer-related-medication-administration-doxorubicin-persona-2"
+/*
 * entry[+].resource = diagnosticreport-cbc-201-1-persona2
 * entry[=].fullUrl = "http://example.org/diagnosticreport-cbc-201-1-persona2"
 * entry[+].resource = diagnosticreport-cbc-202-1-persona2
 * entry[=].fullUrl = "http://example.org/diagnosticreport-cbc-202-1-persona2"
+* entry[+].resource = encounter-ae1-evaluation-persona2
+* entry[=].fullUrl = "http://example.org/encounter-ae1-evaluation-persona2"
 // * entry[+].resource = clinical-trial-example-soc
 // * entry[=].fullUrl = "http://example.org/clinical-trial-example-soc"
+*/
 
 Instance: PatientPersona2
 InstanceOf: mCodeCancerPatient
@@ -50,16 +51,18 @@ Description: "Example for Patient"
 Instance: ctc-adverse-event-anemia1-persona-2
 InstanceOf: CTCAdverseEvent
 Description: "Anemia grade 2"
-* subject = Reference(Patient/PatientPersona2)
+* subject = Reference(PatientPersona2)
 * event = MEDDRA#10002272  "Anemia"
 * event.coding.version = "20.0"
 * event.text = "Hgb 9.0 per CBC results from 12/21/20"
 * extension[grade].valueCodeableConcept = CTCAEGradeCS#2 "Moderate Adverse Event"
-* recorder = Reference(Practitioner/PractitionerExample1)
+* recorder = Reference(us-core-practitioner-nancy-oncology-nurse)
 * suspectEntity[0].instance = Reference(cancer-related-medication-administration-doxorubicin-persona-2)
 * suspectEntity[0].causality[0].productRelatedness = "probable"
 * extension[expectation].valueCodeableConcept = NCIT#C41333 "Expected Adverse Event"
 * extension[resolvedDate].valueDateTime = "2020-12-21"
+* study = Reference(clinical-trial-example-soc)
+* encounter = Reference(encounter-ae1-evaluation-persona2)
 
 Instance: ctc-adverse-event-neutropenia1-persona-2
 InstanceOf: CTCAdverseEvent
@@ -69,7 +72,7 @@ Description: "Neutropenia grade 3"
 * event.coding.version = "20.0"
 * event.text = "neutropenia 0.7 per CBC results from 12/21/20"
 * extension[grade].valueCodeableConcept = CTCAEGradeCS#3 "Severe Adverse Event"
-* recorder = Reference(Practitioner/PractitionerExample1)
+* recorder = Reference(Practitioner/us-core-practitioner-nancy-oncology-nurse)
 * suspectEntity[0].instance = Reference(cancer-related-medication-administration-doxorubicin-persona-2)
 * suspectEntity[0].causality[0].productRelatedness = "probable"
 * extension[expectation].valueCodeableConcept = NCIT#C41333 "Expected Adverse Event"
@@ -83,7 +86,7 @@ Description: "Nausea grade 1"
 * event.coding.version = "20.0"
 * event.text = "patient reported experiencing nausea on 12/21/20"
 * extension[grade].valueCodeableConcept = CTCAEGradeCS#1 "Mild Adverse Event"
-* recorder = Reference(Practitioner/PractitionerExample1)
+* recorder = Reference(Practitioner/us-core-practitioner-nancy-oncology-nurse)
 * suspectEntity[0].instance = Reference(cancer-related-medication-administration-doxorubicin-persona-2)
 * suspectEntity[0].causality[0].productRelatedness = "probable"
 * extension[expectation].valueCodeableConcept = NCIT#C41333 "Expected Adverse Event"
@@ -98,7 +101,7 @@ Description: "Anemia grade 1"
 * event.coding.version = "20.0"
 * event.text = "Anemia improved with Hgb increase to 10.9 per CBC results from 12/29/20"
 * extension[grade].valueCodeableConcept = CTCAEGradeCS#1 "Mild Adverse Event"
-* recorder = Reference(Practitioner/PractitionerExample1)
+* recorder = Reference(Practitioner/us-core-practitioner-nancy-oncology-nurse)
 * suspectEntity[0].instance = Reference(cancer-related-medication-administration-doxorubicin-persona-2) // is the entity related to the improvement to medication on-hold?
 * suspectEntity[0].causality[0].productRelatedness = "probable" // if grade is 0 (absent) do we still need this field?
 * extension[expectation].valueCodeableConcept = NCIT#C41333 "Expected Adverse Event"
@@ -118,6 +121,15 @@ Description: "Neutropenia grade 0"
 * suspectEntity[0].causality[0].productRelatedness = "probable"
 * extension[expectation].valueCodeableConcept = NCIT#C41333 "Expected Adverse Event"
 * extension[resolvedDate].valueDateTime = "2020-12-29"
+
+Instance: encounter-ae1-evaluation-persona2
+InstanceOf: Encounter
+Description: "Encounter identifying adverse events after A-C cycle 1"
+* status = http://hl7.org/fhir/encounter-status#finished "Finished"
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB "ambulatory"
+* subject = Reference(PatientPersona2)
+* period.start = "2020-12-01"
+* period.end = "2020-12-01"
 
 Instance: primary-cancer-condition-persona-2
 InstanceOf: PrimaryCancerCondition
