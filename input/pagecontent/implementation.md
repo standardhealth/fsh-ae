@@ -55,12 +55,17 @@ This is a set of experimental profiles for representing adverse events (AE). The
 [Example 1]: AdverseEvent-ctc-adverse-event-example-1.html
 [Example 2]: AdverseEvent-ctc-adverse-event-example-2.html
 
-#### Representing Adverse Event Grades
+#### Representing Adverse Event Terms and Grades
 
-THe NCI CTCAE 5.0 cross-walk table represents grades ranging from 1 to 5 and assigns an NCI concept for each of the NCI terms.
+Adverse events are represented as two concepts:
+* **CTCAE term** - The adverse event observed.
+* **CTCAE grade** - A level of severity for the noted CTC adverse event.
+
+MedDRA is the preferred terminology for specifying the **CTCAE term**. NCI CTCAE 5.0 contains a cross-walk between assigned NCI Thesaurus (NCIT) codes and MedDRA lower level terms if there is need to support NCIT instead.
+
 For simplicity and to better align with MedDRA, this IG does not use the NCI assigned concepts for grade and instead creates a local code system and value set, [ctcae-grade-value-set](http://hl7.org/fhir/us/codexae/ValueSet/ctcae-grade-value-set), to generally represent the CTCAE grades that can be applied across all CTCAE terms.
 
-Some clinical workflows require that you assert the absence of a solicited adverse event. CTCAE does not contain concepts for a grade 0. 
+Some clinical workflows require that you assert the absence of a solicited adverse event. The NCI CTCAE 5.0 cross-walk table represents grades ranging from 1 to 5 and CTCAE which ranges from mild to death but does not have a way to assert that a solicited adverse event is absent. This IG specifies an adverse event grade value set with a "grade 0" to represent absence.
 
 #### Terminology Preferences
 
