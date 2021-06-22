@@ -21,30 +21,49 @@
 
 ### Background
 
-The mCODE ICAREdata project has received funding from the Food and Drug Administration (FDA) on the improving data capture and standardization of adverse events. 
+The Integrating Clinical Trials and Real-world Endpoints data (ICAREdata) initiative is a program led by the Alliance Data Innovation Lab which is a component of the Alliance for Clinical Trials in Oncology (Alliance). The [ICAREdata](http://icaredata.org) initiative aims to overcome the challenges of using the electronic health record (EHR) as a method of collecting high quality clinical trials data by developing data structures and data collection methods that accurately report clinical trials data while effectively addressing provider burden. 
 
-The information obtained from subject matter experts, several pre-existing standards, nomenclatures, and guidelines were consulted in the development of this specification, including:
+The ICAREdata project has received funding from the Food and Drug Administration (FDA) for research on improving data capture and standardization of adverse events. Adverse event (AE) reporting is necessary to document any unfavorable and unintended sign, symptom or disease that occurs in a patient who is undergoing a medical treatment or procedure. 
 
-* [CTEP-AERS: Cancer Therapy Evaluation Program Adverse Event Reporting System](https://ctep.cancer.gov/protocolDevelopment/electronic_applications/adverse_events.htm)
+The aims of the ICAREdata AE Reporting use case are:
+* Aim 1: Design and test an mCODE-compatible structured data model for Common Terminology Criteria for Adverse Events (CTCAE) that is imbedded within the EHR.
+* Aim 2: Determine the impact of EHR structured CTCAE data capture on providers, especially the burden of documentation.
+* Aim 3: Design and implement strategies to improve complete and accurate CTCAE data capture via the EHR without the need for human curation by optimizing workflows and system design.
+
+
+### Adverse Event Landscape Survey
+
+The information obtained from subject matter experts, pre-existing standards, nomenclatures, and guidelines were consulted in the development of this specification, including:
+
+* [Cancer Therapy Evaluation Program (CTEP) Adverse Event Reporting System (CTEP-AERS)](https://ctep.cancer.gov/protocolDevelopment/electronic_applications/adverse_events.htm)
 * [FDA Adverse Event Reporting System (FAERS)](https://open.fda.gov/data/faers/)
 * [Health and Human Services (HHS) Vaccine Adverse Event Reporting System (VAERS)](https://vaers.hhs.gov/)
-* [CTCAE 5.0](https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v6_Solicitation_Brief_Overview.pdf)
-* [CTMS Rave User Guide](https://www.theradex.com/downloads/CTMS%20Rave%20User%20Guide%20Version%201.pdf)
+* [Common Terminology Criteria for Adverse Events (CTCAE) 5.0](https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v6_Solicitation_Brief_Overview.pdf)
+* [Clinical Trials Monitoring Service (CTMS) Rave User Guide](https://www.theradex.com/downloads/CTMS%20Rave%20User%20Guide%20Version%201.pdf)
 
-#### Comparison among current HL7 Adverse Event Efforts
+For the ICAREdata AE Reporting use case, the CTCAE 5.0 terminology will be used. It was chosen based on applicability to routine clinical care setting and the ICAREdata project aims. CTCAE are a set of criteria for the standardized classification of adverse effects of drugs used in cancer therapy. Each CTCAE term is mapped to a Medical Dictionary for Regulatory Activities (MedDRA) term and code, and many clinical trials, now extending beyond oncology, encode their observations based on the CTCAE system. 
 
-Several artifacts projects related to Adverse Event reporting are underway at HL7, including:
+#### Adverse Event Reporting Standards
+
+Other reporting standards informing the ICAREdata adverse event work:
+* FDA Individual Case Safety Report (ICSR)
+* National Cancer Institute (NCI) CTCAE:
+  * CTEP reporting via CTMS and Clinical Data Update System (CDUS)
+  * CTEP-AERS
+
+#### HL7 Adverse Event Efforts
+
+Several projects related to Adverse Event reporting are underway at HL7, including:
 * FHIR AdverseEvent core resource maintained by the HL7 Patient Care Working Group
 * [HL7 FHIR Implementation Guide: Profiles for ICSR Transfusion and Vaccination Adverse Event Detection and Reporting](https://build.fhir.org/ig/HL7/fhir-icsr-ae-reporting/branches/main/index.html)
 * [HL7 FHIR to CDISC Joint Mapping Implementation Guide](http://hl7.org/fhir/uv/cdisc-mapping/2021JAN/index.html)
 
 We recognize the need to have a more cohesive effort to create an overarching and collaborative FHIR model that could represent these use cases. While collaborative discussions are underway, this IG distinguishes itself in several ways:
-* a focus on meeting NCI CTEP adverse event reporting requirements.
-* the narrow scoping for oncology-specific clinical trials, especially in support for the CodeX ICAREdata project.
+* A focus on meeting NCI CTEP adverse event reporting requirements.
+* The narrow scoping for oncology-specific clinical trials, especially in support for the CodeX ICAREdata project.
 
 
 ### Actors, Systems, and Use Case Scenarios
-
 
 #### Actors
 
@@ -80,20 +99,12 @@ The following use cases will inform the initial design for this IG:
 
 * **Use Case 3**: A patient experiences an adverse event during or after the administration a given drug, vaccine, or biological product (e.g.: drug transfusion). The provider records the adverse event per healthcare organization patient safety policies.
 
+The ICAREdata AE Reporting use case does not prescribe a workflow for AE collection, rather, it defines a representative EHR-based AE workflow to assist in identifying the key CTCAE information captured when documenting AEs. This representative workflow is used to inform the CTCAE data model defined in this IG. The AE collection workflow is described in a separate document. <!-- add link to workflow document -->
 
 <!-- If the image below is not wrapped in a div tag, the publisher tries to wrap text around the image, which is not desired. -->
 <div style="text-align: center;">{%include ae-icsr-exchange.svg%}</div>
 <p></p>
 <p></p>
-
-### Adverse Event Reporting Standards
-
-Other reporting standards informing the ICAREdata adverse event work:
-* FDA Individual Case Safety Report (ICSR)
-* National Cancer Institute CTCAE:
-  * CTEP reporting via the Clinical Trial Monitoring System (CTMS) and Clinical Data Update System (CDUS)
-  * CTEP Adverse Event Reporting System (CTEP-AERS)
-
 
 ### Disclaimers and Known Limitations
 
