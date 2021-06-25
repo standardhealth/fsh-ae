@@ -1,3 +1,5 @@
-### SHR Adverse Event Ballot Version (TBD 2021) 
+### CTC Adverse Event Version Changes
 
-**TBD**
+**Version 0.1**
+* Initial draft version
+

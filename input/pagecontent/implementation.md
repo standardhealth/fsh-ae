@@ -101,7 +101,7 @@ Adverse events are represented as two concepts:
 
 MedDRA is the preferred terminology for specifying the **CTCAE term**. NCI CTCAE 5.0 contains a cross-walk between assigned NCI Thesaurus (NCIT) codes and MedDRA lower level terms if there is need to support NCIT instead.
 
-For simplicity and to better align with MedDRA, this IG does not use the NCI assigned concepts for grade and instead creates a local code system and value set, [ctcae-grade-value-set](http://hl7.org/fhir/us/codexae/ValueSet/ctcae-grade-value-set), to generally represent the CTCAE grades that can be applied across all CTCAE terms.
+For simplicity and to better align with MedDRA, this IG does not use the NCI assigned concepts for grade and instead creates a local code system and value set, [ctcae-grade-value-set](http://hl7.org/fhir/us/ctcae/ValueSet/ctcae-grade-value-set), to generally represent the CTCAE grades that can be applied across all CTCAE terms.
 
 Some clinical workflows require that you assert the absence of a solicited adverse event. The NCI CTCAE 5.0 cross-walk table represents grades ranging from 1 to 5 and CTCAE which ranges from mild to death but does not have a way to assert that a solicited adverse event is absent. This IG specifies an adverse event grade value set with a "grade 0" to represent absence.
 

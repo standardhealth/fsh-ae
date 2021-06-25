@@ -120,13 +120,13 @@ This IG was authored by the MITRE Corporation using [FHIR Shorthand (FSH)](http:
 ### Contact Information
 
 
-| **Co-Editor:**         | May Terry<br>MITRE Corporation<br>[mayt@mitre.org] |
-| **Co-Editor:**         | Michelle Casagni<br>MITRE Corporation<br>[mcasagni@mitre.org]
+| **Co-Editor:**         | Michelle Casagni<br>MITRE Corporation<br>[mcasagni@mitre.org]  |
 | **Co-Editor:**         | Mark Kramer<br>MITRE Corporation<br>[mkramer@mitre.org]          |
+| **Co-Editor:**         | May Terry<br>MITRE Corporation<br>[mayt@mitre.org] |
 
-[mayt@mitre.org]: mailto:mayt@mitre.org
 [mcasagni@mitre.org]: mailto:mcasagni@mitre.org
 [mkramer@mitre.org]: mailto:mkramer@mitre.org
+[mayt@mitre.org]: mailto:mayt@mitre.org
 
 MITRE: Approved for Public Release. Distribution Unlimited. Case Number 16-1988
 

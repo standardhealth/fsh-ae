@@ -1,13 +1,13 @@
 {
   "package-id": "hl7.fhir.us.codexctcae",
-  "canonical": "http://hl7.org/fhir/us/codexae",
-  "title": "HL7 FHIR Implementation Guide: Common Oncology Data Elements(CodeX) Adverse Events Release 1 - US Realm | STU1",
-  "introduction": "CodeX Common Terminology Criteria (CTC) Adverse Events",
+  "canonical": "http://hl7.org/fhir/us/ctcae",
+  "title": "HL7 FHIR Implementation Guide: Common Terminology Criteria (CTC) Adverse Events Release 1 - US Realm | STU1",
+  "introduction": "Common Terminology Criteria (CTC) Adverse Events",
   "list": [
     {
       "version": "current",
       "desc": "Continuous Integration Build (latest in version control)",
-      "path": "http://build.fhir.org/ig/HL7/Codexae/",
+      "path": "http://build.fhir.org/ig/HL7/ctcae/",
       "status": "draft",
       "current": true
     }
