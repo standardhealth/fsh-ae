@@ -7,7 +7,7 @@ Description: "Profile of adverse event, using Common Terminology Criteria (CTC).
 * ^experimental = true
 * obeys adverse-event-grade-zero-invariant
 * subject only Reference(CancerPatient)
-* subject and date and outcome and recorder and actuality and study MS 
+* subject and date and outcome and recorder and actuality and encounter and study MS 
 * actuality = #actual
 // ------Event-----
 * event 1..1 MS

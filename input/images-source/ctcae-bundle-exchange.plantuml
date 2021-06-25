@@ -1,0 +1,14 @@
+@startuml
+skinparam defaultFontName Arial
+
+title CTC Adverse Event Bundle Exchange
+hide footbox
+participant "CTCAE Data Receiver" as Receiver
+participant "CTCAE Data Sender" as Sender
+
+group CTC AdverseEvent Exchange
+    "Receiver" -> "Sender" : ""POST [base]/AEBundle""
+    "Sender" --> "Receiver" : HTTP response 200 containing AEBundle instance with assigned FHIR ID.
+end
+
+@enduml
