@@ -1,8 +1,8 @@
-id: hl7.fhir.us.codexae
-canonical: http://hl7.org/fhir/us/codexae
+id: hl7.fhir.us.ctcae
+canonical: http://hl7.org/fhir/us/ctcae
 version: 0.0.1
-name: HL7FHIRImplementationGuideCodeXAdverseEventsRelease1USRealmSTU1
-title: "HL7 FHIR Implementation Guide: CodeX Common Terminology Criteria (CTC) Adverse Events
+name: HL7FHIRImplementationGuideCTCAdverseEventsRelease1USRealmSTU1
+title: "HL7 FHIR Implementation Guide: Common Terminology Criteria (CTC) Adverse Events
   Release 1 - DRAFT"
 status: draft
 publisher:
@@ -49,7 +49,7 @@ menu:
     All artifacts: "artifacts.html"
   Downloads: downloads.html
   Change Log: change_log.html
-  History: http://hl7.org/fhir/us/codexae/history.html
+  History: http://hl7.org/fhir/us/ctcae/history.html
 
 groups:
   Profiles:
