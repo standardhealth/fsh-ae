@@ -26,11 +26,10 @@ The data elements identified in this process were modeled using [FHIR Shorthand 
 
 The CTC Adverse Event model was informed by data elements identified in the Adverse Event Clinical Workflow document in the context of the current FHIR Adverse Event base resource. The conceptual organization of an individual CTC adverse event in context of FHIR elements is illustrated below.
 
-<!-- **** TO DO **** update with latest mCODE diagram. -->
-
 <div style="text-align: center;">
 <img src="mCODE-CTCAE-ConceptModel.svg" alt="CTC Adverse Event Logical Model" />
 </div>
+
 
 #### Compatibility and Conformance with mCODE
 
@@ -79,13 +78,20 @@ This is a set of experimental profiles for representing adverse events (AE). The
 [Example 1]: AdverseEvent-ctc-adverse-event-example-1.html
 [Example 2]: AdverseEvent-ctc-adverse-event-example-2.html
 
-#### AE Messaging Flow
+#### CTC AE Messaging Flow
+
+The implementation can support either sending an individual CTC adverse event resource, or as part of an AE bundle. Messaging flows in both cases are shown below:
 
 <!-- If the image below is not wrapped in a div tag, the publisher tries to wrap text around the image, which is not desired. -->
-<div style="text-align: center;">{%include ae-icsr-exchange.svg%}</div>
+<div style="text-align: center;">{%include ctcae-exchange.svg%}</div>
 <p></p>
 <p></p>
+
 <!-- **** TO DO **** include a second PlantUML file which exchanges a bundle. We need 2 of them since the adverse event resource can be requested on its own without a bundle. -->
+<div style="text-align: center;">{%include ctcae-bundle-exchange.svg%}</div>
+<p></p>
+<p></p>
+
 
 #### Representing Adverse Event Terms and Grades
 
