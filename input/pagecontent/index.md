@@ -101,11 +101,6 @@ The following use cases will inform the initial design for this IG:
 
 The ICAREdata AE Reporting use case does not prescribe a workflow for AE collection, rather, it defines a representative EHR-based AE workflow to assist in identifying the key CTCAE information captured when documenting AEs. This representative workflow is used to inform the CTCAE data model defined in this IG. The AE collection workflow is described in a separate document. <!-- add link to workflow document -->
 
-<!-- If the image below is not wrapped in a div tag, the publisher tries to wrap text around the image, which is not desired. -->
-<div style="text-align: center;">{%include ae-icsr-exchange.svg%}</div>
-<p></p>
-<p></p>
-
 ### Disclaimers and Known Limitations
 
 This implementation guide (IG) is a Domain of Knowledge IG. The purpose of this IG is to show how to represent clinical concepts generally, not to have a complete set of agreements for interoperable exchanges.

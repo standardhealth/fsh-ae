@@ -7,22 +7,46 @@ This page contains miscellaneous information on modeling and FHIR implementation
 The following topics are addressed:
 
 * [Understanding this Guide](#understanding-this-guide)
-* [Adverse Event Artifacts](#adverse-event-artifacts)
+* [Concept Model](#concept-model)
+* [Artifacts](#artifacts)
 * [Representing Adverse Event Grades](#representing-adverse-event-grades)
 * [Terminology Preferences](#terminology-preferences)
 * [Representing Provenance](#representing-provenance)
 
 #### Understanding this Guide
 
-The SHR Adverse Event Implementation Guide was developed using the standard HL7 FHIR publishing tools. The page layouts and symbols are explained [in the FHIR documentation](https://www.hl7.org/fhir/formats.html).
+The CTC Adverse Event Implementation Guide was developed using the standard HL7 FHIR publishing tools. The page layouts and symbols are explained [in the FHIR documentation](https://www.hl7.org/fhir/formats.html).
 
 Each profile is shown in multiple views. The "Differential Table" view represents the difference between the current profile and its base resource or profile. When interpreting this view, bear in mind that the immediate parent may not be a base FHIR resource, but it could be a US Core profile or another profile in this guide.
 
 The data elements identified in this process were modeled using [FHIR Shorthand (FSH)](http://build.fhir.org/ig/HL7/fhir-shorthand/) and [SUSHI](https://github.com/FHIR/sushi) and exported as FHIR Profiles. [The profiles](artifacts.html#2), related FHIR artifacts, and other [technical implementation information](implementation.html), constitute the bulk of this IG. 
 
-#### Adverse Event Artifacts
 
-This is a set of experimental profiles for representing adverse events (AE). The definitions are FHIR interpretation of Common Terminology Criteria (CTC). The profiles and value sets and are intended to give minimal and sufficient information for CTCAE reporting.
+#### Concept Model
+
+The CTC Adverse Event model was informed by data elements identified in the Adverse Event Clinical Workflow document in the context of the current FHIR Adverse Event base resource. The conceptual organization of an individual CTC adverse event in context of FHIR elements is illustrated below.
+
+<!-- **** TO DO **** update with latest mCODE diagram. -->
+
+<div style="text-align: center;">
+<img src="mCODE-CTCAE-ConceptModel.svg" alt="CTC Adverse Event Logical Model" />
+</div>
+
+#### Compatibility and Conformance with mCODE
+
+The [CTCAdverseEvent] profile can exist independently as a profile reference or derived by other FHIR implementation guides like mCODE. However, to ensure that the AE receiver in our use case receives an adverse event in the context of mCODE, this IG further specifies a [AEPatientBundle] which is derived from mCODE. It is further specified as an _open_ bundle which allows the existence of other FHIR profiles and base resources, although the AE receiver is not required to process those resources but allows for the flexibility of the receiver to either process all entries inside a bundle for comprehensiveness or to just retrieve the minimal and necessary set of bundle entries which support a CTC adverse event.
+
+Alternatively, the mCODE bundle is also specified as an open bundle and can accept additional resources, including and adverse event although it is not required. This is why we recommend the specification of a CT adverse event bundle.
+
+An illustration of this relationship is shown below:
+
+<div style="text-align: center;">
+<img src="AE-mCODE-Bundle.svg" alt="CTC Adverse Event Bundle Relationship to mCODE and FHIR base resources" />
+</div>
+
+
+#### Artifacts
+This is a set of experimental profiles for representing adverse events (AE). The definitions are FHIR interpretation of Common Terminology Criteria (CTC). The profiles and value sets and are intended to give minimal and sufficient information for CTCAE reporting. A summary table is shown below with a more detailed summary available in the [Artifacts](artifacts.html) page.
 
 | Type       | Name                            | Description                    | Example             |
 | ---------- | ------------------------------- | -----------------------------  | ------------------- |
@@ -61,6 +85,7 @@ This is a set of experimental profiles for representing adverse events (AE). The
 <div style="text-align: center;">{%include ae-icsr-exchange.svg%}</div>
 <p></p>
 <p></p>
+<!-- **** TO DO **** include a second PlantUML file which exchanges a bundle. We need 2 of them since the adverse event resource can be requested on its own without a bundle. -->
 
 #### Representing Adverse Event Terms and Grades
 
@@ -82,7 +107,7 @@ Value sets from the FHIR specification and US Core were reused to the extent pos
 
 Relevant CTEP codes and values are listed [here](https://ctep.cancer.gov/protocoldevelopment/codes_values.htm).
 
-The CTCAE Adverse Event reporting is based on CTCAE 5.0 and corresponds to MedDRA version 20.1. The CTCAE terms for the CTCAETermVS defined in this IG includes the codes for the NCI Preferred Terms and the MedDRA LLT (Lowest Level Terms) that map to the CTCAE terms as defined in https://evs.nci.nih.gov/ftp1/CTCAE/CTCAE_5.0/NCIt_CTCAE_5.0.xlsx.
+The CTCAE Adverse Event reporting is based on CTCAE 5.0 and corresponds to MedDRA version 20.1. The CTCAE terms for the CTCAETermVS defined in this IG includes the codes for the NCI Preferred Terms and the MedDRA LLT (Lowest Level Terms) that map to the CTCAE terms as defined in the [NCI CTCAE Cross-walk](https://evs.nci.nih.gov/ftp1/CTCAE/CTCAE_5.0/NCIt_CTCAE_5.0.xlsx).
 
 #### Representing Provenance
 
