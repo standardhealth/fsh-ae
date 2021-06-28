@@ -21,15 +21,7 @@
 
 ### Background
 
-The Integrating Clinical Trials and Real-world Endpoints data (ICAREdata) initiative is a program led by the Alliance Data Innovation Lab which is a component of the Alliance for Clinical Trials in Oncology (Alliance). The [ICAREdata](http://icaredata.org) initiative aims to overcome the challenges of using the electronic health record (EHR) as a method of collecting high quality clinical trials data by developing data structures and data collection methods that accurately report clinical trials data while effectively addressing provider burden. 
-
-The ICAREdata project has received funding from the Food and Drug Administration (FDA) for research on improving data capture and standardization of adverse events. Adverse event (AE) reporting is necessary to document any unfavorable and unintended sign, symptom or disease that occurs in a patient who is undergoing a medical treatment or procedure. 
-
-The aims of the ICAREdata AE Reporting use case are:
-* Aim 1: Design and test an mCODE-compatible structured data model for Common Terminology Criteria for Adverse Events (CTCAE) that is imbedded within the EHR.
-* Aim 2: Determine the impact of EHR structured CTCAE data capture on providers, especially the burden of documentation.
-* Aim 3: Design and implement strategies to improve complete and accurate CTCAE data capture via the EHR without the need for human curation by optimizing workflows and system design.
-
+Adverse event (AE) reporting is necessary to document any unfavorable and unintended sign, symptom or disease that occurs in a patient who is undergoing a medical treatment or procedure. The Common Terminology Criteria for Adverse Events (CTCAE) are a set of criteria for the standardized classification of adverse effects of drugs used in cancer therapy. The CTCAE 5.0 terminology will be used for this Implementation Guide. CTCAE are a set of criteria for the standardized classification of adverse effects of drugs used in cancer therapy. Each CTCAE term is mapped to a Medical Dictionary for Regulatory Activities (MedDRA) term and code, and many clinical trials encode their observations based on the CTCAE system. 
 
 ### Adverse Event Landscape Survey
 
@@ -41,11 +33,9 @@ The information obtained from subject matter experts, pre-existing standards, no
 * [Common Terminology Criteria for Adverse Events (CTCAE) 5.0](https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v6_Solicitation_Brief_Overview.pdf)
 * [Clinical Trials Monitoring Service (CTMS) Rave User Guide](https://www.theradex.com/downloads/CTMS%20Rave%20User%20Guide%20Version%201.pdf)
 
-For the ICAREdata AE Reporting use case, the CTCAE 5.0 terminology will be used. It was chosen based on applicability to routine clinical care setting and the ICAREdata project aims. CTCAE are a set of criteria for the standardized classification of adverse effects of drugs used in cancer therapy. Each CTCAE term is mapped to a Medical Dictionary for Regulatory Activities (MedDRA) term and code, and many clinical trials, now extending beyond oncology, encode their observations based on the CTCAE system. 
-
 #### Adverse Event Reporting Standards
 
-Other reporting standards informing the ICAREdata adverse event work:
+Other reporting standards informing the adverse event work:
 * FDA Individual Case Safety Report (ICSR)
 * National Cancer Institute (NCI) CTCAE:
   * CTEP reporting via CTMS and Clinical Data Update System (CDUS)
@@ -60,7 +50,7 @@ Several projects related to Adverse Event reporting are underway at HL7, includi
 
 We recognize the need to have a more cohesive effort to create an overarching and collaborative FHIR model that could represent these use cases. While collaborative discussions are underway, this IG distinguishes itself in several ways:
 * A focus on meeting NCI CTEP adverse event reporting requirements.
-* The narrow scoping for oncology-specific clinical trials, especially in support for the CodeX ICAREdata project.
+* The narrow scoping for oncology-specific clinical trials, especially in support for mCODE compatible AE reporting.
 
 
 ### Actors, Systems, and Use Case Scenarios
@@ -76,7 +66,7 @@ There are multiple actors recognized in this IG including:
 
 #### Systems
 
-The current ICAREdata pilot environment driving this IG is likely representative of multiple environments seeking to better integrate adverse event data captured from an electronic health record (EHR) with that of a dedicated reporting system for reporting adverse events to a monitoring organization like CTEP. 
+The current pilot environment driving this IG is likely representative of multiple environments seeking to better integrate adverse event data captured from an electronic health record (EHR) with that of a dedicated reporting system for reporting adverse events to a monitoring organization like CTEP. 
 
 The systems considered in this IG include:
 
@@ -86,7 +76,7 @@ The systems considered in this IG include:
 The diagram below shows one example where several Alliance for Clinical Trials (ACT) sites could use one or more forms used for the capture of adverse events.
 
 <div style="text-align: center;">
-<img src="CTEP-CTReporting-SystemsDiagram.png" alt="CTEP Reporting" />
+<img src="CTEP-CTReporting-SystemsDiagram.png" alt="CTEP Reporting" width="600" height="400" />
 </div>
 
 #### Clinical Use Cases
@@ -95,11 +85,7 @@ The following use cases will inform the initial design for this IG:
 
 * **Use Case 1**: A clinical research coordinator or principal investigator submits an electronic Case Report Form for clinical trial patient receiving a treatment and experiences one or more adverse events (AE).
 
-* **Use Case 2**: A clinical research coordinator or principal investigator submits an Individual Case Safety Report (ICSR) after a patient receiving a drug or vaccine treatment either during a clinical trial or after a period of time following the market approval and release of said treatment.
-
-* **Use Case 3**: A patient experiences an adverse event during or after the administration a given drug, vaccine, or biological product (e.g.: drug transfusion). The provider records the adverse event per healthcare organization patient safety policies.
-
-The ICAREdata AE Reporting use case does not prescribe a workflow for AE collection, rather, it defines a representative EHR-based AE workflow to assist in identifying the key CTCAE information captured when documenting AEs. This representative workflow is used to inform the CTCAE data model defined in this IG. The AE collection workflow is described in a separate document. <!-- add link to workflow document -->
+* **Use Case 2**: A patient experiences an adverse event during or after the administration a given drug, vaccine, or biological product (e.g.: drug transfusion). The provider records the adverse event per healthcare organization patient safety policies.
 
 ### Disclaimers and Known Limitations
 
@@ -107,7 +93,7 @@ This implementation guide (IG) is a Domain of Knowledge IG. The purpose of this 
 
 * This IG focus is narrowly scoped to only _the adverse reporting section_ and directly relevant relationships of an adverse event.  It does not attempt to model all of the metadata found in a Case Report Form (CRF) or the entire format of the entire trials report conformant with the NCI Clinical Trials Monitoring Service (CTMS). 
 * This IG focuses on CTCAE terms as the reference for AE terms and grades. MedDRA, while recognized, is scoped to only those MedDRA lower-level terms (LLT) for which there is a CTCAE 5.0 mapping.
-* References to mCODE artifacts, where applicable, are to [mCODE v1.5 FHIR IG (STU2)](http://build.fhir.org/ig/HL7/fhir-mCODE-ig/branches/master/index.html) currently targeted for the HL7 May 2021 ballot.
+* References to mCODE artifacts, where applicable, are to [mCODE v1.16.0 FHIR IG (STU2)](http://hl7.org/fhir/us/mcode/2021may/index.html).
 * CTCAE 6.0, currently in early draft development, is out of scope.
 * The following standards, while noted, will not be the focus of this IG version: CTEP Adverse Event Reporting System (AdEERS), and CDISC adverse event reporting in CDASH and SDTM.
 
