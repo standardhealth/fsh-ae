@@ -6,7 +6,7 @@ Description: "A collection of data for a patient and includes adverse events."
 * type  = #collection
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
-* entry ^slicing.rules = #closed
+* entry ^slicing.rules = #open
 * entry ^slicing.description = "Slicing based on the profile conformance of the sliced element"
 
 
