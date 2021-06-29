@@ -23,6 +23,12 @@
 
 Adverse event (AE) reporting is necessary to document any unfavorable and unintended sign, symptom or disease that occurs in a patient who is undergoing a medical treatment or procedure. The Common Terminology Criteria for Adverse Events (CTCAE) are a set of criteria for the standardized classification of adverse effects of drugs used in cancer therapy. The CTCAE 5.0 terminology will be used for this Implementation Guide. CTCAE are a set of criteria for the standardized classification of adverse effects of drugs used in cancer therapy. Each CTCAE term is mapped to a Medical Dictionary for Regulatory Activities (MedDRA) term and code, and many clinical trials encode their observations based on the CTCAE system. 
 
+The collection of adverse events differs across institutions and there are separate workflows for the capture of adverse events in clinical trials depending on the role. Clinical trial coordinators oftentimes abstract or transcribe relevant elements for trials reporting. In many cases, this results in duplicative efforts in a form that is not easily exchangeable.
+
+It is currently not possible to assess treatment-associated adverse events reliably using electronic health record (EHR) data. Advantages of properly structured EHR data include creating a single data input system, which maximizes efficiency, reduces cost, and eliminates errors associated with double data entry and transcriptions from one data collection system to another.
+
+The CTC Adverse Event is a minimal common oncology data elements (mCODE) compatible structured data model to support embedding CTCAE reporting within the EHR.
+
 ### Adverse Event Landscape Survey
 
 The information obtained from subject matter experts, pre-existing standards, nomenclatures, and guidelines were consulted in the development of this specification, including:
@@ -66,7 +72,9 @@ There are multiple actors recognized in this IG including:
 
 #### Systems
 
-The current pilot environment driving this IG is likely representative of multiple environments seeking to better integrate adverse event data captured from an electronic health record (EHR) with that of a dedicated reporting system for reporting adverse events to a monitoring organization like CTEP. 
+One use case currently driving this IG is the Integrating Clinical Trials and Real-world Endpoints data (ICAREdata) initiative sponsored by the Alliance for Clinical Trials in Oncology. It aims to overcome the challenges of using the EHR as a method of collecting high quality clinical trials data by developing data structures and data collection methods that accurately report clinical trials data while effectively addressing provider burden. The approach to testing ICAREdata methods will also be used for adverse event reporting. The ICAREdata Adverse Event Reporting use case will test this mCODE-compatible structured data model for the CTCAE.
+
+The ICAREdata pilot environment is likely representative of multiple environments seeking to better integrate adverse event data captured from an electronic health record (EHR) with that of a dedicated reporting system for reporting adverse events to a monitoring organization like CTEP. 
 
 The systems considered in this IG include:
 
@@ -93,7 +101,7 @@ This implementation guide (IG) is a Domain of Knowledge IG. The purpose of this 
 
 * This IG focus is narrowly scoped to only _the adverse reporting section_ and directly relevant relationships of an adverse event.  It does not attempt to model all of the metadata found in a Case Report Form (CRF) or the entire format of the entire trials report conformant with the NCI Clinical Trials Monitoring Service (CTMS). 
 * This IG focuses on CTCAE terms as the reference for AE terms and grades. MedDRA, while recognized, is scoped to only those MedDRA lower-level terms (LLT) for which there is a CTCAE 5.0 mapping.
-* References to mCODE artifacts, where applicable, are to [mCODE v1.16.0 FHIR IG (STU2)](http://hl7.org/fhir/us/mcode/2021may/index.html).
+* References to mCODE artifacts, where applicable, are to [mCODE v1.16.0 FHIR IG (STU2)](https://hl7.org/fhir/us/mcode/2021May/).
 * CTCAE 6.0, currently in early draft development, is out of scope.
 * The following standards, while noted, will not be the focus of this IG version: CTEP Adverse Event Reporting System (AdEERS), and CDISC adverse event reporting in CDASH and SDTM.
 

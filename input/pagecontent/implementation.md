@@ -9,7 +9,7 @@ The following topics are addressed:
 * [Understanding this Guide](#understanding-this-guide)
 * [Concept Model](#concept-model)
 * [Artifacts](#artifacts)
-* [Representing Adverse Event Grades](#representing-adverse-event-grades)
+* [Representing Adverse Event Grades](#representing-adverse-event-terms-and-grades)
 * [Terminology Preferences](#terminology-preferences)
 * [Representing Provenance](#representing-provenance)
 
@@ -24,7 +24,7 @@ The data elements identified in this process were modeled using [FHIR Shorthand 
 
 #### Concept Model
 
-The CTC Adverse Event model was informed by data elements identified in the Adverse Event Clinical Workflow document in the context of the current FHIR Adverse Event base resource. The conceptual organization of an individual CTC adverse event in context of FHIR elements is illustrated below.
+The CTC Adverse Event model was informed by data elements identified in an adverse event collection workflow from a vendor based EHR. The conceptual organization of an individual CTC adverse event in the context of FHIR resources and elements is illustrated below.
 
 <div style="text-align: center;">
 <img src="mCODE-CTCAE-ConceptModel.svg" alt="CTC Adverse Event Logical Model" />
@@ -33,9 +33,9 @@ The CTC Adverse Event model was informed by data elements identified in the Adve
 
 #### Compatibility and Conformance with mCODE
 
-The [CTCAdverseEvent] profile can exist independently as a profile reference or derived by other FHIR implementation guides like mCODE. However, to ensure that the AE receiver in our use case receives an adverse event in the context of mCODE, this IG further specifies a [AEPatientBundle] which is derived from mCODE. It is further specified as an _open_ bundle which allows the existence of other FHIR profiles and base resources, although the AE receiver is not required to process those resources but allows for the flexibility of the receiver to either process all entries inside a bundle for comprehensiveness or to just retrieve the minimal and necessary set of bundle entries which support a CTC adverse event.
+The [CTCAdverseEvent] profile can exist independently as a profile reference or derived by other FHIR implementation guides like mCODE. However, to ensure that the AE receiver in our use case receives an adverse event in the context of mCODE, this IG further specifies a [AEPatientBundle] which is dependent on mCODE. It is further specified as an _open_ bundle which allows the existence of other FHIR profiles and base resources, although the AE receiver is not required to process those resources. It allows for the flexibility of the receiver to either process all entries inside a bundle for comprehensiveness or to just retrieve the minimal and necessary set of bundle entries which support a CTC adverse event.
 
-Alternatively, the mCODE bundle is also specified as an open bundle and can accept additional resources, including and adverse event although it is not required. This is why we recommend the specification of a CT adverse event bundle.
+Alternatively, the mCODE bundle is also specified as an open bundle and can accept additional resources, including an adverse event although it is not required. This is why we recommend the specification of a CT adverse event bundle.
 
 An illustration of this relationship is shown below:
 
@@ -101,7 +101,7 @@ Adverse events are represented as two concepts:
 
 MedDRA is the preferred terminology for specifying the **CTCAE term**. NCI CTCAE 5.0 contains a cross-walk between assigned NCI Thesaurus (NCIT) codes and MedDRA lower level terms if there is need to support NCIT instead.
 
-For simplicity and to better align with MedDRA, this IG does not use the NCI assigned concepts for grade and instead creates a local code system and value set, [ctcae-grade-value-set](http://hl7.org/fhir/us/ctcae/ValueSet/ctcae-grade-value-set), to generally represent the CTCAE grades that can be applied across all CTCAE terms.
+For simplicity and to better align with MedDRA, this IG does not use the NCI assigned concepts for grade and instead creates a local code system and value set, [ctcae-grade-value-set](ValueSet-ctcae-grade-value-set.html), to generally represent the CTCAE grades that can be applied across all CTCAE terms.
 
 Some clinical workflows require that you assert the absence of a solicited adverse event. The NCI CTCAE 5.0 cross-walk table represents grades ranging from 1 to 5 and CTCAE which ranges from mild to death but does not have a way to assert that a solicited adverse event is absent. This IG specifies an adverse event grade value set with a "grade 0" to represent absence.
 
