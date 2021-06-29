@@ -7,7 +7,7 @@ participant "CTCAE Data Receiver" as Receiver
 participant "CTCAE Data Sender" as Sender
 
 group CTC AdverseEvent Exchange
-    "Receiver" -> "Sender" : ""POST [base]/CTCAdverseEvent""
+    "Receiver" -> "Sender" : ""GET [base]/CTCAdverseEvent""
     "Sender" --> "Receiver" : HTTP response 200 containing CTCAdverseEvent instance with assigned FHIR ID
 end
 
