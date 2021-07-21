@@ -50,6 +50,7 @@ Usage: #example
 // Instance: Inline-Instance-for-202-1
 Instance: diagnosticreport-cbc-202-1-persona2
 InstanceOf: DiagnosticReport
+Description: "CBC Diagnostic Report"
 // Usage: #inline
 * id = "202"
 * meta.tag = $workflow-codes#01 "Needs Review"
@@ -85,6 +86,7 @@ InstanceOf: DiagnosticReport
 
 Instance: r202-1
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#718-7 "Hemoglobin [Mass/volume] in Blood"
@@ -97,6 +99,7 @@ InstanceOf: Observation
 
 Instance: r202-2
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#789-8 "Erythrocytes [#/volume] in Blood by Automated count"
@@ -109,6 +112,7 @@ InstanceOf: Observation
 
 Instance: r202-3
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#4544-3 "Hematocrit [Volume Fraction] of Blood by Automated count"
@@ -125,6 +129,7 @@ InstanceOf: Observation
 
 Instance: r202-4
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#787-2 "MCV [Entitic volume] by Automated count"
@@ -138,6 +143,7 @@ InstanceOf: Observation
 
 Instance: r202-5
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#785-6 "MCH [Entitic mass] by Automated count"
@@ -151,6 +157,7 @@ InstanceOf: Observation
 
 Instance: r202-6
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#777-3 "Platelets [#/volume] in Blood by Automated count"
@@ -163,6 +170,7 @@ InstanceOf: Observation
 
 Instance: r202-7
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#6690-2 "Leukocytes [#/volume] in Blood by Automated count"
@@ -175,6 +183,7 @@ InstanceOf: Observation
 
 Instance: r202-8
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#770-8 "Neutrophils/100 leukocytes in Blood by Automated count"
@@ -185,6 +194,7 @@ InstanceOf: Observation
 
 Instance: r202-9
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#751-8 "Neutrophils [#/volume] in Blood by Automated count"
@@ -198,6 +208,7 @@ InstanceOf: Observation
 
 Instance: r202-10
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#736-9 "Lymphocytes/100 leukocytes in Blood by Automated count"
@@ -208,6 +219,7 @@ InstanceOf: Observation
 
 Instance: r202-11
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#731-0 "Lymphocytes [#/volume] in Blood by Automated count"
@@ -221,6 +233,7 @@ InstanceOf: Observation
 
 Instance: r202-12
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#5905-5 "Monocytes/100 leukocytes in Blood by Automated count"
@@ -231,6 +244,7 @@ InstanceOf: Observation
 
 Instance: r202-13
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#742-7 "Monocytes [#/volume] in Blood by Automated count"
@@ -243,6 +257,7 @@ InstanceOf: Observation
 
 Instance: r202-14
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#713-8 "Eosinophils/100 leukocytes in Blood by Automated count"
@@ -253,6 +268,7 @@ InstanceOf: Observation
 
 Instance: r202-15
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#711-2 "Eosinophils [#/volume] in Blood by Automated count"
@@ -266,6 +282,7 @@ InstanceOf: Observation
 
 Instance: r202-16
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#706-2 "Basophils/100 leukocytes in Blood by Automated count"
@@ -276,6 +293,7 @@ InstanceOf: Observation
 
 Instance: r202-17
 InstanceOf: Observation
+Description: "CBC observation"
 // Usage: #inline
 * status = #final
 * code = $loinc#704-7 "Basophils [#/volume] in Blood by Automated count"
