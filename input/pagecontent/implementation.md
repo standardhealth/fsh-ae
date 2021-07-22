@@ -33,15 +33,7 @@ The CTC Adverse Event model was informed by data elements identified in an adver
 
 #### Compatibility and Conformance with mCODE
 
-The [CTCAdverseEvent] profile can exist independently as a profile reference or derived by other FHIR implementation guides like mCODE. However, to ensure that the AE receiver in our use case receives an adverse event in the context of mCODE, this IG further specifies a [AEPatientBundle] which is dependent on mCODE. It is further specified as an _open_ bundle which allows the existence of other FHIR profiles and base resources, although the AE receiver is not required to process those resources. It allows for the flexibility of the receiver to either process all entries inside a bundle for comprehensiveness or to just retrieve the minimal and necessary set of bundle entries which support a CTC adverse event.
-
-Alternatively, the mCODE bundle is also specified as an open bundle and can accept additional resources, including an adverse event although it is not required. This is why we recommend the specification of a CT adverse event bundle.
-
-An illustration of this relationship is shown below:
-
-<div style="text-align: center;">
-<img src="AE-mCODE-Bundle.svg" alt="CTC Adverse Event Bundle Relationship to mCODE and FHIR base resources" />
-</div>
+The [CTCAdverseEvent] profile can exist independently as a profile reference or derived by other FHIR implementation guides like mCODE. The mCODE bundle an _open_ and allows the existence of other FHIR profiles and base resources, a [CTCAdverseEvent]. It allows for the flexibility of the receiver to either process all entries inside a bundle for comprehensiveness or to just retrieve the minimal and necessary set of bundle entries which support a CTC adverse event.
 
 
 #### Artifacts
@@ -84,11 +76,6 @@ The implementation can support either sending an individual CTC adverse event re
 
 <!-- If the image below is not wrapped in a div tag, the publisher tries to wrap text around the image, which is not desired. -->
 <div style="text-align: center;">{%include ctcae-exchange.svg%}</div>
-<p></p>
-<p></p>
-
-<!-- **** TO DO **** include a second PlantUML file which exchanges a bundle. We need 2 of them since the adverse event resource can be requested on its own without a bundle. -->
-<div style="text-align: center;">{%include ctcae-bundle-exchange.svg%}</div>
 <p></p>
 <p></p>
 

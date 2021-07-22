@@ -1,10 +1,10 @@
 Instance: ae-bundle-kaitlyn-compass-trial
-InstanceOf: AEPatientBundle  //mCodePatientBundle
+InstanceOf: mCodePatientBundle
 Description: "Extended AdverseEvent example as a Patient Bundle for Compass Trial"
 * entry[cancerPatient].resource = patient-example-kaitlyn-b
 * entry[cancerPatient].fullUrl = "http://example.org/patient-example-kaitlyn-b"
-* entry[ctcAdverseEvent].resource = ctc-adverse-event-compass-ex1
-* entry[ctcAdverseEvent].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1"
+* entry[1].resource = ctc-adverse-event-compass-ex1
+* entry[1].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1"
 /* until AE bundles are fixed
 * entry[ctcAdverseEvent][+].resource = ctc-adverse-event-compass-ex1a
 * entry[ctcAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1a"

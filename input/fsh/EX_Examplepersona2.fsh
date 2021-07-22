@@ -1,27 +1,25 @@
+
 Instance: ae-bundle-persona-2
-InstanceOf: AEPatientBundle
+InstanceOf: Bundle
 // Usage: #example
 Description: "Extended AdverseEvent example as a Patient Bundle"
-* entry[cancerPatient].resource = PatientPersona2
-* entry[cancerPatient].fullUrl = "http://example.org/PatientPersona2"
-* entry[ctcAdverseEvent].resource = ctc-adverse-event-anemia1-persona-2
-* entry[ctcAdverseEvent].fullUrl = "http://example.org/ctc-adverse-event-anemia1-persona-2"
+* type = #collection
+* entry[0].resource = PatientPersona2
+* entry[0].fullUrl = "http://example.org/PatientPersona2"
+* entry[1].resource = ctc-adverse-event-anemia1-persona-2
+* entry[1].fullUrl = "http://example.org/ctc-adverse-event-anemia1-persona-2"
 * entry[2].resource = primary-cancer-condition-persona-2
 * entry[=].fullUrl = "http://example.org/primary-cancer-condition-persona-2"
 * entry[+].resource = cancer-related-medication-request-doxorubicin-persona-2
 * entry[=].fullUrl = "http://example.org/cancer-related-medication-request-doxorubicin-persona-2"
 * entry[+].resource = cancer-related-medication-administration-doxorubicin-persona-2
 * entry[=].fullUrl = "http://example.org/cancer-related-medication-administration-doxorubicin-persona-2"
-/*
 * entry[+].resource = diagnosticreport-cbc-201-1-persona2
 * entry[=].fullUrl = "http://example.org/diagnosticreport-cbc-201-1-persona2"
 * entry[+].resource = diagnosticreport-cbc-202-1-persona2
 * entry[=].fullUrl = "http://example.org/diagnosticreport-cbc-202-1-persona2"
 * entry[+].resource = encounter-ae1-evaluation-persona2
 * entry[=].fullUrl = "http://example.org/encounter-ae1-evaluation-persona2"
-// * entry[+].resource = clinical-trial-example-soc
-// * entry[=].fullUrl = "http://example.org/clinical-trial-example-soc"
-*/
 
 Instance: PatientPersona2
 InstanceOf: mCodeCancerPatient
