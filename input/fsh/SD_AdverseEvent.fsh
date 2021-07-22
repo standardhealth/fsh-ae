@@ -28,7 +28,8 @@ Description: "Profile of adverse event, using Common Terminology Criteria (CTC).
 * extension contains 
     CTCAEGrade named grade 1..1 MS and
     AdverseEventExpectation named expectation 0..1 MS and
-    AdverseEventResolvedDate named resolvedDate 0..1 MS
+    AdverseEventResolvedDate named resolvedDate 0..1 MS and
+    AdverseEventParticpant named participant 0..*
 // ------Seriousness------
 * seriousness 0..1 MS
 * seriousness from AdverseEventSeriousnessVS (required)
@@ -78,3 +79,14 @@ Description: "The date (and time) when the adverse event ends or returns to base
 * insert AdverseEventExtensionPreamble
 * value[x] only dateTime
 
+// from R5 AE profile to assign approver
+Extension: AdverseEventParticpant
+Id: adverse-event-participant
+Title: "Adverse Event Participant"
+Description: "Participant can be used to represent the approver of the adverse event"
+* extension contains
+    function 0..1 and
+    actor 1..1  
+* extension[function].value[x] only CodeableConcept
+* extension[function].value[x] from AdverseEventParticipantFunctionVS (required)
+* extension[actor].value[x] only Reference(Practitioner)

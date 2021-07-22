@@ -42,6 +42,18 @@ Description: "An expected adverse event is one whose nature and severity have be
 * NCIT#C41333 "Expected Adverse Event"
 * NCIT#C41334 "Unexpected Adverse Event"
 
+// valueset in R5 AE, added approver (authenticator)
+ValueSet: AdverseEventParticipantFunctionVS
+Id: adverse-event-participant-function-value-set
+Title: "Adverse Event Participant Function"
+Description: "This value set includes codes that describe the type of involvement of the actor in the adverse event"
+//* include codes from system ParticipationType
+* ParticipationType#INF "Informant"
+* ParticipationType#PART "Participation"
+* ParticipationType#WIT "Witness"
+* ParticipationType#AUT "Author (originator)"
+* ParticipationType#AUTHEN "Authenticator"
+
 ValueSet: CTCAETermVS
 Id: ctcae-term-value-set
 Title: "CTCAE Terms Value Set"

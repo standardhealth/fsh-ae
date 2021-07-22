@@ -67,6 +67,7 @@ groups:
       - StructureDefinition/adverse-event-expectation
       - StructureDefinition/adverse-event-resolved-date
       - StructureDefinition/ctcae-grade
+      - StructureDefinition/adverse-event-participant
 
   # Value sets
   ValueSets:
@@ -78,6 +79,7 @@ groups:
       - ValueSet/adverse-event-seriousness-value-set
       - ValueSet/adverse-event-relatedness-value-set
       - ValueSet/ctcae-grade-value-set
+      - ValueSet/adverse-event-participant-function-value-set
 
   CodeSystems:
     name: Code Systems
