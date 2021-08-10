@@ -41,7 +41,6 @@ This is a set of experimental profiles for representing adverse events (AE). The
 
 | Type       | Name                            | Description                    | Example             |
 | ---------- | ------------------------------- | -----------------------------  | ------------------- |
-| Bundle     | [AEPatientBundle]               | Bundles the contents of an adverse Event in the context of mCODE  | [Persona1 AE Bundle], [Persona2 AE Bundle] |
 | Profile    | [CTCAdverseEvent]               | Records an AE                  | [Example 1], [Example 2] |
 | Extension  | [CTCAEGrade]                    | Records the CTC Grade          | [Example 1], [Example 2] |
 | Extension  | [AdverseEventExpectation]       | Whether event was expected     | [Example 1]        |
@@ -54,7 +53,6 @@ This is a set of experimental profiles for representing adverse events (AE). The
 | ValueSet   | [AdverseEventRelatednessVS]     | Likelihood that AE is related to intervention | n/a |
 
 
-[AEPatientBundle]: StructureDefinition-ae-patient-bundle.html
 [Persona1 AE Bundle]: Bundle-ae-bundle-kaitlyn-compass-trial.html
 [Persona2 AE Bundle]: Bundle-ae-bundle-persona-2.html
 [CTCAdverseEvent]: StructureDefinition-ctc-adverse-event.html

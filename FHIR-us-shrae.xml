@@ -33,7 +33,6 @@
 <artifact id="Patient/PatientPersona2" key="Patient-PatientPersona2" name="PatientPersona2"/>
 <artifact id="Practitioner/PractitionerExample1" key="Practitioner-PractitionerExample1" name="PractitionerExample1"/>
 <artifact id="ResearchStudy/clinical-trial-example-compass" key="clinical-trial-example-compass" name="clinical-trial-example-compass"/>
-<artifact id="StructureDefinition/ae-patient-bundle" key="StructureDefinition-ae-patient-bundle" name="Adverse Event Patient Bundle"/>
 <artifact id="StructureDefinition/adverse-event-expectation" key="StructureDefinition-adverse-event-expectation" name="Adverse Event Expectation"/>
 <artifact id="StructureDefinition/adverse-event-resolved-date" key="StructureDefinition-adverse-event-resolved-date" name="Adverse Event Resolved Date"/>
 <artifact id="StructureDefinition/ctc-adverse-event" key="StructureDefinition-ctc-adverse-event" name="CTC Adverse Event"/>
