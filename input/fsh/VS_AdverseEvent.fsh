@@ -32,7 +32,7 @@ Description: "The outcome of a serious adverse event"
 * NCIT#C84266 "Life Threatening Adverse Event"
 * NCIT#C48275 "Death Related to Adverse Event"
 * NCIT#C113380 "Disabling Adverse Event"
-* NCIT#C83052 "Adverse Event associated with Hopitalization"
+* NCIT#C83052 "Adverse Event associated with Hospitalization"
 * NCIT#C2849 "Congenital Abnormality"
 * NCIT#C52668 "Intervention Required"
 
