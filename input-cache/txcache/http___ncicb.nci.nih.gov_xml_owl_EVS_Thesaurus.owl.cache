@@ -8545,3 +8545,99 @@ e: {
   "error" : "Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+  "code" : "C84266"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl\" is not known (encountered paired with code = \"C84266\"); The code provided (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84266) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+  "code" : "C48275"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl\" is not known (encountered paired with code = \"C48275\"); The code provided (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C48275) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+  "code" : "C113380"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl\" is not known (encountered paired with code = \"C113380\"); The code provided (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C113380) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+  "code" : "C83052"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl\" is not known (encountered paired with code = \"C83052\"); The code provided (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83052) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+  "code" : "C2849"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl\" is not known (encountered paired with code = \"C2849\"); The code provided (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C2849) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+  "code" : "C52668"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl\" is not known (encountered paired with code = \"C52668\"); The code provided (http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C52668) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "concept" : [{
+        "code" : "C84266",
+        "display" : "Life Threatening Adverse Event"
+      },
+      {
+        "code" : "C48275",
+        "display" : "Death Related to Adverse Event"
+      },
+      {
+        "code" : "C113380",
+        "display" : "Disabling Adverse Event"
+      },
+      {
+        "code" : "C83052",
+        "display" : "Adverse Event associated with Hopitalization"
+      },
+      {
+        "code" : "C2849",
+        "display" : "Congenital Abnormality"
+      },
+      {
+        "code" : "C52668",
+        "display" : "Intervention Required"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"
+}
+-------------------------------------------------------------------------------------

@@ -21,8 +21,21 @@ ValueSet: AdverseEventSeriousnessVS
 Id: adverse-event-seriousness-value-set
 Title: "Adverse Event Seriousness Value Set"
 Description: "An adverse event is classified as serious or non-serious. It is considered serious if it results in any of the following outcomes: (1) Death, (2) Life-threatening experience, 3) Inpatient hospitalization or prolongation of existing hospitalization (for > 24 hours), (4) Persistent or significant incapacity or substantial disruption of the ability to conduct normal life functions, (5) Congenital anomaly/birth defect, or (6) Important Medical Event (IME) that may jeopardize the patient or subject and may require medical or surgical intervention to prevent one of the outcomes listed in this definition (reference: https://crawb.crab.org/txwb/CRA_MANUAL/Vol1/chapter%2013_Serious%20Adverse%20Events.pdf)."
+//* include codes from system AESeriousness
 * NCIT#C41335 "Serious Adverse Event"
 * NCIT#C41336 "Non-serious Adverse Event"
+
+ValueSet: AdverseEventSeriousnessOutcomeVS
+Id: adverse-event-seriousness-outcome-value-set
+Title: "Adverse Event Seriousness Outcome Value Set"
+Description: "The outcome of a serious adverse event"
+* NCIT#C84266 "Life Threatening Adverse Event"
+* NCIT#C48275 "Death Related to Adverse Event"
+* NCIT#C113380 "Disabling Adverse Event"
+* NCIT#C83052 "Adverse Event associated with Hospitalization"
+* NCIT#C2849 "Congenital Abnormality"
+* NCIT#C52668 "Intervention Required"
+
 
 ValueSet: AdverseEventRelatednessVS
 Id: adverse-event-relatedness-value-set

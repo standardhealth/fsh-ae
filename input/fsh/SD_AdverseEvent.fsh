@@ -29,7 +29,8 @@ Description: "Profile of adverse event, using Common Terminology Criteria (CTC).
     CTCAEGrade named grade 1..1 MS and
     AdverseEventExpectation named expectation 0..1 MS and
     AdverseEventResolvedDate named resolvedDate 0..1 MS and
-    AdverseEventParticpant named participant 0..*
+    AdverseEventParticpant named participant 0..* MS and
+    AdverseEventSeriousnessOutcome named seriousnessOutcome 0..1 MS
 // ------Seriousness------
 * seriousness 0..1 MS
 * seriousness from AdverseEventSeriousnessVS (required)
@@ -90,3 +91,10 @@ Description: "Participant can be used to represent the approver of the adverse e
 * extension[function].value[x] only CodeableConcept
 * extension[function].value[x] from AdverseEventParticipantFunctionVS (required)
 * extension[actor].value[x] only Reference(Practitioner)
+
+Extension: AdverseEventSeriousnessOutcome // named seriousnessOutcome 0..1 MS
+Id: adverse-event-seriousness-outcome
+Title: "Adverse Event Seriousness Outcome"
+Description: "The reason an adverse event is serious"
+* value[x] only CodeableConcept
+* value[x] from AdverseEventSeriousnessOutcomeVS (required)

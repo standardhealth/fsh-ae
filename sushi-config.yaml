@@ -67,6 +67,7 @@ groups:
       - StructureDefinition/adverse-event-resolved-date
       - StructureDefinition/ctcae-grade
       - StructureDefinition/adverse-event-participant
+      - StructureDefinition/adverse-event-seriousness-outcome
 
   # Value sets
   ValueSets:
@@ -76,6 +77,7 @@ groups:
       - ValueSet/ctcae-term-value-set
       - ValueSet/adverse-event-expectation-value-set
       - ValueSet/adverse-event-seriousness-value-set
+      - ValueSet/adverse-event-seriousness-outcome-value-set
       - ValueSet/adverse-event-relatedness-value-set
       - ValueSet/ctcae-grade-value-set
       - ValueSet/adverse-event-participant-function-value-set
@@ -92,6 +94,7 @@ groups:
     resources:
       - AdverseEvent/ctc-adverse-event-example-1
       - AdverseEvent/ctc-adverse-event-example-2
+      - AdverseEvent/ctc-adverse-event-example-3
   
   GenericExamples:
     name: "Examples:"

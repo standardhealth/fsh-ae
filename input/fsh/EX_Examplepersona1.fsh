@@ -1,23 +1,11 @@
 Instance: ae-bundle-kaitlyn-compass-trial
 InstanceOf: mCodePatientBundle
 Description: "Extended AdverseEvent example as a Patient Bundle for Compass Trial"
-* entry[cancerPatient].resource = patient-example-kaitlyn-b
-* entry[cancerPatient].fullUrl = "http://example.org/patient-example-kaitlyn-b"
-* entry[1].resource = ctc-adverse-event-compass-ex1
-* entry[1].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1"
-/* until AE bundles are fixed
-* entry[ctcAdverseEvent][+].resource = ctc-adverse-event-compass-ex1a
-* entry[ctcAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1a"
-* entry[ctcAdverseEvent][+].resource = ctc-adverse-event-compass-ex1a
-* entry[ctcAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1a"
-* entry[ctcAdverseEvent][+].resource = ctc-adverse-event-compass-ex1b
-* entry[ctcAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1b"
-* entry[ctcAdverseEvent][+].resource = ctc-adverse-event-compass-ex2
-* entry[ctcAdverseEvent][=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex2"
-*/
-* entry[2].resource = kaitlyn-primary-cancer-condition-ex1
-* entry[=].fullUrl = "http://example.org/kaitlyn-primary-cancer-condition-ex1"
-* entry[+].resource = medication-request-example-kadcyla
+* entry[0].resource = patient-example-kaitlyn-b
+* entry[0].fullUrl = "http://example.org/patient-example-kaitlyn-b"
+* entry[1].resource = kaitlyn-primary-cancer-condition-ex1
+* entry[1].fullUrl = "http://example.org/kaitlyn-primary-cancer-condition-ex1"
+* entry[2].resource = medication-request-example-kadcyla
 * entry[=].fullUrl = "http://example.org/medication-request-example-kadcyla"
 * entry[+].resource = medication-request-example-tucatinib
 * entry[=].fullUrl = "http://example.org/medication-request-example-tucatinib"
@@ -25,12 +13,17 @@ Description: "Extended AdverseEvent example as a Patient Bundle for Compass Tria
 * entry[=].fullUrl = "http://example.org/medication-administration-kadcyla"
 * entry[+].resource = medication-administration-tucatinib
 * entry[=].fullUrl = "http://example.org/medication-administration-tucatinib"
-
-/* 
-ResearchStudy doesn't work in the bundle, causes it to not render
+* entry[+].resource = ctc-adverse-event-compass-ex1
+* entry[=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1"
+* entry[+].resource = ctc-adverse-event-compass-ex1a
+* entry[=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1a"
+* entry[+].resource = ctc-adverse-event-compass-ex1b
+* entry[=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex1b"
+* entry[+].resource = ctc-adverse-event-compass-ex2
+* entry[=].fullUrl = "http://example.org/ctc-adverse-event-compass-ex2"
 * entry[+].resource = clinical-trial-example-compass
 * entry[=].fullUrl = "http://example.org/clinical-trial-example-compass"
-*/
+
 
 Instance: patient-example-kaitlyn-b
 InstanceOf: mCodeCancerPatient
@@ -171,7 +164,9 @@ Description: "Grade 1 ALT"
 * seriousness = NCIT#C41336 "Non-serious Adverse Event"
 * outcome = AEO#ongoing  // resolved on 6/10/20 after 3 more visits - goes to grade 3 then back to 1 then WNL
 * date = "2020-04-22"
-* recorder = Reference(PractitionerExample1)
+* recorder = Reference(us-core-practitioner-nancy-oncology-nurse)
+* extension[participant][0].extension[function].valueCodeableConcept = ParticipationType#AUTHEN 
+* extension[participant][0].extension[actor].valueReference = Reference(us-core-practitioner-owen-oncologist)
 * study = Reference(clinical-trial-example-compass)
 * suspectEntity[0].instance = Reference(medication-administration-kadcyla)
 * suspectEntity[0].causality[0].assessment = NCIT#C53259
@@ -193,7 +188,9 @@ Description: "Grade 3 ALT"
 * seriousness = NCIT#C41336 "Non-serious Adverse Event"
 * outcome = AEO#ongoing 
 * date = "2020-05-13"
-* recorder = Reference(PractitionerExample1)
+* recorder = Reference(us-core-practitioner-nancy-oncology-nurse)
+* extension[participant][0].extension[function].valueCodeableConcept = ParticipationType#AUTHEN 
+* extension[participant][0].extension[actor].valueReference = Reference(us-core-practitioner-owen-oncologist)
 * study = Reference(clinical-trial-example-compass)
 * suspectEntity[0].instance = Reference(medication-administration-kadcyla)
 * suspectEntity[0].causality[0].assessment = NCIT#C53259
@@ -215,7 +212,9 @@ Description: "ALT back to grade 1 and resolved"
 * seriousness = NCIT#C41336 "Non-serious Adverse Event"
 * outcome = AEO#resolved
 * date = "2020-05-20"
-* recorder = Reference(PractitionerExample1)
+* recorder = Reference(us-core-practitioner-nancy-oncology-nurse)
+* extension[participant][0].extension[function].valueCodeableConcept = ParticipationType#AUTHEN 
+* extension[participant][0].extension[actor].valueReference = Reference(us-core-practitioner-owen-oncologist)
 * study = Reference(clinical-trial-example-compass)
 * suspectEntity[0].instance = Reference(medication-administration-kadcyla)
 * suspectEntity[0].causality[0].assessment = NCIT#C53259
@@ -238,7 +237,9 @@ Description: "Grade 1 Nausea/vomiting"  // both are AEs, which to use or make th
 * seriousness = NCIT#C41336 "Non-serious Adverse Event"
 * outcome = AEO#ongoing  // resolved on 6/10/20 after 3 more visits - goes to grade 3 then back to 1 then WNL
 * date = "2020-05-25"
-* recorder = Reference(PractitionerExample1)
+* recorder = Reference(us-core-practitioner-nancy-oncology-nurse)
+* extension[participant][0].extension[function].valueCodeableConcept = ParticipationType#AUTHEN 
+* extension[participant][0].extension[actor].valueReference = Reference(us-core-practitioner-owen-oncologist)
 * study = Reference(clinical-trial-example-compass)
 * suspectEntity[0].instance = Reference(medication-administration-kadcyla)
 * suspectEntity[0].causality[0].assessment = NCIT#C53258

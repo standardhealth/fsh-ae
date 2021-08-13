@@ -35,3 +35,4 @@ Alias:   MedReqCat = 	http://terminology.hl7.org/CodeSystem/medicationrequest-ca
 Alias:   RefMeaning = http://terminology.hl7.org/CodeSystem/referencerange-meaning
 Alias:   AEO = http://terminology.hl7.org/CodeSystem/adverse-event-outcome 
 Alias:   ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
+Alias:   AESeriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness
