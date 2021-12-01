@@ -11,7 +11,8 @@ Description: "Profile of adverse event, using Common Terminology Criteria (CTC).
 * actuality = #actual
 // ------Event-----
 * event 1..1 MS
-* event.text 1..1 MS  // require the verbatim text, recorded in event.text
+* event.text 0..1 MS  
+* event.coding 1..*
 * event from CTCAETermVS (preferred)
 * event.coding ^short = "CTCAE Term"
 * event.coding ^definition = "The term taken from CTCAE."
