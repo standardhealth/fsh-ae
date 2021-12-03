@@ -3,7 +3,7 @@ Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $loinc = http://loinc.org
 Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 
-// removed the O&O representation of a bundle and just kept the DiagnosticReport
+// mlt_cmt: removed the O&O representation of a bundle and just kept the DiagnosticReport
 /*
 Instance: cbc-201-persona2
 InstanceOf: Bundle
